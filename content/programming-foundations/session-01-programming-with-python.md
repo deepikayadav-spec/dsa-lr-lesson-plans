@@ -1,6 +1,6 @@
 # Programming with Python
 
-**Duration** 33 min total — 28 min instruction + 5 min Classroom Quiz · **Topic** Introduction to Python — software, code, syntax, `print()` · **Prerequisite** None — day one
+**Duration** 47 min total — 40 min instruction + 7 min Classroom Quiz · **Topic** Introduction to Python — software, code, syntax, `print()` · **Prerequisite** None — day one
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -16,7 +16,7 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Diagnostic (0–4 min) · ALS: Polling
+## Warm-Up Poll — Diagnostic (0–6 min) · ALS: Polling
 
 There's no previous session to recall, so this poll is diagnostic, not retrieval practice — no wrong answers. Purpose is to calibrate pace on day one.
 
@@ -41,7 +41,7 @@ Say: *"Five quick questions. Nobody is graded, nobody is named. I need to know w
 
 ---
 
-## Hook (4–8 min)
+## Hook (6–11 min)
 
 Stand at the board with a marker. Ask for one volunteer to stay seated and give you instructions.
 
@@ -53,7 +53,7 @@ Follow every instruction with deliberate literalism. *"Pick up the marker"* — 
 
 ---
 
-## Concept Walkthrough (8–18 min)
+## Concept Walkthrough (11–26 min)
 
 **Core idea:** software is a set of instructions to the hardware; code is what you write; syntax is the set of rules that code must follow to be understood. `print()` displays exactly what's between its quotes; without quotes, Python evaluates it as an expression instead.
 
@@ -65,19 +65,19 @@ Follow every instruction with deliberate literalism. *"Pick up the marker"* — 
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Error-Spotting Pairs (18–23 min)
+## ⚡ Active Learning Strategy 1 — Error-Spotting Pairs (26–33 min)
 
 Four broken `print()` lines on screen; students guess the error alone, then compare with a partner, then share out — instructor runs each broken line live so the real error message appears. Exposes whether students can read an error message instead of freezing at it.
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Predict & Verify (23–28 min)
+## ⚡ Active Learning Strategy 2 — Predict & Verify (33–40 min)
 
 A short sequence of `print()` lines typed live, one at a time; students commit to a predicted output before each run, ending with a deliberately broken `Print("...")` line the class has to fix. Exposes the quotes-vs-no-quotes misconception before it becomes a habit.
 
 ---
 
-## Classroom Quiz (28–33 min)
+## Classroom Quiz (40–47 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block, covering software/syntax definitions, `print()` output prediction, and the four common errors.
 

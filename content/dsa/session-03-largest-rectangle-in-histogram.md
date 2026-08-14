@@ -1,6 +1,6 @@
 # Largest Rectangle in Histogram
 
-**Duration** 28 min total — 23 min instruction + 5 min Classroom Quiz · **Topic** Stack — Largest Rectangle in Histogram (NSE/PSE two-pass approach + optimal one-pass approach) · **Prerequisite** Asteroid Collision
+**Duration** 42 min total — 35 min instruction + 7 min Classroom Quiz · **Topic** Stack — Largest Rectangle in Histogram (NSE/PSE two-pass approach + optimal one-pass approach) · **Prerequisite** Asteroid Collision
 **Session type** Concept lecture · **Format** Condensed — merged from a previous two-part (35 + 30 min) split into a single 45+5-capped session; active learning strategies referenced by name, single closing quiz
 
 <!-- Merge note: previously split as session-58a (Part 1, NSE/PSE approach, 35 min) and session-58b (Part 2, optimal one-pass approach, 30 min), 65 min combined. The image's schedule shows this as one topic occupying one slot per batch, so both parts are merged back into a single session and trimmed to fit the 45+5 cap. Both approaches are kept — the two-pass approach because Part 1's instructor notes were explicit that skipping it undercuts why the one-pass approach is a genuine simplification, not a random trick. -->
@@ -18,7 +18,7 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Asteroid Collision (0–5 min)
+## Warm-Up Poll — Retrieval Practice on Asteroid Collision (0–6 min)
 
 Say: *"Five quick ones on asteroid collisions before we hit the hardest problem in this block."*
 
@@ -40,7 +40,7 @@ Say: *"Five quick ones on asteroid collisions before we hit the hardest problem 
 
 ---
 
-## Hook (5–8 min)
+## Hook (6–10 min)
 
 Draw a rough skyline on the board — bars of heights `2, 1, 5, 6, 2, 3` sitting side by side, each width 1.
 
@@ -52,7 +52,7 @@ Let a few guesses land (actual answer: height 5, width 2, area 10 — bars at he
 
 ---
 
-## Concept Walkthrough (8–18 min)
+## Concept Walkthrough (10–28 min)
 
 **Core idea (two-pass):** for every bar, width = `NSE[i] - PSE[i] - 1`, where NSE/PSE are the nearest strictly-smaller bar to the right/left, each found with a monotonic stack in one pass. **Core idea (one-pass, optimal):** instead of precomputing both arrays, pop-and-compute — when a shorter bar arrives, pop the taller one off the stack and compute its area immediately, using the current index as its right boundary.
 
@@ -64,13 +64,13 @@ Let a few guesses land (actual answer: height 5, width 2, area 10 — bars at he
 
 ---
 
-## ⚡ Active Learning Strategy — Live Coding / Dry-Run Relay (18–23 min)
+## ⚡ Active Learning Strategy — Live Coding / Dry-Run Relay (28–35 min)
 
 A fresh, smaller array traced twice by the class — once for NSE only (right to left), once for the one-pass area computation (left to right), students predicting each pop/area before it's confirmed. Exposes whether students can run both the two-pass mechanics and the optimal one-pass mechanics themselves, not just watch the deck's example.
 
 ---
 
-## Classroom Quiz (23–28 min)
+## Classroom Quiz (35–42 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block, covering both the NSE/PSE approach and the optimal one-pass trade-off.
 

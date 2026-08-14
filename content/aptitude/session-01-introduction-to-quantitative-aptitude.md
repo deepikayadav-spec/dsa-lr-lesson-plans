@@ -1,6 +1,6 @@
 # Introduction to Quantitative Aptitude
 
-**Duration** 33 min total — 28 min instruction + 5 min Classroom Quiz · **Topic** Introduction to Quantitative Aptitude — what aptitude is, why it matters, course overview · **Prerequisite** None — day one
+**Duration** 45 min total — 40 min instruction + 5 min Classroom Quiz · **Topic** Introduction to Quantitative Aptitude — what aptitude is, why it matters, course overview · **Prerequisite** None — day one
 **Session type** Lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -16,7 +16,7 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Diagnostic (0–4 min) · ALS: Polling
+## Warm-Up Poll — Diagnostic (0–6 min) · ALS: Polling
 
 There's no previous session to recall, so this poll is diagnostic, not retrieval practice — no wrong answers.
 
@@ -38,7 +38,7 @@ Say: *"Five quick questions. Nobody is graded, nobody is named. I need to know w
 
 ---
 
-## Hook (4–7 min)
+## Hook (6–10 min)
 
 Say: *"Before I show you the next slide — guess. Out of the top IT recruiters in India, how many do you think run an aptitude round before they even look at your resume?"*
 
@@ -48,7 +48,7 @@ Take two or three shouted guesses. Then reveal: TCS, IBM, Cognizant, HCL, Accent
 
 ---
 
-## Concept Walkthrough (7–16 min)
+## Concept Walkthrough (10–25 min)
 
 **Core idea:** aptitude tests how you reason and approach a problem under time pressure — not how fast you calculate. It's tested everywhere: recruitment drives (TCS, Infosys, Wipro...), qualifying exams (CAT, GATE, GMAT...), and government exams (UPSC, SSC, IBPS...). This course has four components — **Quantitative Aptitude, Logical Reasoning, Advanced Aptitude, Numerical Ability** — and everything from today onward lives inside the first of those four.
 
@@ -60,19 +60,19 @@ Take two or three shouted guesses. Then reveal: TCS, IBM, Cognizant, HCL, Accent
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Real-World Callout (16–21 min)
+## ⚡ Active Learning Strategy 1 — Real-World Callout (25–32 min)
 
 Students shout out any company, exam, or government test they personally know someone who's taken an aptitude round for, not restricted to the deck's lists — instructor sorts each callout into the right category live. Exposes that aptitude testing isn't an abstract syllabus topic but something students have already brushed up against.
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Silent Solve → Vote-Lock → Reveal (21–26 min)
+## ⚡ Active Learning Strategy 2 — Silent Solve → Vote-Lock → Reveal (32–40 min)
 
 Students work the goats-and-hens riddle alone or in pairs for two minutes and commit to an answer letter *before* any explanation, then the assume-all-hens technique is revealed step by step. Exposes whether students can commit to reasoning before seeing the trick — this is the session's one genuine problem-solving moment.
 
 ---
 
-## Classroom Quiz (26–31 min)
+## Classroom Quiz (40–45 min)
 
 **Classroom Quiz** *Reserved — not yet available.* No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet for this Aptitude content. Until then, use this slot for an instructor-led review — re-run the "assume all hens" reveal one more time, cold-calling a different student to narrate each step.
 

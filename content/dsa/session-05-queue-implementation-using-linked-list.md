@@ -1,6 +1,6 @@
 # Queue Implementation Using Linked List
 
-**Duration** 29 min total — 24 min instruction + 5 min Classroom Quiz · **Topic** Queue — Implementation Using Linked List · **Prerequisite** Introduction to Queue & Implementation Using Arrays
+**Duration** 44 min total — 37 min instruction + 7 min Classroom Quiz · **Topic** Queue — Implementation Using Linked List · **Prerequisite** Introduction to Queue & Implementation Using Arrays
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -16,7 +16,7 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Queue: Array Implementation (0–5 min)
+## Warm-Up Poll — Retrieval Practice on Queue: Array Implementation (0–6 min)
 
 Say: *"Five quick ones on the array-based queue before we swap the array out entirely."*
 
@@ -38,7 +38,7 @@ Say: *"Five quick ones on the array-based queue before we swap the array out ent
 
 ---
 
-## Hook (5–8 min)
+## Hook (6–10 min)
 
 Ask: *"A shared office printer has a print queue. Someone can send a 200-page print job at 2 AM, and someone else can send one job every minute all day. Should that queue ever say 'sorry, full, try again later'?"*
 
@@ -48,7 +48,7 @@ Let students answer (no). Then:
 
 ---
 
-## Concept Walkthrough (8–16 min)
+## Concept Walkthrough (10–23 min)
 
 **Core idea:** swap the fixed array for a linked list — `front` and `back` become **node pointers**, not indices, both `null` when empty. No capacity, no modulo. `push` links a new node after `back` and moves `back` to it; `pop` moves `front` to `front->next`.
 
@@ -60,19 +60,19 @@ Let students answer (no). Then:
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Live Trace: Push and Pop by Pointer (16–20 min)
+## ⚡ Active Learning Strategy 1 — Live Trace: Push and Pop by Pointer (23–30 min)
 
 A short push/pop sequence traced node by node, students stating what `front` and `back` point to before each reveal. Exposes whether students can track pointers moving between actual nodes, rather than array indices.
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Spot the Bug: The Missing Reset (20–24 min)
+## ⚡ Active Learning Strategy 2 — Spot the Bug: The Missing Reset (30–37 min)
 
 A buggy `pop()` implementation that never resets `back` when the last node is removed; students find the bug. Exposes the single most common real bug in this implementation — a dangling `back` pointer.
 
 ---
 
-## Classroom Quiz (24–29 min)
+## Classroom Quiz (37–44 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
 

@@ -1,6 +1,6 @@
 # Number Systems: Basic Classification of Numbers & Divisibility Rules
 
-**Duration** 31 min total — 26 min instruction + 5 min Classroom Quiz · **Topic** Number Systems — classification of numbers and divisibility rules for 2–12, co-primes · **Prerequisite** Introduction to Quantitative Aptitude
+**Duration** 43 min total — 38 min instruction + 5 min Classroom Quiz · **Topic** Number Systems — classification of numbers and divisibility rules for 2–12, co-primes · **Prerequisite** Introduction to Quantitative Aptitude
 **Session type** Lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -16,7 +16,7 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Introduction to Quantitative Aptitude (0–4 min) · ALS: Polling
+## Warm-Up Poll — Retrieval Practice on Introduction to Quantitative Aptitude (0–6 min) · ALS: Polling
 
 4 questions on last session's course overview and the goats-and-hens riddle.
 
@@ -38,7 +38,7 @@ By the end of this session, students will be able to:
 
 ---
 
-## Hook (4–6 min)
+## Hook (6–9 min)
 
 Say: *"Today we start Number Systems. Before the first slide — a question. How old do you think the idea of 'numbers' is? Not calculators, not written digits — just the idea of counting. Shout a guess."*
 
@@ -48,7 +48,7 @@ Take two or three guesses.
 
 ---
 
-## Concept Walkthrough (6–16 min)
+## Concept Walkthrough (9–24 min)
 
 **Core idea:** Numbers split into Real / Imaginary. Real splits into Rational / Irrational — rational means expressible as p/q (terminates or repeats as a decimal), irrational means neither. Rational splits further into Integers and Fractions. Divisibility rules for 2–12 are shortcuts, not new facts each time — 6 = divisible by 2 **and** 3, 12 = divisible by 3 **and** 4, no new rule needed.
 
@@ -60,19 +60,19 @@ Take two or three guesses.
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Think-Pair-Share: Rational or Irrational? (16–21 min)
+## ⚡ Active Learning Strategy 1 — Think-Pair-Share: Rational or Irrational? (24–31 min)
 
 Six numbers (including `22/7`, `π`, and a repeating decimal) sorted into two buckets, individually first, then in pairs. Exposes two classic traps at once: mistaking an approximation of π for π itself, and mistaking "never seems to end" for "irrational" when it's actually a repeating decimal.
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Full-Chain Dictation: Co-Primes & Remainder Word Problems (21–26 min)
+## ⚡ Active Learning Strategy 2 — Full-Chain Dictation: Co-Primes & Remainder Word Problems (31–38 min)
 
 Instructor writes *only* what a student dictates, one step at a time, working through a chained-remainder word problem (divide by 7, then 11, then 12) with nothing filled in or assumed. Exposes whether students can reconstruct a multi-step chain themselves rather than just following a worked slide.
 
 ---
 
-## Classroom Quiz (26–31 min)
+## Classroom Quiz (38–43 min)
 
 **Classroom Quiz** *Reserved — not yet available.* No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet for this Aptitude content. Until then, run a quick timed drill instead — put `343` and `3546` on screen one at a time, 10 s silent, then a student walks the divisibility steps at the board.
 

@@ -1,6 +1,6 @@
 # Stack Using Queue
 
-**Duration** 29 min total — 24 min instruction + 5 min Classroom Quiz · **Topic** Stack & Queue — Implementation: Stack Using Queue · **Prerequisite** Queue Implementation Using Linked List
+**Duration** 44 min total — 37 min instruction + 7 min Classroom Quiz · **Topic** Stack & Queue — Implementation: Stack Using Queue · **Prerequisite** Queue Implementation Using Linked List
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -16,7 +16,7 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Queue: Linked List Implementation (0–5 min)
+## Warm-Up Poll — Retrieval Practice on Queue: Linked List Implementation (0–6 min)
 
 Say: *"Five on the linked-list queue, then we do something a little backwards — build a stack out of a queue."*
 
@@ -38,7 +38,7 @@ Say: *"Five on the linked-list queue, then we do something a little backwards �
 
 ---
 
-## Hook (5–8 min)
+## Hook (6–10 min)
 
 Ask: *"You have a queue — enqueue at the back, dequeue from the front. That's the only tool you're allowed to use. Can you make it behave like a stack — last in, first out?"*
 
@@ -48,7 +48,7 @@ Let students think for a moment; most will assume this needs a completely differ
 
 ---
 
-## Concept Walkthrough (8–16 min)
+## Concept Walkthrough (10–23 min)
 
 **Core idea:** simulate a stack using only a queue's `enqueue`/`dequeue`. On every `push`, enqueue the new element, then rotate the rest of the queue behind it — exactly `size-before-the-push` rotations — so the newest element ends up at the front, where `pop()` and `top()` can read it directly.
 
@@ -60,19 +60,19 @@ Let students think for a moment; most will assume this needs a completely differ
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Live Trace: Rotate It Yourself (16–20 min)
+## ⚡ Active Learning Strategy 1 — Live Trace: Rotate It Yourself (23–30 min)
 
 A fresh push sequence (`push(5), push(15), push(25)`), students stating rotation count and resulting queue order before each reveal. Exposes whether students can execute the rotation mechanics themselves, not just watch the deck's example.
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Predict & Discuss: Where Did the Cost Go? (20–24 min)
+## ⚡ Active Learning Strategy 2 — Predict & Discuss: Where Did the Cost Go? (30–37 min)
 
 Class discussion: a native stack has all three operations at O(1); this version matches on `pop`/`top` — so where did the cost go? Exposes whether students understand the complexity trade-off as a *conservation* of work, not a free win. Answer: the cost moved entirely into `push`, now O(N).
 
 ---
 
-## Classroom Quiz (24–29 min)
+## Classroom Quiz (37–44 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
 

@@ -1,6 +1,6 @@
 # Balanced Parenthesis
 
-**Duration** 31 min total — 26 min instruction + 5 min Classroom Quiz · **Topic** Stack — Balanced Parenthesis Validation · **Prerequisite** Implement Min Stack
+**Duration** 46 min total — 39 min instruction + 7 min Classroom Quiz · **Topic** Stack — Balanced Parenthesis Validation · **Prerequisite** Implement Min Stack
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -16,7 +16,7 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Implement Min Stack (0–4 min) · ALS: Polling
+## Warm-Up Poll — Retrieval Practice on Implement Min Stack (0–6 min) · ALS: Polling
 
 5 questions on **Implement Min Stack**. ~45 s each, project the distribution, never name individuals.
 
@@ -38,7 +38,7 @@ By the end of this session, students will be able to:
 
 ---
 
-## Hook (4–7 min)
+## Hook (6–10 min)
 
 Write this on the board: `(){[{}])`
 
@@ -50,7 +50,7 @@ Let a few guesses land.
 
 ---
 
-## Concept Walkthrough (7–16 min)
+## Concept Walkthrough (10–25 min)
 
 **Core idea:** push every opening bracket onto a stack. On a closing bracket, check the top of the stack — if it matches, pop; if it doesn't match, or the stack is already empty, the string is invalid. After the whole string, the stack must also be empty — leftover unclosed openings are invalid too.
 
@@ -64,19 +64,19 @@ Let a few guesses land.
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Spot the Bug (16–21 min)
+## ⚡ Active Learning Strategy 1 — Spot the Bug (25–32 min)
 
 Four bracket strings on the board; students call out valid/invalid and, if invalid, which of the three failure modes applies. Exposes whether students can name the *specific* failure, not just guess valid/invalid.
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Live Coding / Dry-Run Relay (21–26 min)
+## ⚡ Active Learning Strategy 2 — Live Coding / Dry-Run Relay (32–39 min)
 
 A fresh 8-character string (`{[()()]}`), run one character at a time with students predicting the stack state before each reveal. Exposes whether students can execute the full algorithm end to end on their own.
 
 ---
 
-## Classroom Quiz (26–31 min)
+## Classroom Quiz (39–46 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session, covering the three failure modes and the count-isn't-enough misconception.
 

@@ -1,6 +1,6 @@
 # Introduction to Queue & Implementation Using Arrays
 
-**Duration** 33 min total — 28 min instruction + 5 min Classroom Quiz · **Topic** Queue — Introduction and Array Implementation · **Prerequisite** Largest Rectangle in Histogram
+**Duration** 46 min total — 39 min instruction + 7 min Classroom Quiz · **Topic** Queue — Introduction and Array Implementation · **Prerequisite** Largest Rectangle in Histogram
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -16,7 +16,7 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Largest Rectangle in Histogram (0–5 min)
+## Warm-Up Poll — Retrieval Practice on Largest Rectangle in Histogram (0–6 min)
 
 Say: *"Five quick ones on histograms, then we leave stacks behind for one session and meet an entirely new structure."*
 
@@ -38,7 +38,7 @@ Say: *"Five quick ones on histograms, then we leave stacks behind for one sessio
 
 ---
 
-## Hook (5–8 min)
+## Hook (6–10 min)
 
 Ask: *"You're standing in a line at a ticket counter. Who gets served first — the person who joined the line first, or the person standing closest to the counter right now?"*
 
@@ -48,7 +48,7 @@ Let students answer (first joined). Then:
 
 ---
 
-## Concept Walkthrough (8–18 min)
+## Concept Walkthrough (10–25 min)
 
 **Core idea:** a fixed-size array queue tracks two pointers — `front` (where you remove) and `back` (where you add), both starting at `-1` to mean empty. When `back` reaches the end of the array but slots have been freed at the front (from prior pops), it **wraps around** via `back = (back + 1) % capacity` instead of reporting full.
 
@@ -60,19 +60,19 @@ Let students answer (first joined). Then:
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Predict the Output: Trace the Circular Wraparound (18–23 min)
+## ⚡ Active Learning Strategy 1 — Predict the Output: Trace the Circular Wraparound (25–32 min)
 
 A capacity-4 array traced operation by operation through a full wraparound cycle, students predicting `front`, `back`, and array contents before each reveal. Exposes whether students can track a wraparound themselves — the single trickiest mechanical detail in this session.
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Spot the Bug: Full or Empty? (23–28 min)
+## ⚡ Active Learning Strategy 2 — Spot the Bug: Full or Empty? (32–39 min)
 
 Three queue states, all with `front == back` at the same index; students decide whether each is empty or has exactly one element, and how code would tell. Exposes the classic array-queue ambiguity — `front == back` alone can't distinguish "empty" from "one element."
 
 ---
 
-## Classroom Quiz (28–33 min)
+## Classroom Quiz (39–46 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
 
