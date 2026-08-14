@@ -3,12 +3,6 @@
 **Duration** 38 min total — 33 min instruction + 5 min Classroom Quiz (cap: 45 + 5, not more) · **Topic** Queue — Introduction and Array Implementation · **Prerequisite** Session 58 — Largest Rectangle in Histogram
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
-**Platform units**
-
-| Resource | Unit ID |
-|---|---|
-| Video + deck — Introduction to Queue (Implementation Using Array) | https://docs.google.com/presentation/d/1bqZqsiOqiO6NrptQdMTMV9yDvDqa8yq0PhbuKlzTtG4/edit |
-
 ---
 
 ## Learning Objectives
@@ -103,7 +97,7 @@ Three queue states, all with `front == back` at the same index; students decide 
 
 ## Classroom Quiz (33–38 min)
 
-**Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session. <!-- placement: inferred — question bank not available in source material; instructor to pull from platform before class. -->
+**Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
 
 ---
 

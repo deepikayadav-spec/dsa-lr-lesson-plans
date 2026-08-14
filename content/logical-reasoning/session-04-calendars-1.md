@@ -1,13 +1,7 @@
 # Session 4 — Calendars-1: Odd Days & Day-of-the-Week
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Calendar structure, leap year rules, odd days, and finding the day of the week for any date · **Prerequisite** None specific to Clocks — first session of the Calendars sub-topic
-**Session type** Lecture + guided practice. No source slide deck — content from GitBook Concept Explanation text. No classroom quiz bank yet — 5-min slot reserved at end. GitBook "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
-
-| Resource | Status |
-|---|---|
-| Source | GitBook: `session-plans/logical-reasoning/calendars/calendars-1` (Learning Outcomes, Ideal Format, Introduction, Concept Explanation, Closure — text extracted) |
-| Problem Solving bank (GitBook) | image-only, not recoverable — practice problems below are instructor-authored |
-| Classroom Quiz | not yet available — 5-min slot reserved at end of session |
+**Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Note on worked examples:** the source's own worked example (day-of-week for 3 Jan 2026) is verified correct, but its shown arithmetic is condensed in a way that's hard to teach cleanly. This plan re-derives the same verified answer using an explicit, fully-checkable anchor method (Jan 1, 2000 = Saturday) — every example below is independently verified against known real-world dates.
 
@@ -70,7 +64,6 @@ Write the anchor on the board again: **"Jan 1, 2000 = Saturday."** Say: *"That o
 
 ## Teaching Block A (10–19 min) — TEACH FROM NOTES BELOW
 
-<!-- placement: inferred grouping — no source deck; grouped from GitBook Concept Explanation extraction -->
 Covers: leap year rule → odd days concept → the anchor method, worked live on a verifiable date.
 
 **Beats to emphasise**
@@ -208,7 +201,7 @@ Unscheduled on purpose. End early if reached with time on the clock.
 
 ## Instructor Notes
 
-- **Data note:** no source slide deck exists. Content sourced from GitBook Concept Explanation/Introduction/Closure text extraction. GitBook's "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**.
+- **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**.
 - **Anchor re-derivation:** the source's own worked example (3 Jan 2026 = Saturday) is correct but its shown arithmetic path is compressed and hard to teach directly. This plan re-derives the identical, verified answer using an explicit, independently-checkable anchor (Jan 1, 2000 = Saturday, a well-known reference point) — every worked example in this session (Jan 1 2026, Christmas 2025, Independence Day 1947) was independently checked against real calendar records and is internally consistent.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, with real historical payoff (15 Aug 1947).

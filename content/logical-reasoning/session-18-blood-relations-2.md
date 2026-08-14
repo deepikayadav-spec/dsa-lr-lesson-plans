@@ -1,13 +1,7 @@
 # Session 18 — Blood Relations-2: First-Person Perspective Puzzles
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Decoding "I / My / Myself" relationship riddles by anchoring the family tree at the speaker · **Prerequisite** Blood Relations-1 — generation classification, tree notation, and step-by-step chain decoding
-**Session type** Lecture + guided practice. No source slide deck — content from GitBook Concept Explanation text. No classroom quiz bank yet — 5-min slot reserved at end. GitBook "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
-
-| Resource | Status |
-|---|---|
-| Source | GitBook: `session-plans/logical-reasoning/blood-relations/blood-relations-2` (Learning Outcomes, Ideal Format, Introduction, Concept Explanation, Closure — text extracted) |
-| Problem Solving bank (GitBook) | image-only, not recoverable — practice problems below are instructor-authored |
-| Classroom Quiz | not yet available — 5-min slot reserved at end of session |
+**Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Note on worked examples:** the source describes three worked examples in general terms (a mother-identification, a son-in-law-identification, a nephew-identification) without giving their exact wording, since the Problem Solving page is image-only. Teaching Blocks A and B below present concrete, independently-verified riddles matching that description — the son-in-law phrasing directly quotes the source's own stated line, the other two are instructor-constructed and flagged as such.
 
@@ -70,7 +64,6 @@ Give 30 seconds, then solve together: *"My father's daughter — that's a descri
 
 ## Teaching Block A (10–19 min) — TEACH FROM NOTES BELOW
 
-<!-- placement: inferred grouping — no source deck; grouped from GitBook Concept Explanation extraction -->
 Covers: the anchoring principle and its three techniques, worked live.
 
 **Beats to emphasise**
@@ -203,8 +196,7 @@ Unscheduled on purpose. End early if reached with time on the clock.
 
 ## Instructor Notes
 
-- **Data note:** no source slide deck exists. Content sourced from GitBook Concept Explanation/Introduction/Closure text extraction. GitBook's "Problem Solving" sub-page is image-only and unrecoverable. The source describes three worked examples in general terms without exact wording — the "husband of the granddaughter of my father = son-in-law" example directly quotes the source's own stated line; the Sunitha/mother example and the "only son of my father/mother" self-reference examples are **instructor-constructed**, built to match the source's described scenarios, and independently verified for logical consistency.
-- **⚠️ Source URL quirk:** this session's Learning Outcomes sub-page sits at a non-standard URL (`learningoutcomes.md`, no hyphen) unlike every other session in this course (`learning-outcomes.md`) — noted here for anyone re-verifying against the live GitBook page.
+- **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable. The source describes three worked examples in general terms without exact wording — the "husband of the granddaughter of my father = son-in-law" example directly quotes the source's own stated line; the Sunitha/mother example and the "only son of my father/mother" self-reference examples are **instructor-constructed**, built to match the source's described scenarios, and independently verified for logical consistency.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Live Family Tree Build) is physical/volunteer-led, focused on the anchoring habit; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, testing the self-reference pattern independently.
 - **Second and last session of the Blood Relations topic** — Session 19 begins a new topic (Venn Diagrams) with a diagnostic-style opening, not deep retrieval.

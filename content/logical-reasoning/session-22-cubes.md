@@ -1,13 +1,7 @@
 # Session 22 — Cubes: Cuts, Pieces & Painted Faces
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Cube structure, cutting formulas (forward and reverse), and painted-cube counting (corner/edge/face/interior pieces) · **Prerequisite** None specific — first and only session of the Cubes topic
-**Session type** Lecture + guided practice. No source slide deck — content from GitBook Concept Explanation text. No classroom quiz bank yet — 5-min slot reserved at end. GitBook "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
-
-| Resource | Status |
-|---|---|
-| Source | GitBook: `session-plans/logical-reasoning/cubes` (Learning Outcomes, Ideal Format, Introduction, Concept Explanation, Closure — text extracted) |
-| Problem Solving bank (GitBook) | image-only, not recoverable — practice problems below are instructor-authored |
-| Classroom Quiz | not yet available — 5-min slot reserved at end of session |
+**Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
 
 **⚠️ Resolved discrepancy:** the source's "Ideal Format" page states "Minimum cuts needed: nl + nw + nh," while its "Concept Explanation" page states "Min cuts = Nl + Nw + Nh − 3." This plan resolves it directly: if Nl, Nw, Nh are the number of *pieces* along each axis, the number of *cuts* along that axis is one fewer (Nl−1, etc.), so total cuts = (Nl−1)+(Nw−1)+(Nh−1) = Nl+Nw+Nh−3. The "−3" version is correct once "N" is understood as piece-count per axis; this plan teaches it with that explicit derivation rather than as a memorised, unexplained formula.
 
@@ -72,7 +66,6 @@ Take 2–3 guesses (common wrong answers: "none," "1"), write them on the board 
 
 ## Teaching Block A (10–19 min) — TEACH FROM NOTES BELOW
 
-<!-- placement: inferred grouping — no source deck; grouped from GitBook Concept Explanation extraction -->
 Covers: basic structure → forward and reverse cutting formulas.
 
 **Beats to emphasise**
@@ -199,7 +192,7 @@ Unscheduled on purpose. End early if reached with time on the clock.
 
 ## Instructor Notes
 
-- **Data note:** no source slide deck exists. Content sourced from GitBook Concept Explanation/Introduction/Closure text extraction. GitBook's "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**, though the basic structure (6/12/8) and all four painted-cube formulas directly match the source's own stated figures.
+- **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**, though the basic structure (6/12/8) and all four painted-cube formulas directly match the source's own stated figures.
 - **⚠️ The min-cuts discrepancy flagged in the source is resolved in this plan** (see the note at the top of this file) — teach the −3 version with its derivation, not as a memorised fact.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive, execution-focused; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, combining both halves of the session's content.

@@ -5,12 +5,6 @@
 
 <!-- Merge note: previously split as session-58a (Part 1, NSE/PSE approach, 35 min) and session-58b (Part 2, optimal one-pass approach, 30 min), 65 min combined. The image's schedule shows this as one topic occupying one slot per batch, so both parts are merged back into a single session and trimmed to fit the 45+5 cap. Both approaches are kept — the two-pass approach because Part 1's instructor notes were explicit that skipping it undercuts why the one-pass approach is a genuine simplification, not a random trick. -->
 
-**Platform units**
-
-| Resource | Link |
-|---|---|
-| Video + deck — Largest Rectangle in Histogram | https://docs.google.com/presentation/d/1_OHNtNxlKJdYOX6LT_zqx1NwQnuQF8T6onInuzNhN2I/edit |
-
 ---
 
 ## Learning Objectives
@@ -121,7 +115,7 @@ A fresh, smaller array traced twice by the class — once for NSE only (right to
 
 ## Classroom Quiz (37–42 min)
 
-**Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block, covering both the NSE/PSE approach and the optimal one-pass trade-off. <!-- placement: inferred — question bank not available in source material; instructor to pull from platform before class. -->
+**Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block, covering both the NSE/PSE approach and the optimal one-pass trade-off.
 
 ---
 

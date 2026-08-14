@@ -1,13 +1,7 @@
 # Session 10 — Directions: Turns, Position & Shortest Distance
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Cardinal/intermediate directions, tracking turns, net displacement, direction interchange, and Pythagorean shortest-distance · **Prerequisite** None specific — first session of the Directions topic
-**Session type** Lecture + guided practice. No source slide deck — content from GitBook Concept Explanation text. No classroom quiz bank yet — 5-min slot reserved at end. GitBook "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
-
-| Resource | Status |
-|---|---|
-| Source | GitBook: `session-plans/logical-reasoning/directions` (Learning Outcomes, Ideal Format, Introduction, Concept Explanation, Closure — text extracted) |
-| Problem Solving bank (GitBook) | image-only, not recoverable — practice problems below are instructor-authored |
-| Classroom Quiz | not yet available — 5-min slot reserved at end of session |
+**Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
 
 ---
 
@@ -71,7 +65,6 @@ Take 2–3 shouted guesses, write them on the board without confirming or denyin
 
 ## Teaching Block A (10–19 min) — TEACH FROM NOTES BELOW
 
-<!-- placement: inferred grouping — no source deck; grouped from GitBook Concept Explanation extraction -->
 Covers: compass basics → turn-tracking rules → solving the Hook riddle live.
 
 **Beats to emphasise**
@@ -201,9 +194,9 @@ Unscheduled on purpose. End early if reached with time on the clock.
 
 ## Instructor Notes
 
-- **Data note:** no source slide deck exists. Content sourced from GitBook Concept Explanation/Introduction/Closure text extraction. GitBook's "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**, though the Hook riddle and the 6-8-10 Pythagorean example directly match the source's own stated figures.
+- **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**, though the Hook riddle and the 6-8-10 Pythagorean example directly match the source's own stated figures.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Human Compass) is loud/physical/whole-class; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, combining both halves of the session's content.
 - **First and only session for this topic** (Directions is a single-session topic per the course structure) — warm-up poll is diagnostic, not retrieval.
-- **The direction-interchange rotation logic (Teaching Block B) is instructor-derived** <!-- placement: inferred --> from the source's example ("If South becomes East, what does West become?") — the source states the example but not its resolved answer; this plan works it out explicitly as a 90° counter-clockwise compass relabeling (West → South) and shows the reasoning, not just the result.
+- **The direction-interchange rotation logic (Teaching Block B) is instructor-derived** from the source's example ("If South becomes East, what does West become?") — the source states the example but not its resolved answer; this plan works it out explicitly as a 90° counter-clockwise compass relabeling (West → South) and shows the reasoning, not just the result.
 - Classroom Quiz slot reserved-empty per site convention.

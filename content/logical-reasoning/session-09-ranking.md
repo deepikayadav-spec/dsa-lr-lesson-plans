@@ -1,13 +1,7 @@
 # Session 9 — Ranking: Position in a Row
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Ranking from either end, total-persons formulas, position-between-two-people, and position swaps · **Prerequisite** None specific — first session of the Ranking topic
-**Session type** Lecture + guided practice. No source slide deck — content from GitBook Concept Explanation text. No classroom quiz bank yet — 5-min slot reserved at end. GitBook "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
-
-| Resource | Status |
-|---|---|
-| Source | GitBook: `session-plans/logical-reasoning/ranking` (Learning Outcomes, Ideal Format, Introduction, Concept Explanation, Closure — text extracted) |
-| Problem Solving bank (GitBook) | image-only, not recoverable — practice problems below are instructor-authored |
-| Classroom Quiz | not yet available — 5-min slot reserved at end of session |
+**Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
 
 ---
 
@@ -71,7 +65,6 @@ Take 2–3 shouted guesses, write them on the board without confirming or denyin
 
 ## Teaching Block A (10–19 min) — TEACH FROM NOTES BELOW
 
-<!-- placement: inferred grouping — no source deck; grouped from GitBook Concept Explanation extraction -->
 Covers: ranking from one end → converting between ends → the same-person total formula.
 
 **Beats to emphasise**
@@ -201,7 +194,7 @@ Unscheduled on purpose. End early if reached with time on the clock.
 
 ## Instructor Notes
 
-- **Data note:** no source slide deck exists. Content sourced from GitBook Concept Explanation/Introduction/Closure text extraction. GitBook's "Problem Solving" sub-page (8 questions, Q1–Q8) is image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**, though the Rahul (7th/20 row) and 4th-from-left/9th-from-right/14-total examples directly match the source's own stated figures.
+- **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page (8 questions, Q1–Q8) is image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**, though the Rahul (7th/20 row) and 4th-from-left/9th-from-right/14-total examples directly match the source's own stated figures.
 - **The two-formula distinction (same-person −1 vs. two-person +between) is the pedagogical core of this session** — it's built into the Hook, both Teaching Blocks, and Activity 2's reveal. Protect this thread above all else if running behind.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, and deliberately closes the exact riddle posed in the Hook.

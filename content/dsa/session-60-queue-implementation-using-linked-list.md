@@ -3,12 +3,6 @@
 **Duration** 34 min total — 29 min instruction + 5 min Classroom Quiz (cap: 45 + 5, not more) · **Topic** Queue — Implementation Using Linked List · **Prerequisite** Session 59 — Introduction to Queue & Implementation Using Arrays
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
-**Platform units**
-
-| Resource | Unit ID |
-|---|---|
-| Video + deck — Queue Implementation using Linked List | https://docs.google.com/presentation/d/1J_6bbrNsBsWexmlP9v4tbCwRsT1gveOzPKhhQ73aCr0/edit |
-
 ---
 
 ## Learning Objectives
@@ -103,7 +97,7 @@ A buggy `pop()` implementation that never resets `back` when the last node is re
 
 ## Classroom Quiz (29–34 min)
 
-**Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session. <!-- placement: inferred — question bank not available in source material; instructor to pull from platform before class. -->
+**Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
 
 ---
 

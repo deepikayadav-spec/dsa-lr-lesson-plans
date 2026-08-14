@@ -1,13 +1,7 @@
 # Session 20 — Syllogisms-1: The Venn Diagram Method
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Syllogism structure, the four standard statement types, testing conclusions with Venn diagrams, and the "Either I or II" special case · **Prerequisite** Venn Diagrams — overlapping-circle representation, applied here to test logical validity instead of counting
-**Session type** Lecture + guided practice. No source slide deck — content from GitBook Concept Explanation text. No classroom quiz bank yet — 5-min slot reserved at end. GitBook "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
-
-| Resource | Status |
-|---|---|
-| Source | GitBook: `session-plans/logical-reasoning/syllogisms/syllogisms-1` (Learning Outcomes, Ideal Format, Introduction, Concept Explanation, Closure — text extracted) |
-| Problem Solving bank (GitBook) | image-only, not recoverable — practice problems below are instructor-authored |
-| Classroom Quiz | not yet available — 5-min slot reserved at end of session |
+**Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Note on worked example:** the source mentions "a laptops/wireless/desktop example" for the Either-Or case without giving its exact wording (Problem Solving page is image-only). Teaching Block B below constructs a concrete, independently-verified version matching that description, flagged accordingly.
 
@@ -70,7 +64,6 @@ Take a vote, then solve together with a quick diagram: draw "Apples" fully insid
 
 ## Teaching Block A (10–19 min) — TEACH FROM NOTES BELOW
 
-<!-- placement: inferred grouping — no source deck; grouped from GitBook Concept Explanation extraction -->
 Covers: the four standard statement types, mapped to Venn diagrams → the five answer options.
 
 **Beats to emphasise**
@@ -204,7 +197,7 @@ Unscheduled on purpose. End early if reached with time on the clock.
 
 ## Instructor Notes
 
-- **Data note:** no source slide deck exists. Content sourced from GitBook Concept Explanation/Introduction/Closure text extraction. GitBook's "Problem Solving" sub-page is image-only and unrecoverable. The Hook (fruits/apples) and the four Venn statement-type mappings directly match the source's own stated content; the "laptops/wireless/desktop" Either-Or worked example is **instructor-constructed**, built to match the source's described scenario, and independently verified for logical consistency.
+- **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable. The Hook (fruits/apples) and the four Venn statement-type mappings directly match the source's own stated content; the "laptops/wireless/desktop" Either-Or worked example is **instructor-constructed**, built to match the source's described scenario, and independently verified for logical consistency.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, deliberately testing the Either-Or trap with a case that isn't actually Either-Or.
 - **First session of the Syllogisms topic** — warm-up poll is retrieval practice on Session 19 (Venn Diagrams), since the overlapping-circle skill carries over directly.

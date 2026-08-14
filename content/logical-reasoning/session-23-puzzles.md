@@ -1,13 +1,7 @@
 # Session 23 — Puzzles: Paragraph-Based & Pattern-Based
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Converting paragraph clues into a solving grid, and identifying patterns in matrix/figure-style puzzles · **Prerequisite** None specific — first and only session of the Puzzles topic, draws on Ranking, Linear/Circular Arrangements, and Blood Relations habits
-**Session type** Lecture + guided practice. No source slide deck — content from GitBook Concept Explanation text. No classroom quiz bank yet — 5-min slot reserved at end. GitBook "Problem Solving" page is image-only and unrecoverable — all practice puzzles below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
-
-| Resource | Status |
-|---|---|
-| Source | GitBook: `session-plans/logical-reasoning/puzzles` (Learning Outcomes, Ideal Format, Introduction, Concept Explanation, Closure — text extracted) |
-| Problem Solving bank (GitBook) | image-only, not recoverable — practice puzzles below are instructor-authored |
-| Classroom Quiz | not yet available — 5-min slot reserved at end of session |
+**Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice puzzles below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Note on characteristic-based (figure) puzzles:** the source describes figure-based puzzles that identify patterns across rows/diagonals of images — these can't be represented visually here. Teaching Block B and ALS Activity 2 use an equivalent **number-matrix** format instead (a grid of numbers following a row-wise pattern), which tests the identical skill — spotting a consistent operation across a grid — without requiring an image.
 
@@ -70,7 +64,6 @@ Give 30 seconds, take guesses, then say: *"Hold that thought — we're about to 
 
 ## Teaching Block A (10–19 min) — TEACH FROM NOTES BELOW
 
-<!-- placement: inferred grouping — no source deck; grouped from GitBook Concept Explanation extraction -->
 Covers: the paragraph-puzzle method, solving the Hook fully, live.
 
 **Beats to emphasise**
@@ -212,7 +205,7 @@ Unscheduled on purpose. End early if reached with time on the clock.
 
 ## Instructor Notes
 
-- **Data note:** no source slide deck exists. Content sourced from GitBook Concept Explanation/Introduction/Closure text extraction. GitBook's "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice puzzles in this plan are **instructor-authored**, though the three-friends/pets/houses Hook directly matches the source's own stated icebreaker, and the paragraph-puzzle method (list/extract/grid) matches the source's own stated strategy.
+- **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice puzzles in this plan are **instructor-authored**, though the three-friends/pets/houses Hook directly matches the source's own stated icebreaker, and the paragraph-puzzle method (list/extract/grid) matches the source's own stated strategy.
 - **Characteristic-based (figure) puzzles are represented here as number matrices** — the source's own figure-pattern content is image-only and unrecoverable, but the underlying skill (spot a consistent operation across a grid, verify against every row) is identical and fully teachable through numbers instead of images. Flagged clearly at the top of this file.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive, paragraph-puzzle focused; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, matrix-puzzle focused, deliberately using a lookalike pattern to test real verification habits.

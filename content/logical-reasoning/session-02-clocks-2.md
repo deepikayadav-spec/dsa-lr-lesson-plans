@@ -1,13 +1,7 @@
 # Session 2 — Clocks-2: Coincidence, Opposite & Perpendicular Hands
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Hand coincidence (11×/12h), opposite hands (180°, 11×/12h), perpendicular hands (90°, 22×/12h), and reversing angle→time · **Prerequisite** Clocks-1 — the θ = |30H − (11/2)M| formula
-**Session type** Lecture + guided practice. No source slide deck — content from GitBook Concept Explanation text. No classroom quiz bank yet — 5-min slot reserved at end. GitBook "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
-
-| Resource | Status |
-|---|---|
-| Source | GitBook: `session-plans/logical-reasoning/clocks/clocks-2` (Learning Outcomes, Ideal Format, Introduction, Concept Explanation, Closure — text extracted) |
-| Problem Solving bank (GitBook) | image-only, not recoverable — practice problems below are instructor-authored |
-| Classroom Quiz | not yet available — 5-min slot reserved at end of session |
+**Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
 
 ---
 
@@ -67,7 +61,6 @@ Draw a 12-hour clock face on the board. Say: *"Between 12:00 and 1:00, the hands
 
 ## Teaching Block A (10–19 min) — TEACH FROM NOTES BELOW
 
-<!-- placement: inferred grouping — no source deck; grouped from GitBook Concept Explanation extraction -->
 Covers: why coincidence happens 11 times, not 12 · the coincidence-time formula · opposite-hands (180°) case.
 
 **Beats to emphasise**
@@ -189,7 +182,7 @@ Unscheduled on purpose. End early if reached with time on the clock.
 
 ## Instructor Notes
 
-- **Data note:** no source slide deck exists. Content sourced from GitBook Concept Explanation/Introduction/Closure text extraction. GitBook's "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**, built from the verified formulas (coincidence M=60H/11 confirmed against the stated "≈10 min 55 sec between 2 and 3" example in the source).
+- **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**, built from the verified formulas (coincidence M=60H/11 confirmed against the stated "≈10 min 55 sec between 2 and 3" example in the source).
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive/paired; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual. Continues the alternation pattern from Session 1.
 - **The two-case trap (Activity 2) is the pedagogical core of this session** — protect its time slot above all else if running behind.

@@ -1,13 +1,7 @@
 # Session 24 — Data Sufficiency: Enough Information, Not the Answer
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Judging whether given statements are sufficient to answer a question, without solving it — the five standard answer options · **Prerequisite** None specific — draws on general familiarity with earlier Logical Reasoning topics (arrangements, ranking) for its worked examples; final session of the course
-**Session type** Lecture + guided practice. No source slide deck — content from GitBook Concept Explanation text. No classroom quiz bank yet — 5-min slot reserved at end. GitBook "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
-
-| Resource | Status |
-|---|---|
-| Source | GitBook: `session-plans/logical-reasoning/data-sufficiency` (Learning Outcomes, Ideal Format, Introduction, Concept Explanation, Closure — text extracted) |
-| Problem Solving bank (GitBook) | image-only, not recoverable — practice problems below are instructor-authored |
-| Classroom Quiz | not yet available — 5-min slot reserved at end of session |
+**Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Note on worked examples:** the source's own quantitative example (LCM of A:B ratio 3:4, given HCF) contains an internal inconsistency in the extracted text — the ratio appears to be part of the question stem, which would make Statement I alone already sufficient, contradicting the source's stated "individually insufficient" framing. This plan uses fresh, independently-verified examples instead for all five answer-option types, flagged accordingly.
 
@@ -72,7 +66,6 @@ Give 20 seconds, then confirm: *"Yes — because 2 and 3 share no common factors
 
 ## Teaching Block A (10–19 min) — TEACH FROM NOTES BELOW
 
-<!-- placement: inferred grouping — no source deck; grouped from GitBook Concept Explanation extraction -->
 Covers: the five standard answer options → the three-step evaluation method → a fully worked "together sufficient" example.
 
 **Beats to emphasise**
@@ -213,7 +206,7 @@ Unscheduled on purpose. End early if reached with time on the clock.
 
 ## Instructor Notes
 
-- **Data note:** no source slide deck exists. Content sourced from GitBook Concept Explanation/Introduction/Closure text extraction. GitBook's "Problem Solving" sub-page is image-only and unrecoverable. The Hook (divisible by 2 and 3 → divisible by 6) and the five standard answer options directly match the source's own stated content; **the source's own quantitative worked example (LCM/ratio/HCF) contains an internal inconsistency** in the extracted text (the ratio appears to be stem-given information, which would make Statement I alone already sufficient, contradicting the source's "individually insufficient" claim) — this plan uses fresh, independently-verified examples for all five answer-option types instead, flagged at the top of this file.
+- **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable. The Hook (divisible by 2 and 3 → divisible by 6) and the five standard answer options directly match the source's own stated content; **the source's own quantitative worked example (LCM/ratio/HCF) contains an internal inconsistency** in the extracted text (the ratio appears to be stem-given information, which would make Statement I alone already sufficient, contradicting the source's "individually insufficient" claim) — this plan uses fresh, independently-verified examples for all five answer-option types instead, flagged at the top of this file.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive, single-statement judgment only; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, full three-step method, deliberately reusing Session 15's seating-arrangement skill to close the course on a cross-topic note.
 - **This is the final session of the 24-session Logical Reasoning course.** The Exit Ticket and closing line both intentionally reference the course as a whole, not just this session.

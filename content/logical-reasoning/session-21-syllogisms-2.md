@@ -1,13 +1,7 @@
 # Session 21 — Syllogisms-2: The Tick and Cross Shortcut
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** The Tick and Cross method for single-statement conclusions, and the rules for combining two statements without drawing a full diagram · **Prerequisite** Syllogisms-1 — the four standard statement types and Venn-based validity testing
-**Session type** Lecture + guided practice. No source slide deck — content from GitBook Concept Explanation text. No classroom quiz bank yet — 5-min slot reserved at end. GitBook "Problem Solving" page is image-only and unrecoverable (this session has two problem-solving sub-pages, both image-only) — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
-
-| Resource | Status |
-|---|---|
-| Source | GitBook: `session-plans/logical-reasoning/syllogisms/syllogisms-2` (Learning Outcomes, Ideal Format, Introduction, Concept Explanation, Closure — text extracted) |
-| Problem Solving bank (GitBook) | image-only, not recoverable (two sub-pages, both image-only) — practice problems below are instructor-authored |
-| Classroom Quiz | not yet available — 5-min slot reserved at end of session |
+**Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable (this session has two problem-solving sub-pages, both image-only) — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
 
 ---
 
@@ -66,7 +60,6 @@ Say: *"Quick puzzle: if I say 'All apples are fruits,' can I confidently say 'So
 
 ## Teaching Block A (10–19 min) — TEACH FROM NOTES BELOW
 
-<!-- placement: inferred grouping — no source deck; grouped from GitBook Concept Explanation extraction -->
 Covers: the four statement types → the Tick and Cross table, worked live.
 
 **Beats to emphasise**
@@ -211,7 +204,7 @@ Unscheduled on purpose. End early if reached with time on the clock.
 
 ## Instructor Notes
 
-- **Data note:** no source slide deck exists. Content sourced from GitBook Concept Explanation/Introduction/Closure text extraction. This session has **two** Problem Solving sub-pages on GitBook, both image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**, though the Tick and Cross table and the "All books are papers" worked example directly match the source's own stated content.
+- **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. This session has **two** Problem Solving sub-pages on the source material, both image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**, though the Tick and Cross table and the "All books are papers" worked example directly match the source's own stated content.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive, single-statement only; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, combining two statements with a particular+negative mix.
 - **Second and last session of the Syllogisms topic** — Session 22 begins a new topic (Cubes) with a diagnostic-style opening, not deep retrieval.

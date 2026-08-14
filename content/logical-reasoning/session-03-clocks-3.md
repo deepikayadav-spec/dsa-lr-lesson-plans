@@ -1,15 +1,9 @@
 # Session 3 — Clocks-3: Faulty Clocks, Mirror Images & Direction
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Time gain/loss on faulty clocks, mirror-image time formula (11:60 − given time), and hand-to-compass-direction mapping · **Prerequisite** Clocks-1 and Clocks-2 — the base angle formula and the coincidence/opposite/perpendicular cases
-**Session type** Lecture + guided practice. No source slide deck — content from GitBook Concept Explanation text. No classroom quiz bank yet — 5-min slot reserved at end. GitBook "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
 
-| Resource | Status |
-|---|---|
-| Source | GitBook: `session-plans/logical-reasoning/clocks/clocks-3` (Learning Outcomes, Ideal Format, Introduction, Concept Explanation, Closure — text extracted) |
-| Problem Solving bank (GitBook) | image-only, not recoverable — practice problems below are instructor-authored |
-| Classroom Quiz | not yet available — 5-min slot reserved at end of session |
-
-**⚠️ Content note:** the source's direction-mapping claim ("at 6:00, hour hand points South") is flagged in the extracted source as unverified against the live deck — Teaching Block B below presents it with an explicit consistency check rather than as unquestioned fact. Verify against the live GitBook page before teaching if a corrected version becomes available.
+**⚠️ Content note:** the source's direction-mapping claim ("at 6:00, hour hand points South") is flagged in the extracted source as unverified against the live deck — Teaching Block B below presents it with an explicit consistency check rather than as unquestioned fact. Verify against the live source material before teaching if a corrected version becomes available.
 
 ---
 
@@ -68,7 +62,6 @@ Say: *"Quick quiz — if your watch says 12:00, and you look at it in a mirror, 
 
 ## Teaching Block A (10–19 min) — TEACH FROM NOTES BELOW
 
-<!-- placement: inferred grouping — no source deck; grouped from GitBook Concept Explanation extraction -->
 Covers: net time gain/loss problems on faulty clocks.
 
 **Beats to emphasise**
@@ -78,7 +71,7 @@ Covers: net time gain/loss problems on faulty clocks.
   1. Time elapsed: 12 PM to 6 PM = **6 hours**.
   2. Total gain over that period: 6 × 2 = **12 minutes**.
   3. Net adjustment: starts 10 min behind, gains 12 min → net = −10 + 12 = **+2 minutes** (now 2 min *ahead*).
-  4. The clock reads 6:00 PM; correct time = 6:00 − 2 min = **5:58 PM**. <!-- placement: corrected — if the clock is 2 min ahead of correct time, correct time is 2 min behind what the clock shows, i.e. 5:58 PM, not 6:02 PM; verify sign convention with students explicitly since this is the step where errors happen -->
+  4. The clock reads 6:00 PM; correct time = 6:00 − 2 min = **5:58 PM**.
 - **Sign-convention drill, explicit:** *"If the faulty clock is ahead, the real time is earlier than what it shows. If the faulty clock is behind, the real time is later than what it shows."* Write this as a standing rule on the board — it answers poll **Q5** directly (yes, it can cross back to correct and then run ahead).
 - **Reverse case:** *"A clock gains 3 minutes every hour and was set correctly at 8 AM. What does it show at 8 PM real time?"* Elapsed: 12 hours → gain = 36 min → clock shows **8:36 PM** when real time is 8:00 PM.
 
@@ -191,7 +184,7 @@ Unscheduled on purpose. End early if reached with time on the clock.
 
 ## Instructor Notes
 
-- **Data note:** no source slide deck exists. Content sourced from GitBook Concept Explanation/Introduction/Closure text extraction. GitBook's "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**.
+- **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**.
 - **⚠️ Flagged discrepancy resolved for teaching purposes:** the source's worked "10 min slow, gains 2 min/hr, find time at 6 PM" example was re-derived here with explicit sign-convention reasoning (net +2 min ahead → correct time is 5:58 PM, not 6:02 PM) — walk through the sign logic slowly, this is where the source material itself is easiest to misapply.
 - **⚠️ Direction-mapping claim carries a source-flagged discrepancy** — the 3:00 and 6:00 examples were independently checked here and are internally consistent under a fixed 12=N/3=E/6=S/9=W overlay; teach it with that explicit fixed-overlay framing rather than asserting it as received fact.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).

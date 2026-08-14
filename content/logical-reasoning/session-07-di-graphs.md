@@ -1,13 +1,7 @@
 # Session 7 — Data Interpretation: Bar & Line Graphs
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Reading bar graphs and line graphs, and applying percentage/growth calculations to graphical data · **Prerequisite** DI Tables — the percentage-change formula and the four-step reading method
-**Session type** Lecture + guided practice. No source slide deck — content from GitBook Concept Explanation text. No classroom quiz bank yet — 5-min slot reserved at end. GitBook "Problem Solving" page is image-only and unrecoverable — all practice data below is instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
-
-| Resource | Status |
-|---|---|
-| Source | GitBook: `session-plans/logical-reasoning/data-interpretation/di-graph` (Learning Outcomes, Ideal Format, Introduction, Concept Explanation, Closure — text extracted) |
-| Problem Solving bank (GitBook) | image-only, not recoverable — practice data and problems below are instructor-authored |
-| Classroom Quiz | not yet available — 5-min slot reserved at end of session |
+**Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice data below is instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Note on visuals:** the source's bar/line graph images are not recoverable. This plan represents the same graph data as tables (values that would sit on the axes) — when delivering live, sketch the bars/lines on the board from these values so students practice reading an actual visual, not just a table restated as a graph.
 
@@ -68,7 +62,6 @@ Sketch a rough upward-trending line on the board with no numbers. Say: *"By the 
 
 ## Teaching Block A (10–19 min) — TEACH FROM NOTES BELOW
 
-<!-- placement: inferred grouping — no source deck; grouped from GitBook Concept Explanation extraction; the graph data itself is instructor-authored since the source's graph images are not recoverable -->
 Covers: bar vs. line graph purpose → axes/scale/legend → the four-step method → worked bar-graph reading.
 
 **Beats to emphasise**
@@ -214,7 +207,7 @@ Unscheduled on purpose. End early if reached with time on the clock.
 
 ## Instructor Notes
 
-- **Data note:** no source slide deck exists. Content sourced from GitBook Concept Explanation/Introduction/Closure text extraction. GitBook's "Problem Solving" sub-page is image-only and unrecoverable — the graph data table and every worked/practice problem in this plan are **instructor-authored**, though the growth-calculation method and its 10% worked value directly match the source's own stated example (Company A, 50,000→55,000).
+- **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable — the graph data table and every worked/practice problem in this plan are **instructor-authored**, though the growth-calculation method and its 10% worked value directly match the source's own stated example (Company A, 50,000→55,000).
 - **When delivering live, sketch the data as an actual bar or line graph on the board** (not just as a table) — the source's own graph images aren't recoverable, but the point of this session is reading a visual, so don't skip redrawing it.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive; Activity 2 (Silent Solve → Vote-Lock → Reveal, full ranking) is quiet/individual.

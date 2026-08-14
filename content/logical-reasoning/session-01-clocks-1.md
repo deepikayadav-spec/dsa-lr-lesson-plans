@@ -1,13 +1,7 @@
 # Session 1 — Clocks-1: Angle Between Hands
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Clock structure, hand-movement rates, and the angle formula θ = |30H − (11/2)M| · **Prerequisite** None — first session of Logical Reasoning
-**Session type** Lecture + guided practice. No source slide deck exists for this topic — content is sourced from the GitBook Concept Explanation text. No classroom quiz bank exists yet — a 5-min slot is reserved at the end. The GitBook "Problem Solving" page (Q1–Q11) is image-only and unrecoverable, so every worked/practice problem below is **instructor-authored**, grounded in the verified formula. · **Format** 50-min recalibrated, 2 ALS activities
-
-| Resource | Status |
-|---|---|
-| Source | GitBook: `session-plans/logical-reasoning/clocks/clocks-1` (Learning Outcomes, Ideal Format, Introduction, Concept Explanation, Closure — text extracted) |
-| Problem Solving bank (GitBook) | image-only, not recoverable — practice problems below are instructor-authored |
-| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists |
+**Session type** Lecture + guided practice. No source slide deck exists for this topic — content is sourced from the session's concept-explanation text. No classroom quiz bank exists yet — a 5-min slot is reserved at the end. The "Problem Solving" page (Q1–Q11) is image-only and unrecoverable, so every worked/practice problem below is **instructor-authored**, grounded in the verified formula. · **Format** 50-min recalibrated, 2 ALS activities
 
 ---
 
@@ -73,7 +67,6 @@ Tie to **Q3**: *"Most of you said the minute hand moves 6° a minute — that's 
 
 ## Teaching Block A (10–19 min) — TEACH FROM NOTES BELOW
 
-<!-- placement: inferred grouping — no source deck exists; content grouped from the GitBook Concept Explanation extraction -->
 Covers: clock structure and dial geometry → hand movement rates → deriving the angle formula → reflex vs. acute angles.
 
 **Beats to emphasise**
@@ -124,7 +117,7 @@ Mark 12/3/6/9 positions on the floor or wall (masking tape or chalk) so the "han
 
 ## Teaching Block B (25–32 min) — TEACH FROM NOTES BELOW
 
-Covers: reflex-angle handling → worked practice problems (instructor-authored, since GitBook's problem bank is image-only).
+Covers: reflex-angle handling → worked practice problems (instructor-authored, since the source problem bank is image-only).
 
 **Beats to emphasise**
 
@@ -214,7 +207,7 @@ Unscheduled on purpose. If you land here with time on the clock, let the session
 
 ## Instructor Notes
 
-- **Data note:** no source slide deck exists for this topic. All content is sourced from a text extraction of the GitBook Concept Explanation / Introduction / Closure pages. The GitBook "Problem Solving" sub-page (11 questions, Q1–Q11) is **image-only and was not recoverable** — every worked example and practice problem in this plan (Teaching Block B's two problems, Activity 2's problem, the exit ticket, and homework) is **instructor-authored**, built directly from the verified formula, not transcribed from the original bank.
+- **Data note:** no source slide deck exists for this topic. All content is sourced from a text extraction of the Concept Explanation / Introduction / Closure sections. The "Problem Solving" sub-page (11 questions, Q1–Q11) is **image-only and was not recoverable** — every worked example and practice problem in this plan (Teaching Block B's two problems, Activity 2's problem, the exit ticket, and homework) is **instructor-authored**, built directly from the verified formula, not transcribed from the original bank.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, deliberately different registers:** Activity 1 (Human Clock) is loud/physical/group; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual-then-shared. Don't run two of the same register back to back across sessions — vary it.
 - **Formula verified independently:** θ = |30H − (11/2)M| checked against the worked 2:20 example (50°, reflex 310°) via the full step-by-step method — matches exactly.

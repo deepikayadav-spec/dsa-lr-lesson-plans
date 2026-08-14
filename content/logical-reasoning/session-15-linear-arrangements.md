@@ -1,13 +1,7 @@
 # Session 15 — Data Arrangements: Linear Arrangements
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Seating/lineup terminology (extreme, immediate, adjacent, between), and multi-clue solving strategy for a single row · **Prerequisite** None specific — first session of the Data Arrangements topic
-**Session type** Lecture + guided practice. No source slide deck — content from GitBook Concept Explanation text. No classroom quiz bank yet — 5-min slot reserved at end. GitBook "Problem Solving" page is image-only and unrecoverable — all practice puzzles below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
-
-| Resource | Status |
-|---|---|
-| Source | GitBook: `session-plans/logical-reasoning/data-arrangements/linear-arrangements` (Learning Outcomes, Ideal Format, Introduction, Concept Explanation, Closure — text extracted) |
-| Problem Solving bank (GitBook) | image-only, not recoverable — practice puzzles below are instructor-authored |
-| Classroom Quiz | not yet available — 5-min slot reserved at end of session |
+**Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice puzzles below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
 
 **⚠️ Sequencing note:** the source's own Introduction text references "Blood Relations" as already covered before this session, while the site's course order (and the Circular Arrangements source page's own recap list) places Data Arrangements *before* Blood Relations. This plan follows the site's course order — Linear Arrangements (Session 15) before Blood Relations (Sessions 17–18) — treating the source's internal reference as the inconsistency, not the nav order.
 
@@ -72,7 +66,6 @@ Give 30 seconds, then draw it together on the board: position 1 = A, position 2 
 
 ## Teaching Block A (10–19 min) — TEACH FROM NOTES BELOW
 
-<!-- placement: inferred grouping — no source deck; grouped from GitBook Concept Explanation extraction -->
 Covers: core setup and terminology, worked directly against the Hook's own lineup.
 
 **Beats to emphasise**
@@ -220,7 +213,7 @@ Unscheduled on purpose. End early if reached with time on the clock.
 
 ## Instructor Notes
 
-- **Data note:** no source slide deck exists. Content sourced from GitBook Concept Explanation/Introduction/Closure text extraction. GitBook's "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice puzzles in this plan are **instructor-authored**, though the terminology definitions and the six-friends-photo Hook directly match the source's own stated examples.
+- **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice puzzles in this plan are **instructor-authored**, though the terminology definitions and the six-friends-photo Hook directly match the source's own stated examples.
 - **⚠️ Sequencing discrepancy resolved for this build:** see the note at the top of this file — this plan places Data Arrangements before Blood Relations, following the site's course order and the Circular Arrangements source page's own recap list, not the Linear Arrangements source page's internal "we've already covered Blood Relations" reference.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Human Lineup) is loud/physical/volunteer-led; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, using the identical clue set from Teaching Block B (reordered) to reinforce the solving-order lesson without introducing new content.

@@ -3,12 +3,6 @@
 **Duration** 43 min total — 38 min instruction + 5 min Classroom Quiz (cap: 45 + 5, not more) · **Topic** Stack — Asteroid Collision Simulation · **Prerequisite** Session 924 — Balanced Parenthesis
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
-**Platform units**
-
-| Resource | Link |
-|---|---|
-| Video + deck — Asteroid Collision | https://docs.google.com/presentation/d/1trHgk2ucVk3foQoA1rsUq-UXjv5dZd2ixi0HQCXhKGc/edit |
-
 ---
 
 ## Learning Objectives
@@ -105,7 +99,7 @@ A fresh array (`[6, 3, -8, 2]`), walked one element at a time, students predicti
 
 ## Classroom Quiz (33–38 min)
 
-**Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block, covering the collision rules and the moving-apart trap case. <!-- placement: inferred — question bank not available in source material; instructor to pull from platform before class. -->
+**Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block, covering the collision rules and the moving-apart trap case.
 
 ---
 

@@ -1,13 +1,7 @@
 # Session 5 — Calendars-2: Year Repetition & Calendar Twins
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Calendar advancement rules and shortcut methods for finding when a given year's calendar repeats · **Prerequisite** Calendars-1 — leap year rule and odd days
-**Session type** Lecture + guided practice. No source slide deck — content from GitBook Concept Explanation text. No classroom quiz bank yet — 5-min slot reserved at end. GitBook "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
-
-| Resource | Status |
-|---|---|
-| Source | GitBook: `session-plans/logical-reasoning/calendars/calendars-2` (Learning Outcomes, Ideal Format, Introduction, Concept Explanation, Closure — text extracted) |
-| Problem Solving bank (GitBook) | image-only, not recoverable — practice problems below are instructor-authored |
-| Classroom Quiz | not yet available — 5-min slot reserved at end of session |
+**Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
 
 ---
 
@@ -64,7 +58,6 @@ Say: *"Back to the mind game from the poll — your birthday's on a Tuesday this
 
 ## Teaching Block A (10–19 min) — TEACH FROM NOTES BELOW
 
-<!-- placement: inferred grouping — no source deck; grouped from GitBook Concept Explanation extraction -->
 Covers: the advancement rule → where the 6/11/11/28 shortcuts come from → worked example.
 
 **Beats to emphasise**
@@ -198,7 +191,7 @@ Unscheduled on purpose. End early if reached with time on the clock.
 
 ## Instructor Notes
 
-- **Data note:** no source slide deck exists. Content sourced from GitBook Concept Explanation/Introduction/Closure text extraction. GitBook's "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**.
+- **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**.
 - **Repetition rule verified against source:** the 2022→2033 worked example (leap+2 → +11 years) matches the source's own stated example exactly.
 - **Century-exception content (Teaching Block B, Activity 2) is instructor-added, not from the source extraction** — the source's Ideal Format page mentions "common pitfalls and mistakes" without detailing them; this plan supplies the single most exam-relevant pitfall (century-year breaks) grounded directly in the leap year rule already taught in Session 4.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).

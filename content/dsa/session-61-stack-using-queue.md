@@ -3,12 +3,6 @@
 **Duration** 38 min total — 33 min instruction + 5 min Classroom Quiz (cap: 45 + 5, not more) · **Topic** Stack & Queue — Implementation: Stack Using Queue · **Prerequisite** Session 60 — Queue Implementation Using Linked List
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
-**Platform units**
-
-| Resource | Unit ID |
-|---|---|
-| Video + deck — Implementation Stack Using Queue | https://docs.google.com/presentation/d/1dbh5JIZD5r6Rw__F5MxnwIBMkkLmeZI-ExoISq4M6mQ/edit |
-
 ---
 
 ## Learning Objectives
@@ -104,7 +98,7 @@ Class discussion: a native stack has all three operations at O(1); this version 
 
 ## Classroom Quiz (33–38 min)
 
-**Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session. <!-- placement: inferred — question bank not available in source material; instructor to pull from platform before class. -->
+**Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
 
 ---
 

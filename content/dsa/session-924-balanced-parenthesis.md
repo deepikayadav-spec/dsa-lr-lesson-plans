@@ -3,12 +3,6 @@
 **Duration** 38 min total — 33 min instruction + 5 min Classroom Quiz (cap: 45 + 5, not more) · **Topic** Stack — Balanced Parenthesis Validation · **Prerequisite** Session 923 — Implement Min Stack
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
-**Platform units**
-
-| Resource | Link |
-|---|---|
-| Video + deck — Balanced Parenthesis | https://docs.google.com/presentation/d/1NzWVMwN6CqCKR--ORa0Gy6uVLGrY2vXjM304aOBOeDg/edit |
-
 ---
 
 ## Learning Objectives
@@ -106,7 +100,7 @@ A fresh 8-character string (`{[()()]}`), run one character at a time with studen
 
 ## Classroom Quiz (33–38 min)
 
-**Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session, covering the three failure modes and the count-isn't-enough misconception. <!-- placement: inferred — question bank not available in source material; instructor to pull from platform before class. -->
+**Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session, covering the three failure modes and the count-isn't-enough misconception.
 
 ---
 

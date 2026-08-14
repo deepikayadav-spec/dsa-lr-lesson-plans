@@ -1,13 +1,7 @@
 # Session 19 — Venn Diagrams: Sets, Overlaps & Exact Counts
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Union/intersection/complement, two-set and three-set worked problems, and exact-count phrasing ("exactly two," "only," "at least one") · **Prerequisite** None specific — first session of the Venn Diagrams topic
-**Session type** Lecture + guided practice. No source slide deck — content from GitBook Concept Explanation text. No classroom quiz bank yet — 5-min slot reserved at end. GitBook "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
-
-| Resource | Status |
-|---|---|
-| Source | GitBook: `session-plans/logical-reasoning/venn-diagrams` (Learning Outcomes, Ideal Format, Introduction, Concept Explanation, Closure — text extracted) |
-| Problem Solving bank (GitBook) | image-only, not recoverable — practice problems below are instructor-authored |
-| Classroom Quiz | not yet available — 5-min slot reserved at end of session |
+**Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Note on the three-set worked example:** the source's own three-set example (aptitude/technical/HR clearance) is missing one pairwise overlap value in the extracted text, making it unsolvable as given. Teaching Block B below uses a fully self-consistent instructor-constructed three-set example instead, built in the same spirit (recruitment-style clearance data) and independently verified.
 
@@ -72,7 +66,6 @@ Give 30 seconds, then solve together on the board: *"Only Pizza = 12 total Pizza
 
 ## Teaching Block A (10–19 min) — TEACH FROM NOTES BELOW
 
-<!-- placement: inferred grouping — no source deck; grouped from GitBook Concept Explanation extraction -->
 Covers: union/intersection/complement definitions → the two-set method, worked live.
 
 **Beats to emphasise**
@@ -231,7 +224,7 @@ Unscheduled on purpose. End early if reached with time on the clock.
 
 ## Instructor Notes
 
-- **Data note:** no source slide deck exists. Content sourced from GitBook Concept Explanation/Introduction/Closure text extraction. GitBook's "Problem Solving" sub-page is image-only and unrecoverable. The Pizza/Burger Hook and the 200-student tea/coffee example directly match the source's own stated figures; the three-set recruitment-clearance table in Teaching Block B is **instructor-constructed** (the source's own three-set example was missing a required pairwise value in the extracted text) and independently verified to sum correctly across every region.
+- **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable. The Pizza/Burger Hook and the 200-student tea/coffee example directly match the source's own stated figures; the three-set recruitment-clearance table in Teaching Block B is **instructor-constructed** (the source's own three-set example was missing a required pairwise value in the extracted text) and independently verified to sum correctly across every region.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive, two-set only; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, three-set, targeting the "exactly two" trap specifically.
 - **First session of the Venn Diagrams topic** — warm-up poll is diagnostic, not retrieval.
