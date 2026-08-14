@@ -1,6 +1,6 @@
 # Session 60 — Queue Implementation Using Linked List
 
-**Duration** 34 min total — 29 min instruction + 5 min Classroom Quiz (cap: 45 + 5, not more) · **Topic** Queue — Implementation Using Linked List · **Prerequisite** Session 59 — Introduction to Queue & Implementation Using Arrays
+**Duration** 34 min total — 29 min instruction + 5 min Classroom Quiz · **Topic** Queue — Implementation Using Linked List · **Prerequisite** Session 59 — Introduction to Queue & Implementation Using Arrays
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -36,10 +36,6 @@ Say: *"Five quick ones on the array-based queue before we swap the array out ent
 `A` It's slower than a linked list for `push` · `B` It has a fixed maximum capacity · `C` It can't track a `front` pointer · `D` It doesn't support `pop`
 → **B.**
 
-**Q5 (MSQ — pick all correct).** Which are true of the array-based queue from last session?
-`A` It uses two pointers, `front` and `back` · `B` It needs a `-1, -1` sentinel for the empty state · `C` It can grow without any upper bound · `D` `pop()` only moves `front`, it doesn't physically clear the slot
-→ **A, B, D.**
-
 ---
 
 ## Hook (5–8 min)
@@ -49,37 +45,6 @@ Ask: *"A shared office printer has a print queue. Someone can send a 200-page pr
 Let students answer (no). Then:
 
 > *"Last session's array-based queue had exactly that flaw — a fixed capacity that could genuinely run out even with plenty of memory left. Today's fix is almost embarrassingly simple: swap the array for a linked list. Same FIFO behaviour, same O(1) operations, no capacity ceiling at all."*
-
----
-
-## Slide Block A (8–15 min) — DELIVER SLIDES AS-IS
-
-Covers: Node structure (`data` + `next` pointer) → `front` and `back` become **node pointers**, not array indices, both initialised to `null` for an empty queue.
-
-**Beats to emphasise**
-
-- Say the direct mapping explicitly: everything from last session still applies — you still need a `front` for removal and a `back` for insertion. The only thing that changed is *what kind of thing* they point to: a node, not a slot number.
-- No capacity, no modulo, no wraparound — say this as a relief: the entire reason last session needed circular index arithmetic simply doesn't exist here.
-- `front = null, back = null` is this session's version of last session's `-1, -1` sentinel.
-
-**Checkpoint (at 15 min)** — cold-call:
-> *"What replaces the array index arithmetic from last session's `push` and `pop`?"*
-> **Answer:** Nothing needs arithmetic at all — `push` links a new node after `back` and moves `back` to it; `pop` moves `front` to `front->next`.
-
----
-
-## Slide Block B (15–21 min) — DELIVER SLIDES AS-IS
-
-Covers: Full dry run — `push(1), push(2), push(3), push(4)`, then `pop()`, `front()`, several more `pop()`s down to empty — using node links throughout → pseudocode → complexity (all O(1)).
-
-**Beats to emphasise**
-
-- Narrate `push(1)` as the special case: queue was empty, so the new node becomes *both* `front` and `back` at once. Every push after that just does `back->next = newNode; back = newNode`.
-- Narrate popping the **last** element as the other special case: when `pop()` empties the queue entirely, *both* `front` and `back` must be reset to `null` — updating only `front` would leave `back` dangling.
-
-**Checkpoint (at 21 min)** — cold-call:
-> *"When the very last element is popped, why set *both* `front` and `back` to null, instead of just `front`?"*
-> **Answer:** If only `front` is reset, `back` still points at the deleted node — a dangling pointer.
 
 ---
 
@@ -107,15 +72,7 @@ A buggy `pop()` implementation that never resets `back` when the last node is re
 |---|---|---|
 | Only `front` needs updating when popping the last element | Pop is mentally centred on `front`, since that's the end being removed | ALS 2 — showing `back` left dangling if it isn't explicitly reset alongside `front` |
 | `front == back` always means the queue is empty | Direct carryover from arrays | ALS 1's second pop — `front == back` here means exactly one node remains |
-| The linked-list queue is a fundamentally different algorithm from the array queue | New pointer-based syntax looks unfamiliar | Slide Block A's direct mapping — same FIFO behaviour, same two-pointer design, only the storage mechanism changed |
+| The linked-list queue is a fundamentally different algorithm from the array queue | New pointer-based syntax looks unfamiliar | Same FIFO behaviour, same two-pointer design as last session — only the storage mechanism changed |
 | A linked-list queue can never run out of space | Technically bounded only by system memory | Brief, honest caveat: not capacity-*checked*, but not infinite either |
 
 ---
-
-## Instructor Notes
-
-- **34-min format: 29 min instruction + 5 min Classroom Quiz, capped at 45 + 5.** Active learning strategies are referenced by name and format only.
-- **The Classroom Quiz runs last**, as the sole closing activity — no separate exit ticket or homework block.
-- **This is a fast, mechanically simple session once the array-based mental model has been set aside** — lean on the direct one-to-one mapping from last session.
-- **ALS 2 is the load-bearing activity** — the dangling-`back` bug is the single most common real-world bug in a hand-rolled linked-list queue.
-- **This closes out the Queue pair.** If time allows, state explicitly which one an instructor would actually reach for in practice: the linked-list version, almost always.
