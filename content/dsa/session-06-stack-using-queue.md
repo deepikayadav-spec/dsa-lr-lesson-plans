@@ -62,13 +62,49 @@ Let students think for a moment; most will assume this needs a completely differ
 
 ## ⚡ Active Learning Strategy 1 — Live Trace: Rotate It Yourself (23–30 min)
 
-A fresh push sequence (`push(5), push(15), push(25)`), students stating rotation count and resulting queue order before each reveal. Exposes whether students can execute the rotation mechanics themselves, not just watch the deck's example.
+**Format:** Live Coding / Dry-Run Relay · **Exposes:** whether students can execute the rotation count and mechanics themselves on a fresh sequence, rather than having only watched the deck's example.
+
+**Setup line (say this):**
+> *"Fresh queue. Sequence: `push(5), push(15), push(25)`. After each push, tell me the rotation count and the resulting queue order, front to back, before I confirm."*
+
+Run **one push at a time**:
+
+```
+push(5)  → queue empty → 0 rotations → enqueue 5.                     Queue: [5]
+push(15) → 1 element already there → rotate once:
+           enqueue 15 → [5, 15]; move 5 to back → [15, 5].            Queue: [15, 5]
+push(25) → 2 elements already there → rotate twice:
+           enqueue 25 → [15, 5, 25];
+           move 15 to back → [5, 25, 15];
+           move 5 to back → [25, 15, 5].                              Queue: [25, 15, 5]
+```
+
+**How it surfaces:** At `push(25)`, ask before revealing: *"How many rotations, and what's the very first one?"* Correct: two rotations, and the first one moves `15` (not `5`) to the back — rotation always operates on whatever is currently at the *front*, in order, one at a time.
+
+**Debrief line:**
+> *"Front to back, always: `[25, 15, 5]` — most recently pushed at the front, oldest at the back. That's a stack's order, LIFO, built entirely from a FIFO structure plus one rotation step per push."*
+
+**Cut rule:** If running short, do just `push(15)` — a single rotation is enough to demonstrate the mechanism; `push(25)`'s two-rotation step is confirmation, not new information.
 
 ---
 
 ## ⚡ Active Learning Strategy 2 — Predict & Discuss: Where Did the Cost Go? (30–37 min)
 
-Class discussion: a native stack has all three operations at O(1); this version matches on `pop`/`top` — so where did the cost go? Exposes whether students understand the complexity trade-off as a *conservation* of work, not a free win. Answer: the cost moved entirely into `push`, now O(N).
+**Format:** Predict-the-Output / Discussion · **Exposes:** whether students understand the complexity trade-off as a *conservation* of work, not a free win — the actual insight behind this whole session.
+
+**Setup line (say this):**
+> *"A native stack — the kind you built earlier in this block — has `push`, `pop`, and `top` all at O(1). This queue-based version has `pop` and `top` at O(1) too. So where did the cost go? It has to be somewhere — nothing here is actually free."*
+
+**What students do:** Discuss for a minute, then share out.
+
+**Answer:** The cost moved entirely into `push`, which is now O(N) — every single push rotates however many elements were already there. A native stack's `push` is O(1); this version trades that away specifically so that `pop` and `top` can stay O(1), matching a native stack's behaviour on those two operations.
+
+**How it surfaces:** Ask a follow-up: *"If your program does mostly pushes and very few pops, is this a good trade?"* Push toward: no — you'd be paying the O(N) cost repeatedly for little benefit. *"If your program does one big burst of pushes, then mostly pops and tops?"* Better trade — the expensive part happens once, then everything else is cheap.
+
+**Debrief line:**
+> *"Every 'simulate X using Y' trick you'll ever see works this way — something gets cheaper, and something else absorbs that cost. The real skill isn't memorising the trick, it's being able to say exactly where the bill went."*
+
+**Cut rule:** If running short, skip the "mostly pushes vs. mostly pops" follow-up discussion and just state the O(N) push / O(1) pop-and-top trade-off directly.
 
 ---
 

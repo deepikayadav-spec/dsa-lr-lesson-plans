@@ -64,13 +64,64 @@ Let students reason: `10` (moving right) and `-10` (moving left) are heading tow
 
 ## ⚡ Active Learning Strategy 1 — Spot the Bug: Collide or Not? (25–32 min)
 
-Four stack-top/incoming pairs; students classify collide vs. no-collision and, if colliding, the outcome. Exposes the "opposite signs always means collision" trap — a negative already on the stack (moving left) followed by a positive arriving (moving right) are moving *apart*, not colliding.
+**ALS format:** Spot the Bug / Predict-the-Output — exposes whether students can correctly classify each pairwise interaction into "collide" vs. "no collision," and if colliding, resolve the outcome — the single skill the whole algorithm depends on.
+
+**Setup line:**
+> *"Four pairs of asteroids about to meet or not meet. For each: do they collide? If yes, what survives?"*
+
+```
+1.  Stack top = 6,  incoming = -6
+2.  Stack top = -3, incoming = -9
+3.  Stack top = 4,  incoming = 9    (incoming is positive)
+4.  Stack top = -2, incoming = 8
+```
+
+45 seconds silent, then hands up. Take one pair per student.
+
+**Answers**
+
+| # | Collide? | Outcome |
+|---|---|---|
+| 1 | Yes | Equal magnitude, opposite directions → both explode |
+| 2 | No | Both negative (same direction, moving left) → no collision, both survive, `-9` pushed on top |
+| 3 | No | Incoming is positive (moving right) → same direction as everything already on the stack moving right → no collision, `9` just pushed |
+| 4 | No | Top is negative (already moving left), incoming is positive (moving right) — they're moving *apart*, not toward each other |
+
+**How it surfaces:** Pair 4 is the trap — students will often assume "opposite signs always means collide," but a `-2` sitting on the stack is already moving *left*, and an `8` arriving after it is moving *right*: they're moving apart, not toward each other. Only a *positive* on the stack (moving right, "waiting") followed by a *negative* incoming (moving left, "approaching") is a real collision setup.
+
+**Debrief line:**
+> *"Opposite signs are necessary but not sufficient. The one collision shape that matters is: something on the stack moving right, and something new arriving moving left — anything else is either same-direction or already moving apart."*
+
+**Cut rule:** Do pairs 1 and 4 only — pair 1 is the clean collision case, pair 4 is the trap that catches almost everyone.
 
 ---
 
 ## ⚡ Active Learning Strategy 2 — Live Coding / Dry-Run Relay (32–39 min)
 
-A fresh array (`[6, 3, -8, 2]`), walked one element at a time, students predicting each push/collision before it's confirmed. Exposes whether students grasp "while, not if" — one incoming asteroid can destroy more than one stack element in a row.
+**ALS format:** Live Coding / Dry-Run Relay — exposes whether students can execute a multi-step collision chain themselves, including a case where one incoming asteroid destroys more than one stack element in a row. "While, not if" is the last mechanical detail students need before they can implement this alone.
+
+**Setup line:**
+> *"New array: `[6, 3, -8, 2]`. Walk it with me, one element at a time — tell me what's pushed, what collides, and what survives, before I confirm."*
+
+Run **one element at a time**:
+
+```
+6   → stack empty → push.                                  Stack: [6]
+3   → 3 moving right, same direction as top → push.         Stack: [6, 3]
+-8  → collides with top 3: |3| < |-8| → 3 explodes.
+      collides with new top 6: |6| < |-8| → 6 explodes.
+      Stack now empty → push -8.                            Stack: [-8]
+2   → 2 moving right, top is -8 moving left → moving apart, no collision → push.   Stack: [-8, 2]
+```
+
+Final stack: `[-8, 2]`.
+
+**How it surfaces:** At `-8`, ask before revealing each step: *"Does it stop after destroying `3`, or keep going?"* Correct: it keeps going — `-8` is not yet resolved, so it must keep checking the new top (`6`) until either something bigger stops it or the stack empties.
+
+**Debrief line:**
+> *"One incoming asteroid destroyed two stack elements in a row, in a single step of the outer loop — that's the `while`, not `if`, doing its job. It only stops early if it meets something bigger than itself, or something moving the same direction."*
+
+**Cut rule:** Do only the `-8` step — it's the one that carries the whole "keep colliding until stopped" lesson; `6`, `3`, and `2` are all simple pushes.
 
 ---
 

@@ -62,13 +62,57 @@ Let students answer (no). Then:
 
 ## ⚡ Active Learning Strategy 1 — Live Trace: Push and Pop by Pointer (23–30 min)
 
-A short push/pop sequence traced node by node, students stating what `front` and `back` point to before each reveal. Exposes whether students can track pointers moving between actual nodes, rather than array indices.
+**Format:** Live Coding / Dry-Run Relay · **Exposes:** whether students can track `front` and `back` as they move between actual nodes, rather than array indices — the one genuinely new mental model this session introduces.
+
+**Setup line (say this):**
+> *"Empty queue. Sequence: `push(A)`, `push(B)`, `push(C)`, `pop()`, `pop()`. After each step, tell me what `front` and `back` point to — before I confirm."*
+
+Run **one operation at a time**:
+
+```
+push(A) → queue was empty → front = back = node(A).             front→A←back
+push(B) → back->next = node(B); back = node(B).                 front→A→B←back
+push(C) → back->next = node(C); back = node(C).                 front→A→B→C←back
+pop()   → front = front->next = node(B).                        front→B→C←back
+pop()   → front = front->next = node(C). Now front == back == node(C).   front→C←back
+```
+
+**How it surfaces:** After the second `pop()`, ask before revealing: *"`front` and `back` now point at the same node — does that mean the queue is empty?"* Correct: no — it means exactly one element remains (`C`), the same "front equals back, one element" case from last session's Activity 2, just expressed as pointers instead of indices.
+
+**Debrief line:**
+> *"Same underlying situations as last session — 'one element left' and 'completely empty' are still two different states that happen to look similar. The representation changed from indices to pointers; the logic you have to get right didn't."*
+
+**Cut rule:** If running short, do just `push(A)` and the second `pop()` — one shows the empty-queue special case, the other shows the one-element state.
 
 ---
 
 ## ⚡ Active Learning Strategy 2 — Spot the Bug: The Missing Reset (30–37 min)
 
-A buggy `pop()` implementation that never resets `back` when the last node is removed; students find the bug. Exposes the single most common real bug in this implementation — a dangling `back` pointer.
+**Format:** Spot the Bug · **Exposes:** the single most common real bug in this implementation — forgetting to reset `back` to `null` when the last element is popped, leaving it dangling.
+
+**Setup line (say this):**
+> *"Here's a `pop()` implementation with a bug. Find it."*
+
+```
+pop() {
+    if (size == 0) { print("Queue is empty"); return }
+    Node* temp = front
+    front = front->next
+    delete temp
+    size--
+}
+```
+
+**What students do:** 45 seconds silent, then hands up.
+
+**Answer:** This version *always* just does `front = front->next`, even when popping the very last element. When `front` was the only node, `front->next` is `null`, so `front` correctly becomes `null` — but `back` was never touched, and still points at the now-deleted node. `back` is left dangling.
+
+**How it surfaces:** Ask: *"If I call `push(x)` right after this buggy `pop()` empties the queue, what happens?"* Walk through it: `push` checks `if (size == 0)` to decide whether to set `front = back = newNode` — but `size` was correctly decremented to `0`, so this particular bug is masked *this time*. Then ask: *"What if `push`'s empty-check used `back == null` instead of `size == 0`?"* Now it breaks — `back` isn't null, so `push` thinks the queue isn't empty and tries to do `back->next = newNode` on a dangling pointer.
+
+**Debrief line:**
+> *"The fix: when `size` reaches `0` after a pop, explicitly set both `front = null` and `back = null`. Don't rely on one pointer's state to imply the other's — say it directly, every time."*
+
+**Cut rule:** If running short, state the bug and its fix directly rather than running the "what if push used `back == null`" extension — the core lesson (reset both pointers together) still lands.
 
 ---
 

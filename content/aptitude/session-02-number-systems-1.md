@@ -62,13 +62,67 @@ Take two or three guesses.
 
 ## ⚡ Active Learning Strategy 1 — Think-Pair-Share: Rational or Irrational? (24–31 min)
 
-Six numbers (including `22/7`, `π`, and a repeating decimal) sorted into two buckets, individually first, then in pairs. Exposes two classic traps at once: mistaking an approximation of π for π itself, and mistaking "never seems to end" for "irrational" when it's actually a repeating decimal.
+**ALS format:** Think-Pair-Share. Chosen right after the classification rule was just taught in the abstract — the six-number list below is deliberately built to trap two common misconceptions at once, and pairing lets students argue out the ones they disagree on before the room sees it.
+
+**Setup line:**
+> *"Six numbers, two buckets — Rational, Irrational. On your own first. Thirty seconds, no talking."*
+
+Write or project the six numbers in one line: `123 · 3.14 · 22/7 · π · 1.1111111....... · 1.23486524.........`. Draw two empty buckets underneath.
+
+**Timing:** 30 s think · 90 s pair · cold-call pairs one number at a time.
+
+**The list and answers**
+
+| Number | Bucket | Why |
+|---|---|---|
+| 123 | Rational | An integer = 123/1 — terminates |
+| 3.14 | Rational | Terminating decimal = 314/100 |
+| 22/7 | Rational | Already a ratio of two integers — it's an *approximation* of π, not π itself |
+| π (Pi) | Irrational | Non-terminating, non-repeating; cannot be written as p/q |
+| 1.1111111....... | Rational | Repeating decimal; equals 10/9 by the same p/q method |
+| 1.23486524......... | Irrational | Non-terminating and, on the digits shown, non-repeating |
+
+**When it goes wrong**
+
+| If… | Do this |
+|---|---|
+| Someone puts 22/7 in Irrational "because it's pi" | Write 22/7 as a division on the board — it's already p/q. |
+| Someone puts 1.1111111....... in Irrational "because it never ends" | Run the p/q method live on 1.111... = 10/9. |
+| The room is split on 1.23486524......... | Good — intended tension. Ask what makes 1.1111... different: one repeats a block, the other doesn't. |
+
+**Debrief line:**
+> *"The rule, not the verdict, is what matters — 'repeats or terminates' versus 'genuinely neither' is the whole test, forever."*
+
+**Cut rule:** Skip Pair and go straight from Think to Share; keep only the 22/7 and 1.23486524......... debates live.
 
 ---
 
 ## ⚡ Active Learning Strategy 2 — Full-Chain Dictation: Co-Primes & Remainder Word Problems (31–38 min)
 
-Instructor writes *only* what a student dictates, one step at a time, working through a chained-remainder word problem (divide by 7, then 11, then 12) with nothing filled in or assumed. Exposes whether students can reconstruct a multi-step chain themselves rather than just following a worked slide.
+**ALS format:** Full-Chain Dictation (Human Calculator) — the instructor writes *only* what a student dictates, one step at a time, nothing filled in or assumed. Chosen as the closing activity because these word problems chain several steps together, and students can usually follow a worked example but stumble reconstructing that same chain unprompted — narrating the whole chain out loud, with nothing hidden, is what actually tests it.
+
+**Setup line:**
+> *"I am the calculator now. I write down exactly what you tell me, in order, and nothing else. If you skip a step in your head, it doesn't happen on this board. Talk me through it."*
+
+**Problem 1 — Co-primes.** *"If 567P55Q is divisible by 88, find the least possible value of P + Q."* (Hint: check with co-primes of 88 — 88 = 8 × 11, so check divisibility by 8 and by 11 separately.)
+**Answer: C) 10.**
+
+**Problem 2 — Chained remainders.** *"Dividing a number by 7, the remainder is 6. The quotient so obtained when divided by 11 leaves remainder 7. The new quotient obtained when divided by 12 leaves remainder 6. Find the remainder when the number is divided by 924."*
+Build it live with the class: N = 7q₁+6, where q₁ = 11q₂+7, where q₂ = 12q₃+6. Substituting: q₁ = 132q₃+73, so N = 924q₃ + 517.
+**Answer: B) 517.** (Note 7×11×12 = 924 — that's why 924 is the divisor asked about.)
+
+**When it goes wrong**
+
+| If… | Do this |
+|---|---|
+| The dictating student jumps straight to the answer | Stop them: "What's the very first thing you'd write down?" |
+| The room is lost on Problem 2's three nested divisions | Draw three empty boxes (q₁, q₂, q₃) on the board first, before any numbers go in. |
+| Nobody volunteers to dictate | Cold-call, but soften it: "Just the first step — I'll take it from there if you get stuck." |
+
+**Debrief line:**
+> *"Every step you just said out loud was already in your head. Writing nothing yourself just proved you didn't need me to."*
+
+**Cut rule:** Run Problem 1 only if short on time.
 
 ---
 

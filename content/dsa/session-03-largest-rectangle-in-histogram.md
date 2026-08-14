@@ -66,7 +66,52 @@ Let a few guesses land (actual answer: height 5, width 2, area 10 — bars at he
 
 ## ⚡ Active Learning Strategy — Live Coding / Dry-Run Relay (28–35 min)
 
-A fresh, smaller array traced twice by the class — once for NSE only (right to left), once for the one-pass area computation (left to right), students predicting each pop/area before it's confirmed. Exposes whether students can run both the two-pass mechanics and the optimal one-pass mechanics themselves, not just watch the deck's example.
+**ALS format:** Live Coding / Dry-Run Relay, run twice on the same fresh array — once for NSE only, once for the one-pass area computation — so students execute both the two-pass mechanics and the optimal one-pass mechanics themselves, not just watch the deck's example.
+
+**Part A — Compute NSE Yourself.**
+> *"New array: `[3, 1, 4, 2]`. I want NSE for every index, scanning right to left. Call out what gets popped and what the answer is, before I confirm."*
+
+Run **right to left, one index at a time** (indices 3, 2, 1, 0; values `2, 4, 1, 3`):
+
+```
+i=3 (val=2) → stack empty → NSE[3] = 4 (past end) → push 3.        Stack: [3]
+i=2 (val=4) → top (idx 3, val 2) < 4 → no pop → NSE[2] = 3 → push 2.   Stack: [3, 2]
+i=1 (val=1) → top (idx 2, val 4) ≥ 1 → pop.
+              top (idx 3, val 2) ≥ 1 → pop.
+              stack empty → NSE[1] = 4 (past end) → push 1.         Stack: [1]
+i=0 (val=3) → top (idx 1, val 1) < 3 → no pop → NSE[0] = 1 → push 0.   Stack: [1, 0]
+```
+
+Final NSE: `[1, 4, 3, 4]`.
+
+**How it surfaces:** At `i=1` (value `1`), ask before revealing: *"How many pops happen, and why?"* Correct: two pops — both `4` and `2` are `≥ 1`, so both get thrown away before landing on an empty stack.
+
+**Part B — One Pass, Compute as You Go.**
+> *"Same array, left to right, one pass. Every time something gets popped, tell me its area before I confirm — height × (current index − new top index − 1), or height × current index if the stack goes empty."*
+
+Run **left to right, one index at a time**:
+
+```
+i=0 (val=3) → stack empty → push.                                    Stack: [0]
+i=1 (val=1) → top (idx 0, val 3) ≥ 1 → pop.
+              stack empty → area = 3 × 1 = 3 (width = current index 1)
+              → push 1.                                              Stack: [1]
+i=2 (val=4) → top (idx 1, val 1) < 4 → no pop → push.                 Stack: [1, 2]
+i=3 (val=2) → top (idx 2, val 4) ≥ 2 → pop.
+              new top (idx 1, val 1) < 2 → area = 4 × (3 − 1 − 1) = 4
+              → push 3.                                              Stack: [1, 3]
+End of array → remaining: pop idx 3 (val 2): new top idx 1 → area = 2 × (4 − 1 − 1) = 4
+              pop idx 1 (val 1): stack empty → area = 1 × 4 = 4
+```
+
+Maximum area across all pops: `4`.
+
+**How it surfaces:** At `i=1`, ask before revealing: *"The stack goes empty after this pop — what's the width?"* Correct: when the stack empties, there's no left boundary at all, so the width is simply the current index itself.
+
+**Debrief line:**
+> *"Same discipline as before — the stack only ever holds bars that could still matter. Part A found boundaries and stopped; Part B does the exact same pops but turns each one straight into an area, no second array needed."*
+
+**Cut rule:** If running short, do only Part A's `i=1` step and Part B's `i=1` step plus the end-of-array cleanup — together they cover the multi-pop mechanism and both the "normal pop" and "stack goes empty" cases.
 
 ---
 

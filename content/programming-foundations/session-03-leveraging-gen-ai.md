@@ -66,13 +66,47 @@ Take a volunteer. Most rooms cannot answer.
 
 ## ⚡ Active Learning Strategy 1 — Think-Pair-Share (25–32 min)
 
-Students judge, alone then in pairs, the best and worst thing to type into an AI tool when stuck on a problem for ten minutes, then share out. Exposes the pattern that good prompts keep you at the keyboard ("what is this error telling me?") while bad ones move you off it ("give me the code").
+**ALS format:** Think-Pair-Share. Chosen because the question has no single right answer — it's a judgment call about prompt quality, and judgment calls sharpen through comparing reasoning with a peer before committing.
+
+**Setup line:**
+> *"One minute alone, two minutes with the person next to you, then I take answers. Question: you're stuck on a coding problem for ten minutes. What is the best thing to type into an AI tool — and what's the worst?"*
+
+**Timing:** 1 min silent · 2 min pairs · 3 min report-out from three pairs.
+
+**What good answers look like**
+
+| Better prompt | Worse prompt |
+|---|---|
+| *"I wrote this and got this error. What is the error telling me?"* | *"Solve this problem."* |
+| *"Explain what this line does, one word at a time."* | *"Give me the code."* |
+| *"Give me a similar, simpler problem to practise."* | *"Is this right?"* (without reading it yourself) |
+
+**Debrief line:**
+> *"Notice the pattern. The good ones all keep you at the keyboard. The bad ones move you off it."*
+
+**Cut rule:** 30 s think, 90 s pair, two reports.
 
 ---
 
 ## ⚡ Active Learning Strategy 2 — Student-Generated Prompt Design (32–39 min)
 
-Students fill in the two blanks of the problem-generation template — "current concept" and "concepts already covered" — for exactly where they are in the course, then check whether the problem it generates is actually solvable with what they know. Exposes the temptation to overstate what's been learned, which produces a problem only an unexplained AI answer can solve.
+**ALS format:** Student-Generated Task Design. Chosen instead of a repeat of Think-Pair-Share because the skill here is production, not discussion — students have to construct and own a real artifact (a working prompt) rather than compare opinions on one.
+
+**Setup line:**
+> *"Here's a professional-grade prompt template with two blanks in it: `[current concept/topic]` and `[list of previous concepts/topics]`. Your job: fill both blanks for **where you actually are** — you know what you've covered so far. Write the version you'd send tonight. Three minutes."*
+
+**What students do:** Fill in the two blanks on paper or in chat.
+
+**How it surfaces:** Collect three. Read them out anonymously. For each ask: *"Would the problem this generates be solvable with what we know today?"*
+
+That question is the whole activity. Students routinely write something more advanced than they've covered into the blank because it sounds impressive, then get a problem they cannot attempt — which is exactly how they end up pasting an AI answer they don't understand.
+
+Then **run the best one live** and read the generated problem together. Ask: *can we actually solve this right now?*
+
+**Debrief line:**
+> *"The template did the hard part. The skill is being honest about what you've actually learned. Overstate it and the AI hands you something you can only copy."*
+
+**Cut rule:** Collect two instead of three; skip the live run.
 
 ---
 

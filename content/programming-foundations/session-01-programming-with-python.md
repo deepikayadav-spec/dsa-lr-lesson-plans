@@ -67,13 +67,68 @@ Follow every instruction with deliberate literalism. *"Pick up the marker"* — 
 
 ## ⚡ Active Learning Strategy 1 — Error-Spotting Pairs (26–33 min)
 
-Four broken `print()` lines on screen; students guess the error alone, then compare with a partner, then share out — instructor runs each broken line live so the real error message appears. Exposes whether students can read an error message instead of freezing at it.
+**ALS format:** Individual → Pair → Share (error-analysis variant). Snippets are taken verbatim from the *Possible Mistakes* material — nothing new. Chosen over a straight Think-Pair-Share because the payoff here is a real error message, not just a discussed opinion.
+
+**Setup line (say this):**
+> *"Four broken lines. 30 seconds, silent, on your own — find the error and predict what Python will say back. Then 30 seconds with the person next to you — compare and agree on one answer per line."*
+
+Put all four on screen at once:
+
+```python
+prnt("Hello World!")        # 1
+Print("Hello World!")       # 2
+print(Hello World!)         # 3
+print("Hello World!"        # 4
+```
+
+**What students do:** 30 s silent individual attempt → 30 s pair comparison → one pair per snippet shares out.
+
+**Answers**
+
+| # | Error | What Python says |
+|---|---|---|
+| 1 | `print` misspelled as `prnt` | `NameError` — Python has no function by that name |
+| 2 | Capital `P` | `NameError` — Python is case-sensitive, `Print` ≠ `print` |
+| 3 | Missing quotes | `SyntaxError` — without quotes Python reads `Hello World!` as code, not text |
+| 4 | Missing closing parenthesis | `SyntaxError` — Python is still waiting for you to finish the line |
+
+**How it surfaces:** After each pair shares, type the broken line live and run it so the class sees the real error message. This is the point of the activity — students must learn error messages are readable, not scary.
+
+**Debrief line:**
+> *"Three of these four are just typing. That's the job. You will not be stuck because you can't think — you'll be stuck because of a capital letter. Read the error message, it tells you which line."*
+
+**Cut rule:** If running late, skip the pair-compare step and go straight from individual guess to share on snippets 2 and 3 only — they carry case-sensitivity and the quotes rule, which are the two that recur all course.
 
 ---
 
 ## ⚡ Active Learning Strategy 2 — Predict & Verify (33–40 min)
 
-A short sequence of `print()` lines typed live, one at a time; students commit to a predicted output before each run, ending with a deliberately broken `Print("...")` line the class has to fix. Exposes the quotes-vs-no-quotes misconception before it becomes a habit.
+**ALS format:** Individual predict → instructor-run verification (live-coding variant of Polling). Chosen instead of another Think-Pair-Share so students commit to an answer *before* seeing it run, rather than discussing an opinion — this is the session's single highest-stakes misconception and needs individual accountability, not group averaging.
+
+**Setup line (say this):**
+> *"Editor is open, I'm typing, you're predicting. Before I hit run, everyone commits to an answer out loud or on the poll. If you're wrong, that's the useful part."*
+
+Type and run these **one at a time**, taking an individual prediction before each:
+
+```python
+print("Hello World!")    # → Hello World!
+print(2 + 5)             # → 7
+print("2 + 5")           # → 2 + 5
+print(6 / 3)             # → 2.0
+```
+
+**The deliberate bug** — after the four above, type this and run it:
+
+```python
+Print("I can code")
+```
+
+Let the `NameError` appear. Ask: *"30 seconds with your neighbour — agree on the fix."* Take the instruction from one pair and type exactly what they say.
+
+**Debrief line:**
+> *"Quotes mean 'print these exact characters.' No quotes means 'work it out, then print the answer.' That one rule explains half the confusion in your first week."*
+
+**Cut rule:** If running late, drop `print("Hello World!")` from the predict list (already established) and go straight from `print(2 + 5)` → `print("2 + 5")` → deliberate bug. Never drop the quotes-pair or the deliberate bug — those are the whole point.
 
 ---
 

@@ -62,13 +62,61 @@ Let students answer (first joined). Then:
 
 ## ⚡ Active Learning Strategy 1 — Predict the Output: Trace the Circular Wraparound (25–32 min)
 
-A capacity-4 array traced operation by operation through a full wraparound cycle, students predicting `front`, `back`, and array contents before each reveal. Exposes whether students can track a wraparound themselves — the single trickiest mechanical detail in this session.
+**Format:** Predict-the-Output / Live Trace · **Exposes:** whether students can track `front`, `back`, and `size` through a full wraparound cycle themselves — the single trickiest mechanical detail in this session.
+
+**Setup line (say this):**
+> *"Capacity-4 array, starts empty. Sequence: `push(A), push(B), push(C), pop(), pop(), push(D), push(E)`. After each operation, tell me `front`, `back`, and what's actually stored, before I confirm."*
+
+Run **one operation at a time**:
+
+```
+push(A) → front=0, back=0.                arr: [A, _, _, _]
+push(B) → back=1.                         arr: [A, B, _, _]
+push(C) → back=2.                         arr: [A, B, C, _]
+pop()   → front=1 (A removed logically).  arr: [A, B, C, _]  (A still physically there, just unreachable)
+pop()   → front=2 (B removed logically).  arr: [A, B, C, _]
+push(D) → back=3.                         arr: [A, B, C, D]
+push(E) → back=(3+1)%4=0 → wraps!         arr: [E, B, C, D]  (E overwrites A's old slot)
+```
+
+**How it surfaces:** At `push(E)`, ask before revealing: *"Is the array full at this point? `back` is about to go past index 3 — what happens?"* Correct: it's *not* full — `front` is sitting at index 2, meaning slots 0 and 1 are free — so `back` wraps to `0` and reuses that freed slot, rather than reporting overflow.
+
+**Debrief line:**
+> *"The values at indices 0 and 1 never got erased — `pop()` just moved `front` past them. `push(E)` is the operation that actually overwrites what's there. Physical array position and logical queue position are two different things, and that gap is exactly what the modulo arithmetic bridges."*
+
+**Cut rule:** If running short, do only the `push(D)` and `push(E)` steps — the wraparound is the entire point; the earlier pushes and pops are just setup.
 
 ---
 
 ## ⚡ Active Learning Strategy 2 — Spot the Bug: Full or Empty? (32–39 min)
 
-Three queue states, all with `front == back` at the same index; students decide whether each is empty or has exactly one element, and how code would tell. Exposes the classic array-queue ambiguity — `front == back` alone can't distinguish "empty" from "one element."
+**Format:** Spot the Bug · **Exposes:** the classic array-queue ambiguity — `front == back` can mean either "completely empty" or "exactly one element," and conflating the two is the most common real bug in this implementation.
+
+**Setup line (say this):**
+> *"Three queue states, each showing `front` and `back` at the same index. For each: is the queue empty, or does it have exactly one element? How would code even tell the difference?"*
+
+```
+1.  front = -1, back = -1
+2.  front = 2,  back = 2   (after a fresh push(x) as the very first element)
+3.  front = 2,  back = 2   (after several push/pop cycles have looped back around)
+```
+
+**What students do:** 45 seconds silent, then hands up.
+
+**Answers**
+
+| # | State | How to tell |
+|---|---|---|
+| 1 | Empty | `-1, -1` is the dedicated sentinel — this is the *only* unambiguous empty signal in this design |
+| 2 | One element | `front == back` at a real index, with a `size` counter confirming `size = 1` |
+| 3 | One element | Same as #2 — `front == back` alone can't distinguish "just started" from "wrapped back around"; only an explicit `size` variable (or capacity check) resolves it |
+
+**How it surfaces:** Push students to say explicitly *why* `front == back` is ambiguous on its own — it's true both when there's exactly one element and, in some naive implementations, when the queue is completely empty. This deck's design sidesteps the ambiguity with the dedicated `-1, -1` sentinel plus an explicit `size` counter — flag that as a deliberate design choice, not an accident.
+
+**Debrief line:**
+> *"`front == back` alone never tells you the whole story. This implementation solves it two ways at once: a `-1, -1` sentinel for genuinely empty, and a `size` counter for everything else. Skip either one and you'll misreport empty as full, or vice versa."*
+
+**Cut rule:** If running short, do state 1 vs. state 2 only — that pairing alone establishes the sentinel-vs-real-index distinction; state 3 is a reinforcement.
 
 ---
 

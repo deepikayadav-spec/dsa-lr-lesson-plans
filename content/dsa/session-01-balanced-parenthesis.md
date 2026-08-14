@@ -66,13 +66,66 @@ Let a few guesses land.
 
 ## ⚡ Active Learning Strategy 1 — Spot the Bug (25–32 min)
 
-Four bracket strings on the board; students call out valid/invalid and, if invalid, which of the three failure modes applies. Exposes whether students can name the *specific* failure, not just guess valid/invalid.
+**ALS format:** Spot the Bug — exposes whether students can identify *which* of the three failure modes applies, not just guess valid/invalid from a glance. Naming the specific failure is the actual transferable skill here, not just voting.
+
+**Setup line:**
+> *"Four strings on the board. For each one: valid or invalid? If invalid, tell me exactly which character breaks it and which failure mode it is — empty-stack-on-close, mismatched-type-on-close, or leftover-stack-at-the-end."*
+
+```
+1.  "([])"
+2.  "([)]"
+3.  "((("
+4.  ")("
+```
+
+45 seconds silent, then hands up. Take one student per string.
+
+**Answers**
+
+| # | Valid? | Reason |
+|---|---|---|
+| 1 | Valid | Properly nested: `(`, `[`, `]` matches `[`, `)` matches `(` |
+| 2 | Invalid | At `)`: stack top is `[`, doesn't match — mismatched-type-on-close |
+| 3 | Invalid | End of string, stack still has 3 unmatched `(` — leftover-stack-at-the-end |
+| 4 | Invalid | At `)`: stack is empty (nothing pushed yet) — empty-stack-on-close |
+
+**How it surfaces:** For string 2, push students to say specifically what's on top of the stack the instant `)` appears (`[`, not `(`) — this is the mismatched-type failure, distinct from string 4's empty-stack failure. Many students will say "invalid" correctly but conflate the two reasons.
+
+**Debrief line:**
+> *"Three ways this breaks: empty stack when you need to pop, wrong type on top when you pop, or leftover stack when you're done. Every invalid string in this problem is exactly one of those three — nothing else."*
+
+**Cut rule:** Do strings 2 and 4 only — they're the two genuinely distinct mid-scan failure modes; 1 and 3 are confirmations, not new information.
 
 ---
 
 ## ⚡ Active Learning Strategy 2 — Live Coding / Dry-Run Relay (32–39 min)
 
-A fresh 8-character string (`{[()()]}`), run one character at a time with students predicting the stack state before each reveal. Exposes whether students can execute the full algorithm end to end on their own.
+**ALS format:** Live Coding / Dry-Run Relay — exposes whether students can execute the full algorithm themselves end to end, on a string they haven't seen. Closing activity: the first time students run the complete algorithm start to finish, on eight characters in a row, without the safety of a partial example.
+
+**Setup line:**
+> *"New string: `{[()()]}`. I want the stack state after every single character — call it out before I write it."*
+
+Run **one character at a time**, taking a prediction before each:
+
+```
+{   → push                    Stack: [{]
+[   → push                    Stack: [{, []
+(   → push                    Stack: [{, [, (]
+)   → matches top (           Stack: [{, []
+(   → push                    Stack: [{, [, (]
+)   → matches top (           Stack: [{, []
+]   → matches top [           Stack: [{]
+}   → matches top {           Stack: []
+```
+
+End of string, stack empty → **valid**.
+
+**How it surfaces:** At each `)`, confirm out loud what's being matched against — students should say "top of stack" every time, not "the most recent `(` I can remember," which breaks down on longer strings.
+
+**Debrief line:**
+> *"Every close only ever looks at one thing: the top of the stack. Not the whole string, not memory — just the top. That's the entire algorithm, executed eight times in a row."*
+
+**Cut rule:** Do the first four characters only (`{[()`) plus the final `}` — enough to show both a push run and a full unwind to empty.
 
 ---
 

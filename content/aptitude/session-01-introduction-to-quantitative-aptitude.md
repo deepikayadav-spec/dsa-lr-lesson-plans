@@ -62,13 +62,46 @@ Take two or three shouted guesses. Then reveal: TCS, IBM, Cognizant, HCL, Accent
 
 ## ⚡ Active Learning Strategy 1 — Real-World Callout (25–32 min)
 
-Students shout out any company, exam, or government test they personally know someone who's taken an aptitude round for, not restricted to the deck's lists — instructor sorts each callout into the right category live. Exposes that aptitude testing isn't an abstract syllabus topic but something students have already brushed up against.
+**ALS format:** Open-Floor Callout — students shout out any company, exam, or government test they personally know someone who has taken an aptitude round for, not restricted to the lists just covered. Chosen as the first activity because the poll and hook already established that aptitude testing is widespread in the abstract; this makes it personal before the session moves into course logistics.
+
+**Setup line:**
+> *"Thirty seconds — call out any company, exam, or government test you personally know someone who's taken an aptitude round for. Doesn't have to be from our list. I'll write it under the right category."*
+
+Have the four categories (recruitment drives, qualifying exams, government exams, applications) visible on screen or written as headers on the board, ready to add student callouts underneath.
+
+**How it surfaces:** For 2–3 of the callouts, push once: *"What do you know about that round — was it timed, was it online, did they say what it covered?"* Accept anything students actually know; you're building evidence, not testing them.
+
+**Debrief line:**
+> *"Notice something — every single callout you just gave me lands in one of these four categories. This isn't a syllabus topic invented for a classroom. It's a filter used everywhere, and you've already brushed up against it."*
+
+**Cut rule:** Cap it at 5 callouts total and skip the push-for-detail step. Do not cut the debrief line.
 
 ---
 
 ## ⚡ Active Learning Strategy 2 — Silent Solve → Vote-Lock → Reveal (32–40 min)
 
-Students work the goats-and-hens riddle alone or in pairs for two minutes and commit to an answer letter *before* any explanation, then the assume-all-hens technique is revealed step by step. Exposes whether students can commit to reasoning before seeing the trick — this is the session's one genuine problem-solving moment.
+**ALS format:** Silent Solve, Vote-Lock, Then Reveal — students commit to an answer letter before anything is explained, locking in a public guess before the technique is shown. **This is the session's one genuine problem-solving moment — protect this slot above everything else if the session runs behind.**
+
+**Setup line:**
+> *"Forty-three heads, one hundred twenty-six legs, some goats, some hens. A) 26, B) 32, C) 20, D) 23. Pick one before I show you anything. Two minutes — work it out alone or with your neighbour."*
+
+Give 2 minutes silent/paired work, then take a show-of-hands vote on A/B/C/D before revealing anything.
+
+After the vote:
+> *"Now watch how this works. Assume, just for a second, that every single animal is a hen."*
+
+**The reveal:**
+1. **Assume all 43 are hens.** Total legs would be 43 × 2 = **86**.
+2. **But the question says there are 126 legs.** Why the difference?
+3. **Because some of them are goats!** The gap is 126 − 86 = **40 extra legs**.
+4. Each goat contributes 2 more legs than a hen would (4 − 2). So the number of goats = 40 ÷ 2 = **20**.
+
+**Answer: C) 20 goats** (and 23 hens). Verify out loud: 20 goats × 4 legs = 80, plus 23 hens × 2 legs = 46, total = 126 legs; 20 + 23 = 43 heads. ✔
+
+**Debrief line:**
+> *"No algebra, no equations — just 'assume the simple case, then measure the gap.' That's the kind of technique this course is built on. You'll use some version of this trick constantly."*
+
+**Cut rule:** If running short, skip the show-of-hands vote and go straight to the reveal, but keep the "assume all hens" framing intact — that framing *is* the technique being taught.
 
 ---
 
