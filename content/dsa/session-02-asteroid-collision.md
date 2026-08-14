@@ -1,6 +1,6 @@
 # Asteroid Collision
 
-**Duration** 43 min total — 38 min instruction + 5 min Classroom Quiz · **Topic** Stack — Asteroid Collision Simulation · **Prerequisite** Balanced Parenthesis
+**Duration** 31 min total — 26 min instruction + 5 min Classroom Quiz · **Topic** Stack — Asteroid Collision Simulation · **Prerequisite** Balanced Parenthesis
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -50,19 +50,31 @@ Let students reason: `10` (moving right) and `-10` (moving left) are heading tow
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Spot the Bug: Collide or Not? (21–27 min)
+## Concept Walkthrough (7–16 min)
+
+**Core idea:** keep a stack of surviving asteroids. Push positives (moving right) directly. For a negative (moving left) asteroid, keep colliding it against the stack's top — in a `while`, not an `if` — popping any smaller positive, until it either meets something bigger/equal or the stack empties.
+
+**Worked example** — `[7, 5, 4, -5, -6, -8, -9, 12]`: `7, 5, 4` all push. `-5` collides with `4` (explodes), then `5` (equal — both explode). `-6` collides with `7` (`7` survives, `-6` explodes). `-8` collides with `7` (`7` explodes, stack empty, push `-8`). `-9` — same direction as `-8` — push. `12` — moving apart from `-9` — push. Final: `[-8, -9, 12]`.
+
+**Checkpoint:**
+> *"When `-9` arrives and the stack top is `-8`, why is there no collision?"*
+> **Answer:** Both are moving left — same-direction asteroids never collide, regardless of size.
+
+---
+
+## ⚡ Active Learning Strategy 1 — Spot the Bug: Collide or Not? (16–21 min)
 
 Four stack-top/incoming pairs; students classify collide vs. no-collision and, if colliding, the outcome. Exposes the "opposite signs always means collision" trap — a negative already on the stack (moving left) followed by a positive arriving (moving right) are moving *apart*, not colliding.
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Live Coding / Dry-Run Relay (27–33 min)
+## ⚡ Active Learning Strategy 2 — Live Coding / Dry-Run Relay (21–26 min)
 
 A fresh array (`[6, 3, -8, 2]`), walked one element at a time, students predicting each push/collision before it's confirmed. Exposes whether students grasp "while, not if" — one incoming asteroid can destroy more than one stack element in a row.
 
 ---
 
-## Classroom Quiz (33–38 min)
+## Classroom Quiz (26–31 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block, covering the collision rules and the moving-apart trap case.
 

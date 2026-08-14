@@ -1,6 +1,6 @@
 # Balanced Parenthesis
 
-**Duration** 38 min total — 33 min instruction + 5 min Classroom Quiz · **Topic** Stack — Balanced Parenthesis Validation · **Prerequisite** Implement Min Stack
+**Duration** 31 min total — 26 min instruction + 5 min Classroom Quiz · **Topic** Stack — Balanced Parenthesis Validation · **Prerequisite** Implement Min Stack
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -50,19 +50,33 @@ Let a few guesses land.
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Spot the Bug (23–28 min)
+## Concept Walkthrough (7–16 min)
+
+**Core idea:** push every opening bracket onto a stack. On a closing bracket, check the top of the stack — if it matches, pop; if it doesn't match, or the stack is already empty, the string is invalid. After the whole string, the stack must also be empty — leftover unclosed openings are invalid too.
+
+**Worked example** — `s = "(){[{}])"`: `(` push. `)` matches top `(`, pop — stack empty. `{` push. `[` push. `{` push (stack: `{`, `[`, `{`). `}` matches top `{`, pop (stack: `{`, `[`). `]` matches top `[`, pop (stack: `{`). `)` — top is `{`, does **not** match `)` — invalid, stop.
+
+**Say explicitly:** counting brackets isn't enough — `(){[{}])` has 3 of each type and is still invalid. Order and type both matter, not just totals.
+
+**Checkpoint:**
+> *"Suppose the string is just `"(("` — two opening brackets, nothing else. Valid or invalid?"*
+> **Answer:** Invalid — the stack still has two unmatched elements when the string ends.
+
+---
+
+## ⚡ Active Learning Strategy 1 — Spot the Bug (16–21 min)
 
 Four bracket strings on the board; students call out valid/invalid and, if invalid, which of the three failure modes applies. Exposes whether students can name the *specific* failure, not just guess valid/invalid.
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Live Coding / Dry-Run Relay (28–33 min)
+## ⚡ Active Learning Strategy 2 — Live Coding / Dry-Run Relay (21–26 min)
 
 A fresh 8-character string (`{[()()]}`), run one character at a time with students predicting the stack state before each reveal. Exposes whether students can execute the full algorithm end to end on their own.
 
 ---
 
-## Classroom Quiz (33–38 min)
+## Classroom Quiz (26–31 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session, covering the three failure modes and the count-isn't-enough misconception.
 

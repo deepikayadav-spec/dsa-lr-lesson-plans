@@ -1,6 +1,6 @@
 # Queue Implementation Using Linked List
 
-**Duration** 34 min total — 29 min instruction + 5 min Classroom Quiz · **Topic** Queue — Implementation Using Linked List · **Prerequisite** Introduction to Queue & Implementation Using Arrays
+**Duration** 29 min total — 24 min instruction + 5 min Classroom Quiz · **Topic** Queue — Implementation Using Linked List · **Prerequisite** Introduction to Queue & Implementation Using Arrays
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -48,19 +48,31 @@ Let students answer (no). Then:
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Live Trace: Push and Pop by Pointer (21–25 min)
+## Concept Walkthrough (8–16 min)
+
+**Core idea:** swap the fixed array for a linked list — `front` and `back` become **node pointers**, not indices, both `null` when empty. No capacity, no modulo. `push` links a new node after `back` and moves `back` to it; `pop` moves `front` to `front->next`.
+
+**Worked example:** on the very first `push`, the queue was empty, so the new node becomes *both* `front` and `back`. When `pop()` removes the **last** remaining node, *both* `front` and `back` must be reset to `null` — resetting only `front` leaves `back` dangling, pointing at a deleted node.
+
+**Checkpoint:**
+> *"When the last element is popped, why reset both pointers, not just `front`?"*
+> **Answer:** If only `front` is reset, `back` still points at the deleted node — a dangling pointer that corrupts the next `push`.
+
+---
+
+## ⚡ Active Learning Strategy 1 — Live Trace: Push and Pop by Pointer (16–20 min)
 
 A short push/pop sequence traced node by node, students stating what `front` and `back` point to before each reveal. Exposes whether students can track pointers moving between actual nodes, rather than array indices.
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Spot the Bug: The Missing Reset (25–29 min)
+## ⚡ Active Learning Strategy 2 — Spot the Bug: The Missing Reset (20–24 min)
 
 A buggy `pop()` implementation that never resets `back` when the last node is removed; students find the bug. Exposes the single most common real bug in this implementation — a dangling `back` pointer.
 
 ---
 
-## Classroom Quiz (29–34 min)
+## Classroom Quiz (24–29 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
 

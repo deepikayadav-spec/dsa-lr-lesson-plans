@@ -1,6 +1,6 @@
 # Stack Using Queue
 
-**Duration** 38 min total — 33 min instruction + 5 min Classroom Quiz · **Topic** Stack & Queue — Implementation: Stack Using Queue · **Prerequisite** Queue Implementation Using Linked List
+**Duration** 29 min total — 24 min instruction + 5 min Classroom Quiz · **Topic** Stack & Queue — Implementation: Stack Using Queue · **Prerequisite** Queue Implementation Using Linked List
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -48,19 +48,31 @@ Let students think for a moment; most will assume this needs a completely differ
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Live Trace: Rotate It Yourself (24–29 min)
+## Concept Walkthrough (8–16 min)
+
+**Core idea:** simulate a stack using only a queue's `enqueue`/`dequeue`. On every `push`, enqueue the new element, then rotate the rest of the queue behind it — exactly `size-before-the-push` rotations — so the newest element ends up at the front, where `pop()` and `top()` can read it directly.
+
+**Worked example:** `push(10)` — 0 rotations. `push(20)` — 1 element already there, rotate once: `[20, 10]`. `push(30)` — 2 elements, rotate twice: `[30, 20, 10]`. `pop()` and `top()` are then trivial front reads — no rotation involved.
+
+**Checkpoint:**
+> *"`push(40)` on a 3-element queue rotates how many times, and why?"*
+> **Answer:** Three — once per pre-existing element, until `40` reaches the front.
+
+---
+
+## ⚡ Active Learning Strategy 1 — Live Trace: Rotate It Yourself (16–20 min)
 
 A fresh push sequence (`push(5), push(15), push(25)`), students stating rotation count and resulting queue order before each reveal. Exposes whether students can execute the rotation mechanics themselves, not just watch the deck's example.
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Predict & Discuss: Where Did the Cost Go? (29–33 min)
+## ⚡ Active Learning Strategy 2 — Predict & Discuss: Where Did the Cost Go? (20–24 min)
 
 Class discussion: a native stack has all three operations at O(1); this version matches on `pop`/`top` — so where did the cost go? Exposes whether students understand the complexity trade-off as a *conservation* of work, not a free win. Answer: the cost moved entirely into `push`, now O(N).
 
 ---
 
-## Classroom Quiz (33–38 min)
+## Classroom Quiz (24–29 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
 

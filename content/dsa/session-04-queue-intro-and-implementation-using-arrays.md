@@ -1,6 +1,6 @@
 # Introduction to Queue & Implementation Using Arrays
 
-**Duration** 38 min total — 33 min instruction + 5 min Classroom Quiz · **Topic** Queue — Introduction and Array Implementation · **Prerequisite** Largest Rectangle in Histogram
+**Duration** 33 min total — 28 min instruction + 5 min Classroom Quiz · **Topic** Queue — Introduction and Array Implementation · **Prerequisite** Largest Rectangle in Histogram
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -48,19 +48,31 @@ Let students answer (first joined). Then:
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Predict the Output: Trace the Circular Wraparound (23–28 min)
+## Concept Walkthrough (8–18 min)
+
+**Core idea:** a fixed-size array queue tracks two pointers — `front` (where you remove) and `back` (where you add), both starting at `-1` to mean empty. When `back` reaches the end of the array but slots have been freed at the front (from prior pops), it **wraps around** via `back = (back + 1) % capacity` instead of reporting full.
+
+**Worked example** — capacity-5 array: `push(1), push(2), push(3), push(4)` fills to `front=0, back=3`. Two pops move `front` to `2`, freeing indices `0` and `1`. `push(5)` uses index `4` (still in bounds); `push(6)` needs a slot — the only free ones are behind `front` positionally, so `back` wraps `4 → 0`.
+
+**Checkpoint:**
+> *"Why does a queue need two pointers when a stack only needed one?"*
+> **Answer:** A queue adds at one end and removes from the other; a stack does both at the same end.
+
+---
+
+## ⚡ Active Learning Strategy 1 — Predict the Output: Trace the Circular Wraparound (18–23 min)
 
 A capacity-4 array traced operation by operation through a full wraparound cycle, students predicting `front`, `back`, and array contents before each reveal. Exposes whether students can track a wraparound themselves — the single trickiest mechanical detail in this session.
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Spot the Bug: Full or Empty? (28–33 min)
+## ⚡ Active Learning Strategy 2 — Spot the Bug: Full or Empty? (23–28 min)
 
 Three queue states, all with `front == back` at the same index; students decide whether each is empty or has exactly one element, and how code would tell. Exposes the classic array-queue ambiguity — `front == back` alone can't distinguish "empty" from "one element."
 
 ---
 
-## Classroom Quiz (33–38 min)
+## Classroom Quiz (28–33 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
 
