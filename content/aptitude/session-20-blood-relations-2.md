@@ -1,4 +1,4 @@
-# Session 18 — Blood Relations-2: First-Person Perspective Puzzles
+# Session 20 — Blood Relations-2: First-Person Perspective Puzzles
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Decoding "I / My / Myself" relationship riddles by anchoring the family tree at the speaker · **Prerequisite** Blood Relations-1 — generation classification, tree notation, and step-by-step chain decoding
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -24,7 +24,7 @@ Board ready. Draw a small stick-figure "Speaker" at the center of the board — 
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Session 17 (3–7 min) · ALS: Polling
+## Warm-Up Poll — Retrieval Practice on Session 19 (3–7 min) · ALS: Polling
 
 Say: *"Five quick ones from last session."*
 
@@ -71,7 +71,7 @@ Covers: the anchoring principle and its three techniques, worked live.
 - **Core principle:** *"Whenever you see 'I said,' 'My mother,' 'My father's wife,' 'Myself' — pause. That's your signal to draw the speaker at the center of your diagram first, before anything else."*
 - **Three techniques, write on the board:**
   1. **Anchor from the speaker** — literally start your sketch with the speaker in the middle.
-  2. **Decode piece by piece** — same discipline as Session 17's symbolic chains, just in plain English now.
+  2. **Decode piece by piece** — same discipline as Session 19's symbolic chains, just in plain English now.
   3. **Direction matters** — "son of daughter" and "husband of granddaughter" are NOT interchangeable; work out exactly whose child or spouse is being described, in order.
 - **Worked example, live (instructor-constructed, matching the source's described "mother-identification" example):** *"Pointing to a boy, Sunitha said, 'His mother is the only daughter of my mother.'"*
   1. Anchor: Sunitha is the speaker.
@@ -163,7 +163,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > "Pointing to a boy, a woman said, 'He is the son of my husband's only sister.'" Who is the boy to the woman?
 > **Answer:** Husband's only sister = the woman's sister-in-law. Her son = **the woman's nephew** (by marriage).
 
-Scan responses on the way out — if the "anchor at the speaker, not the photo subject" habit isn't sticking, revisit briefly at the start of Session 19.
+Scan responses on the way out — if the "anchor at the speaker, not the photo subject" habit isn't sticking, revisit briefly at the start of Session 21.
 
 **Homework**
 
@@ -172,7 +172,7 @@ Scan responses on the way out — if the "anchor at the speaker, not the photo s
 | "A man says, 'This girl is my father's mother's only granddaughter.'" Who is the girl to the man? | Self-check — a two-generation self-reference chain, same method as today |
 | Write your own first-person riddle (2–3 clauses) about your own real family, then solve it the next day without looking | Self-check — construction reinforces the anchor-first habit |
 
-Tell them: *"That completes Blood Relations — symbols and structure, then perspective and self-reference. Session 19 moves into Venn Diagrams, where overlapping circles do a very similar job for categories instead of families."*
+Tell them: *"That completes Blood Relations — symbols and structure, then perspective and self-reference. Session 21 moves into Venn Diagrams, where overlapping circles do a very similar job for categories instead of families."*
 
 ---
 
@@ -199,5 +199,5 @@ Unscheduled on purpose. End early if reached with time on the clock.
 - **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable. The source describes three worked examples in general terms without exact wording — the "husband of the granddaughter of my father = son-in-law" example directly quotes the source's own stated line; the Sunitha/mother example and the "only son of my father/mother" self-reference examples are **instructor-constructed**, built to match the source's described scenarios, and independently verified for logical consistency.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Live Family Tree Build) is physical/volunteer-led, focused on the anchoring habit; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, testing the self-reference pattern independently.
-- **Second and last session of the Blood Relations topic** — Session 19 begins a new topic (Venn Diagrams) with a diagnostic-style opening, not deep retrieval.
+- **Second and last session of the Blood Relations topic** — Session 21 begins a new topic (Venn Diagrams) with a diagnostic-style opening, not deep retrieval.
 - Classroom Quiz slot reserved-empty per site convention.

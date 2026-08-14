@@ -1,4 +1,4 @@
-# Session 24 — Data Sufficiency: Enough Information, Not the Answer
+# Session 26 — Data Sufficiency: Enough Information, Not the Answer
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Judging whether given statements are sufficient to answer a question, without solving it — the five standard answer options · **Prerequisite** None specific — draws on general familiarity with earlier Logical Reasoning topics (arrangements, ranking) for its worked examples; final session of the course
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -154,7 +154,7 @@ Give 3 minutes silent work, then: *"Show me — three, two, one, show."*
 4. **Answer: Both statements together are sufficient.**
 
 **Debrief line:**
-> *"This puzzle used exactly the same seating logic from Session 15, but the question changed completely — instead of 'find everyone's seat,' it was 'do you have enough information to find R's seat.' Same skill, different judgment layered on top. That's Data Sufficiency in one sentence — it doesn't replace what you've learned this whole course, it just asks a new question about it."*
+> *"This puzzle used exactly the same seating logic from Session 17, but the question changed completely — instead of 'find everyone's seat,' it was 'do you have enough information to find R's seat.' Same skill, different judgment layered on top. That's Data Sufficiency in one sentence — it doesn't replace what you've learned this whole course, it just asks a new question about it."*
 
 **Cut rule:** If running short, cut the silent window to 2 minutes but always walk through all three steps explicitly in the reveal (I alone, II alone, together) — skipping the individual checks defeats the entire discipline this topic teaches.
 
@@ -208,6 +208,6 @@ Unscheduled on purpose. End early if reached with time on the clock.
 
 - **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable. The Hook (divisible by 2 and 3 → divisible by 6) and the five standard answer options directly match the source's own stated content; **the source's own quantitative worked example (LCM/ratio/HCF) contains an internal inconsistency** in the extracted text (the ratio appears to be stem-given information, which would make Statement I alone already sufficient, contradicting the source's "individually insufficient" claim) — this plan uses fresh, independently-verified examples for all five answer-option types instead, flagged at the top of this file.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
-- **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive, single-statement judgment only; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, full three-step method, deliberately reusing Session 15's seating-arrangement skill to close the course on a cross-topic note.
+- **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive, single-statement judgment only; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, full three-step method, deliberately reusing Session 17's seating-arrangement skill to close the course on a cross-topic note.
 - **This is the final session of the 24-session Logical Reasoning course.** The Exit Ticket and closing line both intentionally reference the course as a whole, not just this session.
 - Classroom Quiz slot reserved-empty per site convention.

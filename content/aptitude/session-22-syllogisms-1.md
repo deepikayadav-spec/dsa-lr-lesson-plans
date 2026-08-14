@@ -1,4 +1,4 @@
-# Session 20 — Syllogisms-1: The Venn Diagram Method
+# Session 22 — Syllogisms-1: The Venn Diagram Method
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Syllogism structure, the four standard statement types, testing conclusions with Venn diagrams, and the "Either I or II" special case · **Prerequisite** Venn Diagrams — overlapping-circle representation, applied here to test logical validity instead of counting
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -24,7 +24,7 @@ Board ready. Draw two overlapping circles labelled A and B as a running referenc
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Session 19 (3–7 min) · ALS: Polling
+## Warm-Up Poll — Retrieval Practice on Session 21 (3–7 min) · ALS: Polling
 
 Say: *"Five quick ones from last session."*
 
@@ -164,7 +164,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > Statement: "Some students are athletes." Conclusion: "Some athletes are students." Does it follow?
 > **Answer:** **Yes, follows** — "Some A are B" is always symmetric with "Some B are A" (same reasoning as Activity 1 Round 1).
 
-Scan responses on the way out — if the Either-Or vs. directly-provable distinction isn't sticking, revisit briefly at the start of Session 21.
+Scan responses on the way out — if the Either-Or vs. directly-provable distinction isn't sticking, revisit briefly at the start of Session 23.
 
 **Homework**
 
@@ -173,7 +173,7 @@ Scan responses on the way out — if the Either-Or vs. directly-provable distinc
 | Statement: "All squares are rectangles. No rectangle is a triangle." Conclusions: I. No square is a triangle. II. Some squares are triangles. Solve. | Self-check — same structure as Activity 2, verify you get "Only I follows" |
 | Construct your own genuine Either-Or pair (two conclusions, neither provable alone, but complementary) | Self-check — tests real understanding of the criteria, not just pattern recognition |
 
-Tell them: *"You've now got the Venn method fully down. Session 21 introduces a faster shortcut for single-statement syllogisms — the Tick and Cross method — so you're not sketching a full diagram every single time."*
+Tell them: *"You've now got the Venn method fully down. Session 23 introduces a faster shortcut for single-statement syllogisms — the Tick and Cross method — so you're not sketching a full diagram every single time."*
 
 ---
 
@@ -200,5 +200,5 @@ Unscheduled on purpose. End early if reached with time on the clock.
 - **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable. The Hook (fruits/apples) and the four Venn statement-type mappings directly match the source's own stated content; the "laptops/wireless/desktop" Either-Or worked example is **instructor-constructed**, built to match the source's described scenario, and independently verified for logical consistency.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, deliberately testing the Either-Or trap with a case that isn't actually Either-Or.
-- **First session of the Syllogisms topic** — warm-up poll is retrieval practice on Session 19 (Venn Diagrams), since the overlapping-circle skill carries over directly.
+- **First session of the Syllogisms topic** — warm-up poll is retrieval practice on Session 21 (Venn Diagrams), since the overlapping-circle skill carries over directly.
 - Classroom Quiz slot reserved-empty per site convention.

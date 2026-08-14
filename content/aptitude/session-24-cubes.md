@@ -1,4 +1,4 @@
-# Session 22 — Cubes: Cuts, Pieces & Painted Faces
+# Session 24 — Cubes: Cuts, Pieces & Painted Faces
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Cube structure, cutting formulas (forward and reverse), and painted-cube counting (corner/edge/face/interior pieces) · **Prerequisite** None specific — first and only session of the Cubes topic
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -159,7 +159,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > A painted cube is cut into a 4×4×4 grid. How many pieces have exactly 2 painted faces?
 > **Answer:** Edge = 12(n−2) = 12(2) = **24**.
 
-Scan responses on the way out — if the reverse-cuts formula (Nl+Nw+Nh−3) is still shaky, revisit briefly at the start of Session 23.
+Scan responses on the way out — if the reverse-cuts formula (Nl+Nw+Nh−3) is still shaky, revisit briefly at the start of Session 25.
 
 **Homework**
 
@@ -168,7 +168,7 @@ Scan responses on the way out — if the reverse-cuts formula (Nl+Nw+Nh−3) is 
 | A cube is cut into a 6×4×5 grid. Find the total cuts made, and the total pieces. | Self-check using both the forward and reverse formulas |
 | For a 7×7×7 painted cube, find all four counts (corner, edge, face, interior) and confirm they sum to 343 | Self-check — full application of all four painted-cube formulas |
 
-Tell them: *"Cubes wraps up the spatial-reasoning side of this course. Session 23 moves into Puzzles — combining everything you've learned (relationships, positions, patterns) into multi-clue logic puzzles."*
+Tell them: *"Cubes wraps up the spatial-reasoning side of this course. Session 25 moves into Puzzles — combining everything you've learned (relationships, positions, patterns) into multi-clue logic puzzles."*
 
 ---
 

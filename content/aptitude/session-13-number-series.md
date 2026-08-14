@@ -1,4 +1,4 @@
-# Session 11 — Coding & Decoding: Number Series
+# Session 13 — Coding & Decoding: Number Series
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** The four-tier logic hierarchy for number series (add/subtract → multiply/divide → number properties → multi-operator), missing and incorrect terms · **Prerequisite** None specific — first session of the Coding and Decoding topic
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -163,7 +163,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > 1, 8, 27, 64, ? — what comes next, and which tier does it belong to?
 > **Answer:** Perfect cubes (1³, 2³, 3³, 4³) → Tier 3 → **125 (5³)**.
 
-Scan responses on the way out — if the tier-checking order isn't sticking, revisit briefly at the start of Session 12.
+Scan responses on the way out — if the tier-checking order isn't sticking, revisit briefly at the start of Session 14.
 
 **Homework**
 
@@ -172,7 +172,7 @@ Scan responses on the way out — if the tier-checking order isn't sticking, rev
 | Solve: 6, 11, 16, 21, ? and 4, 12, 36, 108, ? | Self-check — one is Tier 1, one is Tier 2, identify which |
 | Find the incorrect term: 2, 4, 6, 9, 10, 12 | Self-check using the double-check method from Activity 2 |
 
-Tell them: *"Number series is about letters wearing numbers, and next session it's numbers wearing letters — Session 12 is Alphabet Series, where the exact same tier logic applies to the alphabet instead."*
+Tell them: *"Number series is about letters wearing numbers, and next session it's numbers wearing letters — Session 14 is Alphabet Series, where the exact same tier logic applies to the alphabet instead."*
 
 ---
 

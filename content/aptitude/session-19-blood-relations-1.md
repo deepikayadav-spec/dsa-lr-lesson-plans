@@ -1,4 +1,4 @@
-# Session 17 — Blood Relations-1: Generations, Trees & Symbols
+# Session 19 — Blood Relations-1: Generations, Trees & Symbols
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Generation-based classification, family tree notation (□/○), and symbolic relation operators (+, −, ×, ÷) · **Prerequisite** None specific — first session of the Blood Relations topic
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -167,7 +167,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > Decode: K − L + M. What is K to M?
 > **Answer:** K−L → K is brother of L. L+M → L is mother of M. Chain: K is L's brother, L is M's mother → **K is M's (maternal) uncle.**
 
-Scan responses on the way out — if the "sibling symbol carries the parent relationship across" insight isn't sticking, revisit briefly at the start of Session 18.
+Scan responses on the way out — if the "sibling symbol carries the parent relationship across" insight isn't sticking, revisit briefly at the start of Session 20.
 
 **Homework**
 
@@ -176,7 +176,7 @@ Scan responses on the way out — if the "sibling symbol carries the parent rela
 | Decode: A × B + C ÷ D — a four-symbol chain, find what A is to D | Self-check using the step-by-step method |
 | Sketch a family tree for your own immediate family using □/○ notation | Self-check — applies the notation from Teaching Block A to a real, familiar structure |
 
-Tell them: *"Today was about symbols and structure. Session 18 flips the perspective entirely — riddles told in first person, 'I,' 'my,' 'myself,' where you have to build the family tree from the speaker's own point of view."*
+Tell them: *"Today was about symbols and structure. Session 20 flips the perspective entirely — riddles told in first person, 'I,' 'my,' 'myself,' where you have to build the family tree from the speaker's own point of view."*
 
 ---
 

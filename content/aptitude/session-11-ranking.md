@@ -1,4 +1,4 @@
-# Session 9 — Ranking: Position in a Row
+# Session 11 — Ranking: Position in a Row
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Ranking from either end, total-persons formulas, position-between-two-people, and position swaps · **Prerequisite** None specific — first session of the Ranking topic
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -161,7 +161,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > A single student is 8th from the left and 13th from the right. How many students are in the row?
 > **Answer:** 8 + 13 − 1 = **20**. *(Same-person case — the −1 formula.)*
 
-Scan responses on the way out — if students use the +between formula here by mistake, that's the core distinction not yet landed; revisit briefly at the start of Session 10.
+Scan responses on the way out — if students use the +between formula here by mistake, that's the core distinction not yet landed; revisit briefly at the start of Session 12.
 
 **Homework**
 
@@ -170,7 +170,7 @@ Scan responses on the way out — if students use the +between formula here by m
 | Two different people: one is 6th from the left, the other is 10th from the right, with 15 people between them. Find the total. | Self-check using Total = Left + Right + Between |
 | In a row of 40, two students swap positions — one was 5th from the left, the other 5th from the right. Find each student's new rank from the left. | Self-check — position-swap logic from Teaching Block B |
 
-Tell them: *"Ranking is about picking the right formula for the right setup, not memorising numbers. Session 10 moves to Directions — tracking movement and turns, a different kind of spatial reasoning."*
+Tell them: *"Ranking is about picking the right formula for the right setup, not memorising numbers. Session 12 moves to Directions — tracking movement and turns, a different kind of spatial reasoning."*
 
 ---
 

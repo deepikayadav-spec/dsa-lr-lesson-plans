@@ -1,4 +1,4 @@
-# Session 21 — Syllogisms-2: The Tick and Cross Shortcut
+# Session 23 — Syllogisms-2: The Tick and Cross Shortcut
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** The Tick and Cross method for single-statement conclusions, and the rules for combining two statements without drawing a full diagram · **Prerequisite** Syllogisms-1 — the four standard statement types and Venn-based validity testing
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable (this session has two problem-solving sub-pages, both image-only) — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -22,7 +22,7 @@ Board ready. Write the Tick and Cross table headers (Statement Type | Term A | T
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Session 20 (3–7 min) · ALS: Polling
+## Warm-Up Poll — Retrieval Practice on Session 22 (3–7 min) · ALS: Polling
 
 Say: *"Five quick ones from last session."*
 
@@ -64,7 +64,7 @@ Covers: the four statement types → the Tick and Cross table, worked live.
 
 **Beats to emphasise**
 
-- **Four standard statement types, same as Session 20, renamed formally:**
+- **Four standard statement types, same as Session 22, renamed formally:**
   - **Universal Affirmative:** All A's are B's.
   - **Particular Affirmative:** Some A's are B's.
   - **Universal Negative:** No A's are B's.
@@ -171,16 +171,16 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > "All engineers are graduates. Some graduates are managers." Can a definite conclusion be drawn about engineers and managers?
 > **Answer:** Engineers=✔✘, Graduates common term has ✘(stmt1) and ✘(stmt2, since "Some graduates are managers" makes Graduates=✘) → common term has **no tick at all** → **rule 1 fails, no conclusion possible.**
 
-Scan responses on the way out — if the "common term needs at least one tick" rule isn't sticking, revisit briefly at the start of Session 22.
+Scan responses on the way out — if the "common term needs at least one tick" rule isn't sticking, revisit briefly at the start of Session 24.
 
 **Homework**
 
 | Task | Note |
 |---|---|
 | "No pens are pencils. All pencils are stationery." Find the tick/cross for each and state any valid conclusion. | Self-check using all five rules from Teaching Block B |
-| Explain in your own words why "both statements particular" always blocks a conclusion | Self-check — conceptual, ties the rule back to the underlying Venn logic from Session 20 |
+| Explain in your own words why "both statements particular" always blocks a conclusion | Self-check — conceptual, ties the rule back to the underlying Venn logic from Session 22 |
 
-Tell them: *"You now have both tools — full Venn diagrams for two-statement complex cases, and Tick and Cross for fast single- and double-statement work. Session 22 moves into Cubes — a completely different kind of spatial reasoning."*
+Tell them: *"You now have both tools — full Venn diagrams for two-statement complex cases, and Tick and Cross for fast single- and double-statement work. Session 24 moves into Cubes — a completely different kind of spatial reasoning."*
 
 ---
 
@@ -207,5 +207,5 @@ Unscheduled on purpose. End early if reached with time on the clock.
 - **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. This session has **two** Problem Solving sub-pages on the source material, both image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**, though the Tick and Cross table and the "All books are papers" worked example directly match the source's own stated content.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive, single-statement only; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, combining two statements with a particular+negative mix.
-- **Second and last session of the Syllogisms topic** — Session 22 begins a new topic (Cubes) with a diagnostic-style opening, not deep retrieval.
+- **Second and last session of the Syllogisms topic** — Session 24 begins a new topic (Cubes) with a diagnostic-style opening, not deep retrieval.
 - Classroom Quiz slot reserved-empty per site convention.

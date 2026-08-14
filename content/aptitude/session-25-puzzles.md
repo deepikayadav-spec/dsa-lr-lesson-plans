@@ -1,4 +1,4 @@
-# Session 23 — Puzzles: Paragraph-Based & Pattern-Based
+# Session 25 — Puzzles: Paragraph-Based & Pattern-Based
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Converting paragraph clues into a solving grid, and identifying patterns in matrix/figure-style puzzles · **Prerequisite** None specific — first and only session of the Puzzles topic, draws on Ranking, Linear/Circular Arrangements, and Blood Relations habits
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice puzzles below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -172,7 +172,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > Three siblings: A, B, C, ages 10, 12, 14 in some order. A is not the youngest. C is older than A. Who is 14?
 > **Answer:** A≠youngest, so A is middle(12) or oldest(14). C>A, so C can't be younger than A, meaning A isn't the oldest (14) — because then C would need to be older than 14, impossible → A=12 (middle). C>A=12, so C=14. **C is 14.** (B gets the remaining age, 10.)
 
-Scan responses on the way out — if the elimination discipline from Teaching Block A isn't sticking, revisit briefly before Session 24.
+Scan responses on the way out — if the elimination discipline from Teaching Block A isn't sticking, revisit briefly before Session 26.
 
 **Homework**
 
@@ -181,7 +181,7 @@ Scan responses on the way out — if the elimination discipline from Teaching Bl
 | Four friends, four fruits, three clues given — construct your own 4-entity paragraph puzzle and solve it the next day | Self-check — construction reinforces the list/extract/eliminate method |
 | Row 1: 2, 4, 8. Row 2: 3, 6, 12. Row 3: 5, 10, ? — find the pattern and missing value | Self-check using the matrix method from Teaching Block B |
 
-Tell them: *"Puzzles pulled together almost everything from this course — elimination, grids, and patterns. Session 24 is the last one — Data Sufficiency, where you judge whether you have ENOUGH information, without necessarily solving anything at all."*
+Tell them: *"Puzzles pulled together almost everything from this course — elimination, grids, and patterns. Session 26 is the last one — Data Sufficiency, where you judge whether you have ENOUGH information, without necessarily solving anything at all."*
 
 ---
 

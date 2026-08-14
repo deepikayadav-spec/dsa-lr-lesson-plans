@@ -1,9 +1,9 @@
-# Session 15 — Data Arrangements: Linear Arrangements
+# Session 17 — Data Arrangements: Linear Arrangements
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Seating/lineup terminology (extreme, immediate, adjacent, between), and multi-clue solving strategy for a single row · **Prerequisite** None specific — first session of the Data Arrangements topic
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice puzzles below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
 
-**⚠️ Sequencing note:** the source's own Introduction text references "Blood Relations" as already covered before this session, while the site's course order (and the Circular Arrangements source page's own recap list) places Data Arrangements *before* Blood Relations. This plan follows the site's course order — Linear Arrangements (Session 15) before Blood Relations (Sessions 17–18) — treating the source's internal reference as the inconsistency, not the nav order.
+**⚠️ Sequencing note:** the source's own Introduction text references "Blood Relations" as already covered before this session, while the site's course order (and the Circular Arrangements source page's own recap list) places Data Arrangements *before* Blood Relations. This plan follows the site's course order — Linear Arrangements (Session 17) before Blood Relations (Sessions 17–18) — treating the source's internal reference as the inconsistency, not the nav order.
 
 ---
 
@@ -180,7 +180,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > Five people, P/Q/R/S/T. P is at the extreme left. T is at the extreme right. R is immediately right of P. Q is immediately left of T. Where does S go, and where is it?
 > **Answer:** P=1, R=2, T=5, Q=4 → only position 3 remains → **S = position 3**, giving P, R, S, Q, T.
 
-Scan responses on the way out — if the "fix definites first" ordering isn't sticking, revisit briefly at the start of Session 16.
+Scan responses on the way out — if the "fix definites first" ordering isn't sticking, revisit briefly at the start of Session 18.
 
 **Homework**
 
@@ -189,7 +189,7 @@ Scan responses on the way out — if the "fix definites first" ordering isn't st
 | Solve: 6 people, A extreme left, F extreme right, B immediately right of A, E immediately left of F, "C is not adjacent to A," D is between B and C | Self-check — includes a "Not" clue, practising negative elimination |
 | Sketch your own 5-person linear arrangement with 4 clues, then solve it yourself the next day without looking at your notes | Self-check — construction reinforces the solving order |
 
-Tell them: *"You've now mastered rows. Session 16 breaks the row into a circle — Circular Arrangements — where left and right stop meaning the same thing for everyone, depending on which way people face."*
+Tell them: *"You've now mastered rows. Session 18 breaks the row into a circle — Circular Arrangements — where left and right stop meaning the same thing for everyone, depending on which way people face."*
 
 ---
 

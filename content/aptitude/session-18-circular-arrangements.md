@@ -1,4 +1,4 @@
-# Session 16 — Data Arrangements: Circular Arrangements
+# Session 18 — Data Arrangements: Circular Arrangements
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Facing-direction logic (inward/outward), opposite/adjacent positions, and multi-clue circular puzzles · **Prerequisite** Linear Arrangements — terminology and multi-clue solving discipline, applied here with a rotating reference frame
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice puzzles below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -22,7 +22,7 @@ Board ready. Draw a circle with 6 evenly-spaced position markers around it.
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Session 15 (3–7 min) · ALS: Polling
+## Warm-Up Poll — Retrieval Practice on Session 17 (3–7 min) · ALS: Polling
 
 Say: *"Five quick ones from last session."*
 
@@ -166,7 +166,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > Six people sit facing inward. If X is at position 2, what position is directly opposite X?
 > **Answer:** Halfway around a 6-seat circle = 3 seats away → **position 5**.
 
-Scan responses on the way out — if the facing-direction flip isn't sticking, revisit briefly at the start of Session 17.
+Scan responses on the way out — if the facing-direction flip isn't sticking, revisit briefly at the start of Session 19.
 
 **Homework**
 
@@ -175,7 +175,7 @@ Scan responses on the way out — if the facing-direction flip isn't sticking, r
 | 8 people sit facing outward around a table. Find who's opposite the person at position 1. | Self-check — same opposite-position logic, applied to an 8-seat circle (4 seats away) |
 | Redo Teaching Block B's 6-person puzzle, but with everyone facing OUTWARD instead of inward — how does the arrangement change? | Self-check — direct application of the facing-direction flip |
 
-Tell them: *"You've now handled rows and circles both. Session 17 moves into Blood Relations — tracing family connections through a chain of clues, a different kind of relationship-tracking entirely."*
+Tell them: *"You've now handled rows and circles both. Session 19 moves into Blood Relations — tracing family connections through a chain of clues, a different kind of relationship-tracking entirely."*
 
 ---
 
@@ -200,8 +200,8 @@ Unscheduled on purpose. End early if reached with time on the clock.
 ## Instructor Notes
 
 - **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice puzzles in this plan are **instructor-authored**, though the facing-direction framework (inward/outward left-right rules) and the Arya/Rahul Hook directly match the source's own stated content.
-- **Sequencing confirmed:** this session's own source Introduction lists "Clocks and Calendars, Data Interpretation, Ranking, Directions, Coding/Decoding, and Linear Arrangements" as prior topics — no mention of Blood Relations — supporting the site's course order (Data Arrangements before Blood Relations) used throughout this build. See Session 15's sequencing note for the full discrepancy discussion.
+- **Sequencing confirmed:** this session's own source Introduction lists "Clocks and Calendars, Data Interpretation, Ranking, Directions, Coding/Decoding, and Linear Arrangements" as prior topics — no mention of Blood Relations — supporting the site's course order (Data Arrangements before Blood Relations) used throughout this build. See Session 17's sequencing note for the full discrepancy discussion.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Human Circle) is loud/physical/whole-class, directly testing the inward/outward flip; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, deliberately using the outward framing to test retention of the flip under exam-like conditions.
-- **Second and last session of the Data Arrangements topic** — Session 17 begins a new topic (Blood Relations) with a diagnostic-style opening, not deep retrieval.
+- **Second and last session of the Data Arrangements topic** — Session 19 begins a new topic (Blood Relations) with a diagnostic-style opening, not deep retrieval.
 - Classroom Quiz slot reserved-empty per site convention.

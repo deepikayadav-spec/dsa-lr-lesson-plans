@@ -1,4 +1,4 @@
-# Session 6 — Data Interpretation: Tables
+# Session 8 — Data Interpretation: Tables
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Reading tabular data, and applying averages/percentages/comparisons to answer table-based questions · **Prerequisite** None specific — first session of the Data Interpretation sub-topic (draws on general percentage/ratio/average familiarity)
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems and the data table below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -171,7 +171,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > Using today's table, what's the average of East's three months?
 > **Answer:** (150+160+175)/3 = 485/3 = **161.67**.
 
-Scan responses on the way out — if the "divide by original, not new" rule is still shaky, revisit briefly at the start of Session 7.
+Scan responses on the way out — if the "divide by original, not new" rule is still shaky, revisit briefly at the start of Session 9.
 
 **Homework**
 
@@ -180,7 +180,7 @@ Scan responses on the way out — if the "divide by original, not new" rule is s
 | Rank all four regions by their Jan-to-Feb percentage growth | Self-check using the same formula as today |
 | Find the combined average of all 12 cells in the table | Self-check — tests the "ignore the noise" discipline in reverse (this one genuinely needs every cell) |
 
-Tell them: *"Tables are just one way data shows up in exams. Session 7 moves to graphs — bar and line — where the same math applies, but you have to read the values off axes first."*
+Tell them: *"Tables are just one way data shows up in exams. Session 9 moves to graphs — bar and line — where the same math applies, but you have to read the values off axes first."*
 
 ---
 

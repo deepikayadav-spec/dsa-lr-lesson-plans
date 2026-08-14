@@ -1,4 +1,4 @@
-# Session 1 — Clocks-1: Angle Between Hands
+# Session 3 — Clocks-1: Angle Between Hands
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Clock structure, hand-movement rates, and the angle formula θ = |30H − (11/2)M| · **Prerequisite** None — first session of Logical Reasoning
 **Session type** Lecture + guided practice. No source slide deck exists for this topic — content is sourced from the session's concept-explanation text. No classroom quiz bank exists yet — a 5-min slot is reserved at the end. The "Problem Solving" page (Q1–Q11) is image-only and unrecoverable, so every worked/practice problem below is **instructor-authored**, grounded in the verified formula. · **Format** 50-min recalibrated, 2 ALS activities
@@ -174,16 +174,16 @@ No quiz bank exists yet for Logical Reasoning (see Resources table). Use this sl
 > Find the angle between the hands at 5:40. Show your two hand positions before subtracting.
 > **Answer:** Minute hand 6×40=240°, hour hand 30×5+0.5×40=150+20=170°, difference |240−170|=**70°**.
 
-Scan responses on the way out — if hour-hand positions are wrong for more than a couple of students, open Session 2 with a 60-second re-derivation of the hour-hand formula term.
+Scan responses on the way out — if hour-hand positions are wrong for more than a couple of students, open Session 4 with a 60-second re-derivation of the hour-hand formula term.
 
 **Homework**
 
 | Task | Note |
 |---|---|
 | Solve: angle at 11:05, and angle at 6:18 | No platform practice set exists yet — these are instructor-set, self-check against the formula |
-| Bring one real clock/watch time from today and compute its angle | Session 2 opens by collecting a few of these from the room |
+| Bring one real clock/watch time from today and compute its angle | Session 4 opens by collecting a few of these from the room |
 
-Tell them: *"You now have one formula that answers this for any time on any clock. Session 2 builds on it — coincidences, right angles, and working backwards from the angle to find the time."*
+Tell them: *"You now have one formula that answers this for any time on any clock. Session 4 builds on it — coincidences, right angles, and working backwards from the angle to find the time."*
 
 ---
 

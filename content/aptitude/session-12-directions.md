@@ -1,4 +1,4 @@
-# Session 10 — Directions: Turns, Position & Shortest Distance
+# Session 12 — Directions: Turns, Position & Shortest Distance
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Cardinal/intermediate directions, tracking turns, net displacement, direction interchange, and Pythagorean shortest-distance · **Prerequisite** None specific — first session of the Directions topic
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -161,7 +161,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > A person walks 5 km West, then 12 km North. What's the shortest distance back to the starting point?
 > **Answer:** √(5² + 12²) = √(25+144) = √169 = **13 km**.
 
-Scan responses on the way out — if the Pythagorean step is shaky, revisit briefly at the start of Session 11.
+Scan responses on the way out — if the Pythagorean step is shaky, revisit briefly at the start of Session 13.
 
 **Homework**
 
@@ -170,7 +170,7 @@ Scan responses on the way out — if the Pythagorean step is shaky, revisit brie
 | You start facing South. Turn left, turn left, turn right. Which direction do you face? | Self-check using the turn-tracking cycles from Teaching Block A |
 | If East becomes South, what does North become? | Self-check using the interchange/rotation logic from Teaching Block B |
 
-Tell them: *"Directions is about tracking movement with logic, not memorising a map. Session 11 moves into Coding and Decoding — starting with Number Series, a completely different kind of pattern-spotting."*
+Tell them: *"Directions is about tracking movement with logic, not memorising a map. Session 13 moves into Coding and Decoding — starting with Number Series, a completely different kind of pattern-spotting."*
 
 ---
 

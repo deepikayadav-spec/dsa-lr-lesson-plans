@@ -1,4 +1,4 @@
-# Session 7 — Data Interpretation: Bar & Line Graphs
+# Session 9 — Data Interpretation: Bar & Line Graphs
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Reading bar graphs and line graphs, and applying percentage/growth calculations to graphical data · **Prerequisite** DI Tables — the percentage-change formula and the four-step reading method
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice data below is instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -24,7 +24,7 @@ Board ready. Sketch a blank bar-graph axis (x = category, y = value) and a blank
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Session 6 (3–7 min) · ALS: Polling
+## Warm-Up Poll — Retrieval Practice on Session 8 (3–7 min) · ALS: Polling
 
 Say: *"Five quick ones from last session."*
 
@@ -116,7 +116,7 @@ Covers: bar vs. line graph purpose → axes/scale/legend → the four-step metho
 
 ## Teaching Block B (25–32 min) — TEACH FROM NOTES BELOW
 
-Covers: full-range comparison across companies, spotting the highest overall grower — a deliberate trap paralleling Session 6's regional trap.
+Covers: full-range comparison across companies, spotting the highest overall grower — a deliberate trap paralleling Session 8's regional trap.
 
 **Beats to emphasise**
 
@@ -174,7 +174,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > Using today's data, what was Company A's revenue growth from 2020 to 2021?
 > **Answer:** (60.5−55)/55 × 100 = **10%**.
 
-Scan responses on the way out — if students still default to "biggest number = best performer," open Session 8 with a 60-second recap of the D-vs-C contrast.
+Scan responses on the way out — if students still default to "biggest number = best performer," open Session 10 with a 60-second recap of the D-vs-C contrast.
 
 **Homework**
 
@@ -183,7 +183,7 @@ Scan responses on the way out — if students still default to "biggest number =
 | Find the absolute (₹) growth for each company from 2019 to 2021, then compare that ranking to today's percentage ranking | Self-check — should reveal they're different orderings, reinforcing today's core lesson |
 | Sketch today's data as an actual bar graph, one bar per company per year | Practises translating a table into a graph, the reverse of what today's session did |
 
-Tell them: *"You've now handled data as a table and as a graph — same math, different reading skill. Session 8 finishes Data Interpretation with pie charts, where the whole picture always adds up to exactly 360°."*
+Tell them: *"You've now handled data as a table and as a graph — same math, different reading skill. Session 10 finishes Data Interpretation with pie charts, where the whole picture always adds up to exactly 360°."*
 
 ---
 

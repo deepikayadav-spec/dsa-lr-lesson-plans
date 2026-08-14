@@ -1,4 +1,4 @@
-# Session 2 — Clocks-2: Coincidence, Opposite & Perpendicular Hands
+# Session 4 — Clocks-2: Coincidence, Opposite & Perpendicular Hands
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Hand coincidence (11×/12h), opposite hands (180°, 11×/12h), perpendicular hands (90°, 22×/12h), and reversing angle→time · **Prerequisite** Clocks-1 — the θ = |30H − (11/2)M| formula
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -23,7 +23,7 @@ Board ready with the formula θ = |30H − (11/2)M| still visible from last sess
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Session 1 (3–7 min) · ALS: Polling
+## Warm-Up Poll — Retrieval Practice on Session 3 (3–7 min) · ALS: Polling
 
 Say: *"Five quick ones from last session — no notes."*
 
@@ -37,7 +37,7 @@ Say: *"Five quick ones from last session — no notes."*
 
 **Q3.** "15 minutes to 6" translates to which time?
 `A` 6:15 · `B` 5:45 · `C` 5:15 · `D` 6:45
-→ *Read:* B is correct. If weak, this misconception from Session 1 hasn't stuck — flag for a 30-second re-drill before Teaching Block A.
+→ *Read:* B is correct. If weak, this misconception from Session 3 hasn't stuck — flag for a 30-second re-drill before Teaching Block A.
 
 **Q4.** At 4:50 (from last session's exit ticket), was the final angle 155° or did it need a reflex adjustment?
 `A` 155° final, no adjustment · `B` Needed 360−155 adjustment
@@ -149,7 +149,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > Between 8 and 9 o'clock, at what time are the hands exactly opposite (180°)?
 > **Answer:** 30(8) − 5.5M = −180 → 240 + 180 = 5.5M → M = 76.4 (invalid, over 60) → re-anchor: |240 − 5.5M| = 180 → 5.5M = 60 → M ≈ **10.9 min** → approximately **8:10:54**.
 
-Scan responses — if students only try one case and get stuck, that's the Activity 2 lesson not yet landed; revisit briefly at the start of Session 3.
+Scan responses — if students only try one case and get stuck, that's the Activity 2 lesson not yet landed; revisit briefly at the start of Session 5.
 
 **Homework**
 
@@ -158,7 +158,7 @@ Scan responses — if students only try one case and get stuck, that's the Activ
 | Find both 90° times between 10 and 11 o'clock | Self-check against the method from Activity 2 |
 | Find the coincidence time between 9 and 10 o'clock | Self-check using M = 60H/11 |
 
-Tell them: *"You now have three tools — coincidence, opposite, perpendicular — all from one base formula. Session 3 moves into puzzle territory: clocks that lie, mirror images, and directions."*
+Tell them: *"You now have three tools — coincidence, opposite, perpendicular — all from one base formula. Session 5 moves into puzzle territory: clocks that lie, mirror images, and directions."*
 
 ---
 
@@ -184,6 +184,6 @@ Unscheduled on purpose. End early if reached with time on the clock.
 
 - **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**, built from the verified formulas (coincidence M=60H/11 confirmed against the stated "≈10 min 55 sec between 2 and 3" example in the source).
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
-- **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive/paired; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual. Continues the alternation pattern from Session 1.
+- **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive/paired; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual. Continues the alternation pattern from Session 3.
 - **The two-case trap (Activity 2) is the pedagogical core of this session** — protect its time slot above all else if running behind.
 - Classroom Quiz slot reserved-empty per site convention — add real questions once a bank exists.

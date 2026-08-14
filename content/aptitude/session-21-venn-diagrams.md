@@ -1,4 +1,4 @@
-# Session 19 — Venn Diagrams: Sets, Overlaps & Exact Counts
+# Session 21 — Venn Diagrams: Sets, Overlaps & Exact Counts
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Union/intersection/complement, two-set and three-set worked problems, and exact-count phrasing ("exactly two," "only," "at least one") · **Prerequisite** None specific — first session of the Venn Diagrams topic
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -191,7 +191,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > Using today's sports survey data, how many students played at least one sport?
 > **Answer:** Total − none = 200 − 40 = **160**.
 
-Scan responses on the way out — if the "start from the center" discipline isn't sticking for three-set problems, revisit briefly at the start of Session 20.
+Scan responses on the way out — if the "start from the center" discipline isn't sticking for three-set problems, revisit briefly at the start of Session 22.
 
 **Homework**
 
@@ -200,7 +200,7 @@ Scan responses on the way out — if the "start from the center" discipline isn'
 | Using the recruitment clearance table from Teaching Block B, find "only Aptitude or only Technical" (not both, not HR) | Self-check — combines two "only" regions |
 | Draw your own two-set survey (any topic, any numbers) and compute "only A," "only B," and "neither" | Self-check — full application of the two-set method |
 
-Tell them: *"Venn diagrams handle categories and counts. Session 20 moves into Syllogisms, where the exact same overlapping-circle idea is used to test whether a logical conclusion is actually valid."*
+Tell them: *"Venn diagrams handle categories and counts. Session 22 moves into Syllogisms, where the exact same overlapping-circle idea is used to test whether a logical conclusion is actually valid."*
 
 ---
 

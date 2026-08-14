@@ -1,4 +1,4 @@
-# Session 8 — Data Interpretation: Pie Charts
+# Session 10 — Data Interpretation: Pie Charts
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Reading pie charts and converting between sector angle, percentage, and value · **Prerequisite** DI Tables and DI Graphs — the percentage-change formula and general DI reading discipline
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice data below is instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -22,7 +22,7 @@ Board ready. Draw a blank circle divided into a few unlabelled sectors.
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Session 7 (3–7 min) · ALS: Polling
+## Warm-Up Poll — Retrieval Practice on Session 9 (3–7 min) · ALS: Polling
 
 Say: *"Five quick ones from last session."*
 
@@ -167,7 +167,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > Using today's family budget table, what percentage of the total is spent on Food and Transport combined?
 > **Answer:** 18,000+12,000 = 30,000; (30,000/1,20,000) × 100 = **25%**.
 
-Scan responses on the way out — if the "combine before comparing" habit from Teaching Block B isn't sticking, revisit briefly at the start of Session 9 (Ranking begins a new topic, so this is a light check, not a full re-teach).
+Scan responses on the way out — if the "combine before comparing" habit from Teaching Block B isn't sticking, revisit briefly at the start of Session 11 (Ranking begins a new topic, so this is a light check, not a full re-teach).
 
 **Homework**
 
@@ -176,7 +176,7 @@ Scan responses on the way out — if the "combine before comparing" habit from T
 | For today's budget table, find the angle for Others, and confirm it matches (percentage/100)×360° | Self-check using the standard formula |
 | Design a second personal budget (different from your Activity 2 one) and calculate all three columns — value, percentage, angle — for every category | Self-check — full application of all three formulas, both directions |
 
-Tell them: *"That completes Data Interpretation — tables, graphs, and pie charts, all using the exact same underlying math. Session 9 moves into a completely different topic: Ranking — position, order, and 'who's between whom.'"*
+Tell them: *"That completes Data Interpretation — tables, graphs, and pie charts, all using the exact same underlying math. Session 11 moves into a completely different topic: Ranking — position, order, and 'who's between whom.'"*
 
 ---
 
@@ -204,5 +204,5 @@ Unscheduled on purpose. End early if reached with time on the clock.
 - **The equal-value trap (Rent = Food+Savings) is instructor-added**, built to teach the source's own emphasized point about comparing sector contributions without relying on visual size.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive; Activity 2 (Silent Solve → Vote-Lock → Reveal, generative/build-your-own) is quiet/individual and constructive — deliberately varies the register from every DI session's Activity 2 pattern so far while keeping the same silent-solve register for Activity 2 continuity across the sub-topic.
-- **Last of the three Data Interpretation sessions** — Session 9 begins a new topic (Ranking) with a diagnostic-style opening, not deep retrieval.
+- **Last of the three Data Interpretation sessions** — Session 11 begins a new topic (Ranking) with a diagnostic-style opening, not deep retrieval.
 - Classroom Quiz slot reserved-empty per site convention.

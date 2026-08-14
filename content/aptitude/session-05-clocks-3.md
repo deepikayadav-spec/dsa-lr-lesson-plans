@@ -1,4 +1,4 @@
-# Session 3 — Clocks-3: Faulty Clocks, Mirror Images & Direction
+# Session 5 — Clocks-3: Faulty Clocks, Mirror Images & Direction
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Time gain/loss on faulty clocks, mirror-image time formula (11:60 − given time), and hand-to-compass-direction mapping · **Prerequisite** Clocks-1 and Clocks-2 — the base angle formula and the coincidence/opposite/perpendicular cases
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -24,7 +24,7 @@ Board ready. If a physical mirror or phone-camera mirror-mode is available, have
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Session 2 (3–7 min) · ALS: Polling
+## Warm-Up Poll — Retrieval Practice on Session 4 (3–7 min) · ALS: Polling
 
 Say: *"Five quick ones from last session."*
 
@@ -116,7 +116,7 @@ Covers: hand-to-compass-direction mapping, with an explicit consistency check gi
 
 **Checkpoint (at 32 min)** — cold-call:
 > *"At 12:00 exactly, what compass direction do both hands point?"*
-> **Answer:** Both hands point to 12 → **North**, both hands overlap (also ties back to the coincidence concept from Session 2).
+> **Answer:** Both hands point to 12 → **North**, both hands overlap (also ties back to the coincidence concept from Session 4).
 
 ---
 
@@ -151,7 +151,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot to solve 1–2 of t
 > A clock is 6 minutes fast at 10 AM and loses 1 minute every hour. What time does it show at 3 PM real time?
 > **Answer:** Elapsed 5 hours → loses 5 min → net = +6 − 5 = **+1 min ahead** → clock shows **3:01 PM**.
 
-Scan responses on the way out — sign-convention errors here mean revisit Teaching Block A's rule briefly before Session 4 (Calendars-1).
+Scan responses on the way out — sign-convention errors here mean revisit Teaching Block A's rule briefly before Session 6 (Calendars-1).
 
 **Homework**
 
@@ -160,7 +160,7 @@ Scan responses on the way out — sign-convention errors here mean revisit Teach
 | Find the mirror-image time for 4:20 and for 7:35 | Self-check against Mirror Time = 11:60 − Given Time |
 | Solve: clock 8 min slow at 6 AM, gains 1.5 min/hour — find its reading at 12 noon | Self-check using the sign-convention rule |
 
-Tell them: *"That's the full Clocks arc — angle, hand-frequency, and now faulty/mirror/direction problems. Session 4 is a completely different topic: Calendars, where you'll find the day of the week for any date, past or future."*
+Tell them: *"That's the full Clocks arc — angle, hand-frequency, and now faulty/mirror/direction problems. Session 6 is a completely different topic: Calendars, where you'll find the day of the week for any date, past or future."*
 
 ---
 
@@ -189,5 +189,5 @@ Unscheduled on purpose. End early if reached with time on the clock.
 - **⚠️ Direction-mapping claim carries a source-flagged discrepancy** — the 3:00 and 6:00 examples were independently checked here and are internally consistent under a fixed 12=N/3=E/6=S/9=W overlay; teach it with that explicit fixed-overlay framing rather than asserting it as received fact.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Mirror Clock Live Demo) is visual/instructor-led; Activity 2 (Think-Pair-Share generative) is peer-driven/constructive. Completes the Clocks-1/2/3 rotation without repeating a register two sessions running.
-- **This is the last of the three Clocks sessions** — Session 4 begins a new topic (Calendars) with a diagnostic-style light recap, not deep retrieval, since Calendars doesn't build on Clocks content directly.
+- **This is the last of the three Clocks sessions** — Session 6 begins a new topic (Calendars) with a diagnostic-style light recap, not deep retrieval, since Calendars doesn't build on Clocks content directly.
 - Classroom Quiz slot reserved-empty per site convention.

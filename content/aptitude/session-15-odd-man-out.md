@@ -1,4 +1,4 @@
-# Session 13 — Coding & Decoding: Odd Man Out & Analogy
+# Session 15 — Coding & Decoding: Odd Man Out & Analogy
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Finding the outlier in a group (numbers/letters), and solving word/number/letter analogies · **Prerequisite** Number Series and Alphabet Series — pattern-checking discipline, applied here to spot outliers and relationships
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -22,7 +22,7 @@ Board ready. Write "2, 4, 6, 9" on the board as a warm visual.
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Session 12 (3–7 min) · ALS: Polling
+## Warm-Up Poll — Retrieval Practice on Session 14 (3–7 min) · ALS: Polling
 
 Say: *"Five quick ones from last session."*
 
@@ -159,7 +159,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > Pen : Write :: Knife : ?, and what's the relationship?
 > **Answer:** Relationship is "tool : its primary function" → **Cut**.
 
-Scan responses on the way out — if students give an answer without naming the relationship, that's the core habit not yet landed; revisit briefly at the start of Session 14.
+Scan responses on the way out — if students give an answer without naming the relationship, that's the core habit not yet landed; revisit briefly at the start of Session 16.
 
 **Homework**
 
@@ -168,7 +168,7 @@ Scan responses on the way out — if students give an answer without naming the 
 | Find the outlier: 8, 16, 24, 30, 40 | Self-check using the four logic types from Teaching Block A |
 | Solve and name the relationship: Petrol : Car :: Food : ? | Self-check — should be a "fuel : what it powers" relationship, answer: Human/Body |
 
-Tell them: *"You've now spotted outliers and relationships across numbers, letters, and words. Session 14 finishes Coding and Decoding with Coded Language — where whole words get shifted, substituted, or turned into symbols."*
+Tell them: *"You've now spotted outliers and relationships across numbers, letters, and words. Session 16 finishes Coding and Decoding with Coded Language — where whole words get shifted, substituted, or turned into symbols."*
 
 ---
 
@@ -196,5 +196,5 @@ Unscheduled on purpose. End early if reached with time on the clock.
 - **This session covers two combined concepts (Odd Man Out and Analogy)**, matching the source's own page structure, which bundles both under one session despite the "Odd Man Out" title.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive, focused on Odd Man Out; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, and deliberately combines one question from each half of the session.
-- **Third session of the Coding and Decoding topic** — warm-up poll is retrieval practice on Session 12 (Alphabet Series).
+- **Third session of the Coding and Decoding topic** — warm-up poll is retrieval practice on Session 14 (Alphabet Series).
 - Classroom Quiz slot reserved-empty per site convention.

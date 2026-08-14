@@ -1,4 +1,4 @@
-# Session 4 — Calendars-1: Odd Days & Day-of-the-Week
+# Session 6 — Calendars-1: Odd Days & Day-of-the-Week
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Calendar structure, leap year rules, odd days, and finding the day of the week for any date · **Prerequisite** None specific to Clocks — first session of the Calendars sub-topic
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -168,7 +168,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > If 1 January 2026 is a Thursday, what day of the week is 26 January 2026 (Republic Day)?
 > **Answer:** Thursday + 25 days → 25 mod 7 = 4 → Thursday + 4 = **Monday**.
 
-Scan responses on the way out — if the "add the extra days, then mod 7" step is shaky, revisit briefly at the start of Session 5.
+Scan responses on the way out — if the "add the extra days, then mod 7" step is shaky, revisit briefly at the start of Session 7.
 
 **Homework**
 
@@ -177,7 +177,7 @@ Scan responses on the way out — if the "add the extra days, then mod 7" step i
 | Find the weekday for your own birth date (year, month, day) | Self-check using the anchor + month table method |
 | Find the weekday for 2 October 1869 (Gandhi's birth date) | Self-check — requires going backward like the Activity 2 example |
 
-Tell them: *"You now have a full toolkit for finding any date's weekday from scratch. Session 5 goes one step further — figuring out when a given year's entire calendar will repeat, without recalculating from the anchor every time."*
+Tell them: *"You now have a full toolkit for finding any date's weekday from scratch. Session 7 goes one step further — figuring out when a given year's entire calendar will repeat, without recalculating from the anchor every time."*
 
 ---
 

@@ -1,4 +1,4 @@
-# Session 12 — Coding & Decoding: Alphabet Series
+# Session 14 — Coding & Decoding: Alphabet Series
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** The EJOTY shortcut, forward/alternate letter patterns, reverse alphabet numbering, and wraparound logic · **Prerequisite** Number Series — the tier-based pattern-checking discipline, applied here to letters
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -22,7 +22,7 @@ Board ready. Write the alphabet A–Z across the board with position numbers 1�
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Session 11 (3–7 min) · ALS: Polling
+## Warm-Up Poll — Retrieval Practice on Session 13 (3–7 min) · ALS: Polling
 
 Say: *"Five quick ones from last session."*
 
@@ -151,7 +151,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > Using EJOTY, what position is Q?
 > **Answer:** Q is 5 before Y(25)? No — nearest anchor is O(15), Q is 2 after O → **17**.
 
-Scan responses on the way out — if the "nearest anchor" instinct isn't landing, revisit briefly at the start of Session 13.
+Scan responses on the way out — if the "nearest anchor" instinct isn't landing, revisit briefly at the start of Session 15.
 
 **Homework**
 
@@ -160,7 +160,7 @@ Scan responses on the way out — if the "nearest anchor" instinct isn't landing
 | Find the sum of the normal positions of the letters in your own first name | Self-check using EJOTY |
 | B, E, C, G, D, I — split into two alternating tracks and find the pattern in each | Self-check using the alternate-pattern method from Teaching Block B |
 
-Tell them: *"You now read letters as numbers as fluently as you read numbers as numbers. Session 13 combines both — Odd Man Out and Analogy, where you'll spot which item breaks a pattern, or how two pairs relate."*
+Tell them: *"You now read letters as numbers as fluently as you read numbers as numbers. Session 15 combines both — Odd Man Out and Analogy, where you'll spot which item breaks a pattern, or how two pairs relate."*
 
 ---
 
@@ -187,5 +187,5 @@ Unscheduled on purpose. End early if reached with time on the clock.
 - **Data note:** no source slide deck exists. Content sourced from a text extraction of the Concept Explanation/Introduction/Closure sections. The "Problem Solving" sub-page is image-only and unrecoverable — all worked/practice problems in this plan are **instructor-authored**, though the CAT=24 Hook and the A,C,E,G→I forward series directly match the source's own stated examples.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive; Activity 2 (Silent Solve → Vote-Lock → Reveal) is quiet/individual, combining reverse-numbering and multi-letter summation.
-- **Second session of the Coding and Decoding topic** — warm-up poll is retrieval practice on Session 11 (Number Series), since the tier-logic discipline carries over directly.
+- **Second session of the Coding and Decoding topic** — warm-up poll is retrieval practice on Session 13 (Number Series), since the tier-logic discipline carries over directly.
 - Classroom Quiz slot reserved-empty per site convention.

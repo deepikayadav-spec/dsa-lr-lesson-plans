@@ -1,4 +1,4 @@
-# Session 14 — Coding & Decoding: Coded Language
+# Session 16 — Coding & Decoding: Coded Language
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Letter-shift/mirror substitution, sentence decoding via elimination, and symbol-based codes · **Prerequisite** Number Series, Alphabet Series, Odd Man Out & Analogy — letter-to-position conversion and pattern discipline
 **Session type** Lecture + guided practice. No source slide deck — content from the session's concept-explanation text. No classroom quiz bank yet — 5-min slot reserved at end. the "Problem Solving" page is image-only and unrecoverable — all practice problems below are instructor-authored. · **Format** 50-min recalibrated, 2 ALS activities
@@ -18,11 +18,11 @@ By the end of this session, students will be able to:
 
 ## Classroom Settling (0–3 min) · Buffer — not instructional
 
-Board ready. Write the alphabet A–Z with positions 1–26 underneath (same reference as Session 12), and leave space for a 3-sentence decoding grid.
+Board ready. Write the alphabet A–Z with positions 1–26 underneath (same reference as Session 14), and leave space for a 3-sentence decoding grid.
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Session 13 (3–7 min) · ALS: Polling
+## Warm-Up Poll — Retrieval Practice on Session 15 (3–7 min) · ALS: Polling
 
 Say: *"Five quick ones from last session."*
 
@@ -70,7 +70,7 @@ Covers: letter-shift and mirror-position substitution, worked live.
 - **Worked example, live (from the source, verified):** *"CAT = DBU — what's the shift?"* C+1=D, A+1=B, T+1=U → consistent **+1 shift** throughout.
 - **Worked example, live (from the source, verified):** *"PAN = RCP — what's the shift?"* P+2=R, A+2=C, N+2=P → consistent **+2 shift** throughout.
 - **Say explicitly:** *"Always check EVERY letter, not just the first one — a real shift pattern must hold consistently across the whole word, or you've got the wrong rule."*
-- **Mirror-position substitution — a different rule entirely.** Instead of shifting, each letter maps to its mirror partner across the alphabet: **A↔Z, B↔Y, C↔X**, and so on. The pattern: mirror position = 27 − normal position (same formula as reverse alphabet numbering from Session 12).
+- **Mirror-position substitution — a different rule entirely.** Instead of shifting, each letter maps to its mirror partner across the alphabet: **A↔Z, B↔Y, C↔X**, and so on. The pattern: mirror position = 27 − normal position (same formula as reverse alphabet numbering from Session 14).
 - **Worked example, live:** *"Using mirror logic, what does 'BAD' become?"* B(2)→27−2=25→**Y**. A(1)→27−1=26→**Z**. D(4)→27−4=23→**W**. **BAD → YZW.**
 
 **Checkpoint (at 19 min)** — 10 s silent think, cold-call two students:
@@ -161,7 +161,7 @@ No quiz bank exists yet for Logical Reasoning. Use this slot for instructor-led 
 > If the shift rule is −1 (each letter moves back by 1), what does "FISH" become?
 > **Answer:** F−1=E, I−1=H, S−1=R, H−1=G → **EHRG**.
 
-Scan responses on the way out — if the elimination logic from Activity 2 didn't land, revisit briefly next session (Session 15 begins a new topic, so this is a light check, not a full re-teach).
+Scan responses on the way out — if the elimination logic from Activity 2 didn't land, revisit briefly next session (Session 17 begins a new topic, so this is a light check, not a full re-teach).
 
 **Homework**
 
@@ -170,7 +170,7 @@ Scan responses on the way out — if the elimination logic from Activity 2 didn'
 | Using mirror logic, decode "YZW" back to its original word | Self-check — reverse of the BAD→YZW example from Teaching Block A |
 | Three sentences: "red car fast" = "xo mi ta", "blue car slow" = "yo mi ka", "red bus slow" = "xo lo ka" — find the code for "bus" | Self-check using the same three-way elimination method as Activity 2 |
 
-Tell them: *"That completes Coding and Decoding — number patterns, letter patterns, outliers, analogies, and now full coded messages. Session 15 moves into Data Arrangements — Linear Arrangements first, seating people in a row with clues."*
+Tell them: *"That completes Coding and Decoding — number patterns, letter patterns, outliers, analogies, and now full coded messages. Session 17 moves into Data Arrangements — Linear Arrangements first, seating people in a row with clues."*
 
 ---
 
@@ -198,5 +198,5 @@ Unscheduled on purpose. End early if reached with time on the clock.
 - **Activity 2's three-sentence puzzle is instructor-authored and independently verified** — every pairwise overlap (love/ta, cats/pa, dogs/sa) and the final derived answer (chase=ka) was checked for internal consistency across all three sentences before inclusion.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
 - **Two ALS activities, different registers:** Activity 1 (Paired Whiteboard Race) is fast/competitive; Activity 2 (Silent Solve → Vote-Lock → Reveal, three-sentence elimination) is quiet/individual and deliberately harder than any single worked example in the teaching blocks.
-- **Last session of the Coding and Decoding topic** — Session 15 begins a new topic (Data Arrangements) with a diagnostic-style opening, not deep retrieval.
+- **Last session of the Coding and Decoding topic** — Session 17 begins a new topic (Data Arrangements) with a diagnostic-style opening, not deep retrieval.
 - Classroom Quiz slot reserved-empty per site convention.
