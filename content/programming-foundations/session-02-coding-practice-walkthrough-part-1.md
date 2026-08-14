@@ -1,7 +1,7 @@
 # Coding Practice Walkthrough — Part 1
 
 **Duration** 44 min total — 39 min instruction + 5 min Classroom Quiz · **Topic** Introduction to Python — attacking a coding problem: Read, Restate, Write, Run · **Prerequisite** Programming with Python
-**Session type** Support session — walkthrough, no slide deck · **Format** Condensed — active learning strategies referenced by name, single closing quiz
+**Session type** Walkthrough, no slide deck · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
 
