@@ -1,6 +1,6 @@
-# Session 58 — Largest Rectangle in Histogram
+# Largest Rectangle in Histogram
 
-**Duration** 42 min total — 37 min instruction + 5 min Classroom Quiz · **Topic** Stack — Largest Rectangle in Histogram (NSE/PSE two-pass approach + optimal one-pass approach) · **Prerequisite** Session 925 — Asteroid Collision
+**Duration** 42 min total — 37 min instruction + 5 min Classroom Quiz · **Topic** Stack — Largest Rectangle in Histogram (NSE/PSE two-pass approach + optimal one-pass approach) · **Prerequisite** Asteroid Collision
 **Session type** Concept lecture · **Format** Condensed — merged from a previous two-part (35 + 30 min) split into a single 45+5-capped session; active learning strategies referenced by name, single closing quiz
 
 <!-- Merge note: previously split as session-58a (Part 1, NSE/PSE approach, 35 min) and session-58b (Part 2, optimal one-pass approach, 30 min), 65 min combined. The image's schedule shows this as one topic occupying one slot per batch, so both parts are merged back into a single session and trimmed to fit the 45+5 cap. Both approaches are kept — the two-pass approach because Part 1's instructor notes were explicit that skipping it undercuts why the one-pass approach is a genuine simplification, not a random trick. -->
@@ -18,7 +18,7 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Session 925 (0–5 min)
+## Warm-Up Poll — Retrieval Practice on Asteroid Collision (0–5 min)
 
 Say: *"Five quick ones on asteroid collisions before we hit the hardest problem in this block."*
 

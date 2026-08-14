@@ -1,6 +1,6 @@
-# Session 59 — Introduction to Queue & Implementation Using Arrays
+# Introduction to Queue & Implementation Using Arrays
 
-**Duration** 38 min total — 33 min instruction + 5 min Classroom Quiz · **Topic** Queue — Introduction and Array Implementation · **Prerequisite** Session 58 — Largest Rectangle in Histogram
+**Duration** 38 min total — 33 min instruction + 5 min Classroom Quiz · **Topic** Queue — Introduction and Array Implementation · **Prerequisite** Largest Rectangle in Histogram
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -16,7 +16,7 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Session 58 (Largest Rectangle in Histogram) (0–5 min)
+## Warm-Up Poll — Retrieval Practice on Largest Rectangle in Histogram (0–5 min)
 
 Say: *"Five quick ones on histograms, then we leave stacks behind for one session and meet an entirely new structure."*
 

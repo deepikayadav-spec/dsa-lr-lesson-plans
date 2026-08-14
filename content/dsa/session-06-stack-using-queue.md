@@ -1,6 +1,6 @@
-# Session 61 — Stack Using Queue
+# Stack Using Queue
 
-**Duration** 38 min total — 33 min instruction + 5 min Classroom Quiz · **Topic** Stack & Queue — Implementation: Stack Using Queue · **Prerequisite** Session 60 — Queue Implementation Using Linked List
+**Duration** 38 min total — 33 min instruction + 5 min Classroom Quiz · **Topic** Stack & Queue — Implementation: Stack Using Queue · **Prerequisite** Queue Implementation Using Linked List
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -16,7 +16,7 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Session 60 (Queue: Linked List Implementation) (0–5 min)
+## Warm-Up Poll — Retrieval Practice on Queue: Linked List Implementation (0–5 min)
 
 Say: *"Five on the linked-list queue, then we do something a little backwards — build a stack out of a queue."*
 

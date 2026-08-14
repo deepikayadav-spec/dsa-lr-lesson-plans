@@ -208,6 +208,7 @@ def load_course(folder):
         md = open(p, encoding="utf-8").read()
         d = doc_meta(p, md)
         d["html"] = relink(render(md))
+        d["hideNum"] = bool(cfg.get("hideSessionNumbers"))
         (sessions if d["num"] else guides).append(d)
     sessions.sort(key=lambda d: d["num"])
     return {"slug": slug, "name": cfg.get("name", slug),
@@ -415,7 +416,7 @@ function link(d){
   a.className='item';
   a.href='#'+(d.num?'session-'+d.num:'g'+guides.indexOf(d));
   a.dataset.idx=DOCS.indexOf(d);
-  a.innerHTML='<span class="n">'+(d.num||'·')+'</span><span class="t">'+d.title+'</span>'
+  a.innerHTML='<span class="n">'+(d.hideNum?'·':(d.num||'·'))+'</span><span class="t">'+d.title+'</span>'
     +(d.kind==='Support'?'<span class="badge sup">Support</span>':'')
     +(d.noDeck?'<span class="badge nd" title="No slide deck — teaching blocks provided instead">No deck</span>':'');
   return a;
@@ -427,7 +428,7 @@ if(guides.length){section('Guides');guides.forEach(d=>nav.appendChild(link(d)));
 
 function show(idx){
   const d=DOCS[idx];if(!d)return;
-  document.getElementById('ttl').textContent=(d.num?'Session '+d.num+' — ':'')+d.title;
+  document.getElementById('ttl').textContent=(d.num&&!d.hideNum?'Session '+d.num+' — ':'')+d.title;
   const bits=[];
   if(d.num)bits.push('60 min');
   if(d.kind!=='Guide')bits.push(d.kind+' session');

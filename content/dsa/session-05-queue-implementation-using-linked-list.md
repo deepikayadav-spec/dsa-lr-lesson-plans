@@ -1,6 +1,6 @@
-# Session 60 — Queue Implementation Using Linked List
+# Queue Implementation Using Linked List
 
-**Duration** 34 min total — 29 min instruction + 5 min Classroom Quiz · **Topic** Queue — Implementation Using Linked List · **Prerequisite** Session 59 — Introduction to Queue & Implementation Using Arrays
+**Duration** 34 min total — 29 min instruction + 5 min Classroom Quiz · **Topic** Queue — Implementation Using Linked List · **Prerequisite** Introduction to Queue & Implementation Using Arrays
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -16,7 +16,7 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Session 59 (Queue: Array Implementation) (0–5 min)
+## Warm-Up Poll — Retrieval Practice on Queue: Array Implementation (0–5 min)
 
 Say: *"Five quick ones on the array-based queue before we swap the array out entirely."*
 

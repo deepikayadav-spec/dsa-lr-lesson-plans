@@ -1,6 +1,6 @@
-# Session 925 — Asteroid Collision
+# Asteroid Collision
 
-**Duration** 43 min total — 38 min instruction + 5 min Classroom Quiz · **Topic** Stack — Asteroid Collision Simulation · **Prerequisite** Session 924 — Balanced Parenthesis
+**Duration** 43 min total — 38 min instruction + 5 min Classroom Quiz · **Topic** Stack — Asteroid Collision Simulation · **Prerequisite** Balanced Parenthesis
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -16,9 +16,9 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Session 924 (0–4 min) · ALS: Polling
+## Warm-Up Poll — Retrieval Practice on Balanced Parenthesis (0–4 min) · ALS: Polling
 
-5 questions on **Session 924 (Balanced Parenthesis)**. ~45 s each, project the distribution, never name individuals.
+5 questions on **Balanced Parenthesis**. ~45 s each, project the distribution, never name individuals.
 
 **Q1.** A closing bracket arrives and the stack is empty. The string is:
 `A` Automatically valid · `B` Invalid · `C` Valid if it's the last character · `D` Undetermined

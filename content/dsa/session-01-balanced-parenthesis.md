@@ -1,6 +1,6 @@
-# Session 924 — Balanced Parenthesis
+# Balanced Parenthesis
 
-**Duration** 38 min total — 33 min instruction + 5 min Classroom Quiz · **Topic** Stack — Balanced Parenthesis Validation · **Prerequisite** Session 923 — Implement Min Stack
+**Duration** 38 min total — 33 min instruction + 5 min Classroom Quiz · **Topic** Stack — Balanced Parenthesis Validation · **Prerequisite** Implement Min Stack
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -16,9 +16,9 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Session 923 (0–4 min) · ALS: Polling
+## Warm-Up Poll — Retrieval Practice on Implement Min Stack (0–4 min) · ALS: Polling
 
-5 questions on **Session 923 (Implement Min Stack)**. ~45 s each, project the distribution, never name individuals.
+5 questions on **Implement Min Stack**. ~45 s each, project the distribution, never name individuals.
 
 **Q1.** Min Stack's four required operations, all O(1), are:
 `A` push, pop, top, getMin · `B` push, pop, sort, getMin · `C` insert, delete, search, getMin · `D` push, remove, peek, getMax
