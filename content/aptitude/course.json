@@ -1,5 +1,9 @@
 {
   "name": "Aptitude",
   "subtitle": "Quantitative and logical reasoning",
-  "order": 4
+  "order": 4,
+  "sections": [
+    { "label": "Quantitative Aptitude", "from": 1, "to": 2 },
+    { "label": "Logical Reasoning", "from": 3, "to": 26 }
+  ]
 }

@@ -198,9 +198,19 @@ def relink(h):
     return re.sub(r'<a href="\.?/?_[^"]*">(.*?)</a>', r"\1", h)
 
 
+def section_for(num, sections):
+    """Which named sub-section (course.json 'sections': [{label,from,to}]) a
+    session number falls into, or None if the course doesn't define any."""
+    for s in sections:
+        if s["from"] <= num <= s["to"]:
+            return s["label"]
+    return None
+
+
 def load_course(folder):
     slug = os.path.basename(folder)
     cfg = json.load(open(os.path.join(folder, "course.json"), encoding="utf-8"))
+    sections = cfg.get("sections", [])
     sessions, guides = [], []
     for p in sorted(glob.glob(os.path.join(folder, "*.md"))):
         if os.path.basename(p).startswith("_"):
@@ -209,6 +219,7 @@ def load_course(folder):
         d = doc_meta(p, md)
         d["html"] = relink(render(md))
         d["hideNum"] = bool(cfg.get("hideSessionNumbers"))
+        d["section"] = section_for(d["num"], sections) if d["num"] else None
         (sessions if d["num"] else guides).append(d)
     sessions.sort(key=lambda d: d["num"])
     return {"slug": slug, "name": cfg.get("name", slug),
@@ -423,7 +434,14 @@ function link(d){
 }
 function section(t){const h=document.createElement('div');h.className='navsec';
   h.textContent=t;nav.appendChild(h);}
-if(sessions.length){section('Sessions');sessions.forEach(d=>nav.appendChild(link(d)));}
+if(sessions.length){
+  let lastSec=null;
+  sessions.forEach(d=>{
+    const sec=d.section||'Sessions';
+    if(sec!==lastSec){section(sec);lastSec=sec;}
+    nav.appendChild(link(d));
+  });
+}
 if(guides.length){section('Guides');guides.forEach(d=>nav.appendChild(link(d)));}
 
 function show(idx){
