@@ -1,6 +1,6 @@
 # Stack Using Queue
 
-**Duration** 44 min total — 37 min instruction + 7 min Classroom Quiz · **Topic** Stack & Queue — Implementation: Stack Using Queue · **Prerequisite** Queue Implementation Using Linked List
+**Duration** 50 min total — 43 min instruction + 7 min Classroom Quiz · **Topic** Stack & Queue — Implementation: Stack Using Queue · **Prerequisite** Queue Implementation Using Linked List
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -48,7 +48,7 @@ Let students think for a moment; most will assume this needs a completely differ
 
 ---
 
-## Concept Walkthrough (10–23 min)
+## Concept Walkthrough (10–29 min)
 
 **Core idea:** simulate a stack using only a queue's `enqueue`/`dequeue`. On every `push`, enqueue the new element, then rotate the rest of the queue behind it — exactly `size-before-the-push` rotations — so the newest element ends up at the front, where `pop()` and `top()` can read it directly.
 
@@ -60,7 +60,7 @@ Let students think for a moment; most will assume this needs a completely differ
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Live Trace: Rotate It Yourself (23–30 min)
+## ⚡ Active Learning Strategy 1 — Live Trace: Rotate It Yourself (29–36 min)
 
 **Format:** Live Coding / Dry-Run Relay · **Exposes:** whether students can execute the rotation count and mechanics themselves on a fresh sequence, rather than having only watched the deck's example.
 
@@ -88,7 +88,7 @@ push(25) → 2 elements already there → rotate twice:
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Predict & Discuss: Where Did the Cost Go? (30–37 min)
+## ⚡ Active Learning Strategy 2 — Predict & Discuss: Where Did the Cost Go? (36–43 min)
 
 **Format:** Predict-the-Output / Discussion · **Exposes:** whether students understand the complexity trade-off as a *conservation* of work, not a free win — the actual insight behind this whole session.
 
@@ -108,7 +108,7 @@ push(25) → 2 elements already there → rotate twice:
 
 ---
 
-## Classroom Quiz (37–44 min)
+## Classroom Quiz (43–50 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
 

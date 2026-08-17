@@ -1,6 +1,6 @@
 # Asteroid Collision
 
-**Duration** 46 min total — 39 min instruction + 7 min Classroom Quiz · **Topic** Stack — Asteroid Collision Simulation · **Prerequisite** Balanced Parenthesis
+**Duration** 50 min total — 43 min instruction + 7 min Classroom Quiz · **Topic** Stack — Asteroid Collision Simulation · **Prerequisite** Balanced Parenthesis
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -50,7 +50,7 @@ Let students reason: `10` (moving right) and `-10` (moving left) are heading tow
 
 ---
 
-## Concept Walkthrough (10–25 min)
+## Concept Walkthrough (10–29 min)
 
 **Core idea:** keep a stack of surviving asteroids. Push positives (moving right) directly. For a negative (moving left) asteroid, keep colliding it against the stack's top — in a `while`, not an `if` — popping any smaller positive, until it either meets something bigger/equal or the stack empties.
 
@@ -62,7 +62,7 @@ Let students reason: `10` (moving right) and `-10` (moving left) are heading tow
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Spot the Bug: Collide or Not? (25–32 min)
+## ⚡ Active Learning Strategy 1 — Spot the Bug: Collide or Not? (29–36 min)
 
 **ALS format:** Spot the Bug / Predict-the-Output — exposes whether students can correctly classify each pairwise interaction into "collide" vs. "no collision," and if colliding, resolve the outcome — the single skill the whole algorithm depends on.
 
@@ -96,7 +96,7 @@ Let students reason: `10` (moving right) and `-10` (moving left) are heading tow
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Live Coding / Dry-Run Relay (32–39 min)
+## ⚡ Active Learning Strategy 2 — Live Coding / Dry-Run Relay (36–43 min)
 
 **ALS format:** Live Coding / Dry-Run Relay — exposes whether students can execute a multi-step collision chain themselves, including a case where one incoming asteroid destroys more than one stack element in a row. "While, not if" is the last mechanical detail students need before they can implement this alone.
 
@@ -125,7 +125,7 @@ Final stack: `[-8, 2]`.
 
 ---
 
-## Classroom Quiz (39–46 min)
+## Classroom Quiz (43–50 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block, covering the collision rules and the moving-apart trap case.
 

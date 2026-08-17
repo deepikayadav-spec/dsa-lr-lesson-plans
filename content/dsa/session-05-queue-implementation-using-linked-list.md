@@ -1,6 +1,6 @@
 # Queue Implementation Using Linked List
 
-**Duration** 44 min total — 37 min instruction + 7 min Classroom Quiz · **Topic** Queue — Implementation Using Linked List · **Prerequisite** Introduction to Queue & Implementation Using Arrays
+**Duration** 50 min total — 43 min instruction + 7 min Classroom Quiz · **Topic** Queue — Implementation Using Linked List · **Prerequisite** Introduction to Queue & Implementation Using Arrays
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -48,7 +48,7 @@ Let students answer (no). Then:
 
 ---
 
-## Concept Walkthrough (10–23 min)
+## Concept Walkthrough (10–29 min)
 
 **Core idea:** swap the fixed array for a linked list — `front` and `back` become **node pointers**, not indices, both `null` when empty. No capacity, no modulo. `push` links a new node after `back` and moves `back` to it; `pop` moves `front` to `front->next`.
 
@@ -60,7 +60,7 @@ Let students answer (no). Then:
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Live Trace: Push and Pop by Pointer (23–30 min)
+## ⚡ Active Learning Strategy 1 — Live Trace: Push and Pop by Pointer (29–36 min)
 
 **Format:** Live Coding / Dry-Run Relay · **Exposes:** whether students can track `front` and `back` as they move between actual nodes, rather than array indices — the one genuinely new mental model this session introduces.
 
@@ -86,7 +86,7 @@ pop()   → front = front->next = node(C). Now front == back == node(C).   front
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Spot the Bug: The Missing Reset (30–37 min)
+## ⚡ Active Learning Strategy 2 — Spot the Bug: The Missing Reset (36–43 min)
 
 **Format:** Spot the Bug · **Exposes:** the single most common real bug in this implementation — forgetting to reset `back` to `null` when the last element is popped, leaving it dangling.
 
@@ -116,7 +116,7 @@ pop() {
 
 ---
 
-## Classroom Quiz (37–44 min)
+## Classroom Quiz (43–50 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
 

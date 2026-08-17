@@ -1,6 +1,6 @@
 # Introduction to Queue & Implementation Using Arrays
 
-**Duration** 46 min total — 39 min instruction + 7 min Classroom Quiz · **Topic** Queue — Introduction and Array Implementation · **Prerequisite** Largest Rectangle in Histogram
+**Duration** 50 min total — 43 min instruction + 7 min Classroom Quiz · **Topic** Queue — Introduction and Array Implementation · **Prerequisite** Largest Rectangle in Histogram
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -48,7 +48,7 @@ Let students answer (first joined). Then:
 
 ---
 
-## Concept Walkthrough (10–25 min)
+## Concept Walkthrough (10–29 min)
 
 **Core idea:** a fixed-size array queue tracks two pointers — `front` (where you remove) and `back` (where you add), both starting at `-1` to mean empty. When `back` reaches the end of the array but slots have been freed at the front (from prior pops), it **wraps around** via `back = (back + 1) % capacity` instead of reporting full.
 
@@ -60,7 +60,7 @@ Let students answer (first joined). Then:
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Predict the Output: Trace the Circular Wraparound (25–32 min)
+## ⚡ Active Learning Strategy 1 — Predict the Output: Trace the Circular Wraparound (29–36 min)
 
 **Format:** Predict-the-Output / Live Trace · **Exposes:** whether students can track `front`, `back`, and `size` through a full wraparound cycle themselves — the single trickiest mechanical detail in this session.
 
@@ -88,7 +88,7 @@ push(E) → back=(3+1)%4=0 → wraps!         arr: [E, B, C, D]  (E overwrites A
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Spot the Bug: Full or Empty? (32–39 min)
+## ⚡ Active Learning Strategy 2 — Spot the Bug: Full or Empty? (36–43 min)
 
 **Format:** Spot the Bug · **Exposes:** the classic array-queue ambiguity — `front == back` can mean either "completely empty" or "exactly one element," and conflating the two is the most common real bug in this implementation.
 
@@ -120,7 +120,7 @@ push(E) → back=(3+1)%4=0 → wraps!         arr: [E, B, C, D]  (E overwrites A
 
 ---
 
-## Classroom Quiz (39–46 min)
+## Classroom Quiz (43–50 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
 
