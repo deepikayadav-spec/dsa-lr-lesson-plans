@@ -1,6 +1,6 @@
 # Largest Rectangle in Histogram
 
-**Duration** 50 min total — 43 min instruction + 7 min Classroom Quiz · **Topic** Stack — Largest Rectangle in Histogram (NSE/PSE two-pass approach + optimal one-pass approach) · **Prerequisite** Asteroid Collision
+**Duration** 50 min total — 43 min instruction + 5 min Classroom Quiz + 2 min buffer · **Topic** Stack — Largest Rectangle in Histogram (NSE/PSE two-pass approach + optimal one-pass approach) · **Prerequisite** Asteroid Collision
 **Session type** Concept lecture · **Format** Condensed — merged from a previous two-part (35 + 30 min) split into a single 45+5-capped session; active learning strategies referenced by name, single closing quiz
 
 <!-- Merge note: previously split as session-58a (Part 1, NSE/PSE approach, 35 min) and session-58b (Part 2, optimal one-pass approach, 30 min), 65 min combined. The image's schedule shows this as one topic occupying one slot per batch, so both parts are merged back into a single session and trimmed to fit the 45+5 cap. Both approaches are kept — the two-pass approach because Part 1's instructor notes were explicit that skipping it undercuts why the one-pass approach is a genuine simplification, not a random trick. -->
@@ -115,9 +115,15 @@ Maximum area across all pops: `4`.
 
 ---
 
-## Classroom Quiz (43–50 min)
+## Classroom Quiz (43–48 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block, covering both the NSE/PSE approach and the optimal one-pass trade-off.
+
+---
+
+## Buffer (48–50 min) · Flex — not instructional
+
+Unscheduled on purpose. If you land here with time on the clock, let the session end early — don't stretch content to fill it.
 
 ---
 

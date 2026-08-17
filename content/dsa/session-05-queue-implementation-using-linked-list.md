@@ -1,6 +1,6 @@
 # Queue Implementation Using Linked List
 
-**Duration** 50 min total — 43 min instruction + 7 min Classroom Quiz · **Topic** Queue — Implementation Using Linked List · **Prerequisite** Introduction to Queue & Implementation Using Arrays
+**Duration** 50 min total — 43 min instruction + 5 min Classroom Quiz + 2 min buffer · **Topic** Queue — Implementation Using Linked List · **Prerequisite** Introduction to Queue & Implementation Using Arrays
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -116,9 +116,15 @@ pop() {
 
 ---
 
-## Classroom Quiz (43–50 min)
+## Classroom Quiz (43–48 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
+
+---
+
+## Buffer (48–50 min) · Flex — not instructional
+
+Unscheduled on purpose. If you land here with time on the clock, let the session end early — don't stretch content to fill it.
 
 ---
 

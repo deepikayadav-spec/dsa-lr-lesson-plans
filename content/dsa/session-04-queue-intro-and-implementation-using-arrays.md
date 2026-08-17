@@ -1,6 +1,6 @@
 # Introduction to Queue & Implementation Using Arrays
 
-**Duration** 50 min total — 43 min instruction + 7 min Classroom Quiz · **Topic** Queue — Introduction and Array Implementation · **Prerequisite** Largest Rectangle in Histogram
+**Duration** 50 min total — 43 min instruction + 5 min Classroom Quiz + 2 min buffer · **Topic** Queue — Introduction and Array Implementation · **Prerequisite** Largest Rectangle in Histogram
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -120,9 +120,15 @@ push(E) → back=(3+1)%4=0 → wraps!         arr: [E, B, C, D]  (E overwrites A
 
 ---
 
-## Classroom Quiz (43–50 min)
+## Classroom Quiz (43–48 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
+
+---
+
+## Buffer (48–50 min) · Flex — not instructional
+
+Unscheduled on purpose. If you land here with time on the clock, let the session end early — don't stretch content to fill it.
 
 ---
 

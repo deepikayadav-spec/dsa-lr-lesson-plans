@@ -1,6 +1,6 @@
 # Balanced Parenthesis
 
-**Duration** 50 min total — 44 min instruction + 6 min Classroom Quiz · **Topic** Stack — Balanced Parenthesis Validation · **Prerequisite** Implement Min Stack
+**Duration** 50 min total — 44 min instruction + 5 min Classroom Quiz + 1 min buffer · **Topic** Stack — Balanced Parenthesis Validation · **Prerequisite** Implement Min Stack
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -200,9 +200,15 @@ End of string, stack empty → **valid**.
 
 ---
 
-## Classroom Quiz (44–50 min)
+## Classroom Quiz (44–49 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session, covering the three failure modes and the count-isn't-enough misconception.
+
+---
+
+## Buffer (49–50 min) · Flex — not instructional
+
+Unscheduled on purpose. If you land here with time on the clock, let the session end early — don't stretch content to fill it.
 
 ---
 

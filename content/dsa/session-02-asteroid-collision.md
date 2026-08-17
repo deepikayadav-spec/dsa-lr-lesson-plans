@@ -1,6 +1,6 @@
 # Asteroid Collision
 
-**Duration** 50 min total — 43 min instruction + 7 min Classroom Quiz · **Topic** Stack — Asteroid Collision Simulation · **Prerequisite** Balanced Parenthesis
+**Duration** 50 min total — 43 min instruction + 5 min Classroom Quiz + 2 min buffer · **Topic** Stack — Asteroid Collision Simulation · **Prerequisite** Balanced Parenthesis
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -125,9 +125,15 @@ Final stack: `[-8, 2]`.
 
 ---
 
-## Classroom Quiz (43–50 min)
+## Classroom Quiz (43–48 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block, covering the collision rules and the moving-apart trap case.
+
+---
+
+## Buffer (48–50 min) · Flex — not instructional
+
+Unscheduled on purpose. If you land here with time on the clock, let the session end early — don't stretch content to fill it.
 
 ---
 
