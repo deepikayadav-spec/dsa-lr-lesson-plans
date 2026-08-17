@@ -37,6 +37,10 @@ def inline(t):
 
     t = re.sub(r"`([^`]+)`", stash, t)
     t = html.escape(t)
+    # images before links - "![alt](src)" is a superset of the link pattern,
+    # and must consume the leading "!" or the link regex leaves it dangling
+    t = re.sub(r"!\[([^\]]*)\]\(([^)]+)\)",
+               r'<img src="\2" alt="\1" loading="lazy">', t)
     t = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', t)
     t = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", t)
     # twice: an outer *…* wrapping an inner *…* only becomes matchable once the
@@ -323,6 +327,8 @@ a.item .t{flex:1}
  scroll-margin-top:120px}
 .doc h4{font-size:13.5px;font-weight:680;margin:20px 0 6px;color:var(--muted)}
 .doc p{margin:0 0 12px}
+.doc img{max-width:100%;height:auto;display:block;border-radius:8px;
+ border:1px solid var(--rule2);margin:4px 0 14px}
 .doc ul,.doc ol{margin:0 0 14px;padding-left:22px}
 .doc li{margin:0 0 5px}
 .doc hr{border:0;border-top:1px solid var(--rule2);margin:26px 0}

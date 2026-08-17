@@ -10,7 +10,7 @@ Read a session top to bottom once; after that you'll recognize the shape instant
 
 **Learning Objectives** — 4 outcomes, tagged REMEMBERING → UNDERSTANDING → APPLYING → ANALYZING. Not delivered to students; this is what the rest of the plan is built to hit.
 
-**Warm-Up Poll (0–6 min)** — 4–5 MCQs on the *previous* session, run as a live poll. Retrieval practice, not new material.
+**Warm-Up Poll (0–6 min)** — 4–5 MCQs on the *previous* session, run as a live poll using **Mentimeter or a similar live-polling tool** — project the question, students answer on their phones/laptops, results shown live. Not a show-of-hands. Retrieval practice, not new material.
 
 **Hook (6–9 min)** — a short question or board example that motivates *why today's problem needs a new tool*, before any formal definition. Scripted, close to verbatim.
 
