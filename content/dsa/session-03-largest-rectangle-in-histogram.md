@@ -54,6 +54,8 @@ Let a few guesses land (actual answer: height 5, width 2, area 10 — bars at he
 
 ## Problem Statement (9–13 min)
 
+*(Deck: Slide 4 — problem definition; Slides 5–20 — the deck's own animated examples)*
+
 Given an array of non-negative integers `heights` representing histogram bars of width 1 standing side by side, find the area of the largest rectangle that fits entirely under the outline.
 
 **Input:** an array of integers `heights` — each bar's height, width fixed at 1.
@@ -72,6 +74,8 @@ Why: bar `2` alone gives area `2`; bar `4` alone gives area `4`; both together a
 ---
 
 ## Concept Walkthrough (13–36 min)
+
+*(Deck: Two-pass NSE/PSE — Approach Slides 21–22, Dry Run Slides 23–61, Pseudocode Slides 62–64, Complexity Slides 65–66, C++ Code Slides 67–68. One-pass optimal — Approach Slides 69–70, Dry Run Slides 71–88, Pseudocode Slides 89–91, Complexity Slides 92–94, C++ Code Slides 95–97, Summary Slides 98–100)*
 
 **Core idea (two-pass):** for every bar, width = `NSE[i] - PSE[i] - 1`, where NSE/PSE are the nearest strictly-smaller bar to the right/left, each found with a monotonic stack in one pass. **Core idea (one-pass, optimal):** instead of precomputing both arrays, pop-and-compute — when a shorter bar arrives, pop the taller one off the stack and compute its area immediately, using the current index as its right boundary.
 

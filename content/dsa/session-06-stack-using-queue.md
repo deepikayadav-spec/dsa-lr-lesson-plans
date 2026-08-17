@@ -50,6 +50,8 @@ Let students think for a moment; most will assume this needs a completely differ
 
 ## Problem Statement (9–13 min)
 
+*(Deck: Slides 4–7 — problem definition, operations to support)*
+
 Implement a stack — `push`, `pop`, `top` — using only a queue's `enqueue`/`dequeue` operations.
 
 **Input:** a sequence of operations — `push(x)`, `pop()`, `top()`.
@@ -68,6 +70,8 @@ Why: LIFO order — last pushed, first popped.
 ---
 
 ## Concept Walkthrough (13–29 min)
+
+*(Deck: Approach Slides 8–10 · Dry Run Slides 11–28 · Pseudocode Slides 29–30 · Complexity Slides 31–34 · C++ Code Slides 35–36 — deck continues to Slide 58 with a second, alternate Dry Run pass, not needed for this script)*
 
 **Core idea:** simulate a stack using only a queue's `enqueue`/`dequeue`. On every `push`, enqueue the new element, then rotate the rest of the queue behind it — exactly `size-before-the-push` rotations — so the newest element ends up at the front, where `pop()` and `top()` can read it directly.
 

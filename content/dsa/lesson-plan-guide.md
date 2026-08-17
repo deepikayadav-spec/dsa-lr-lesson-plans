@@ -4,22 +4,7 @@
 
 ---
 
-## 1. The 6 sessions, in order
-
-| # | Session | Topic | Duration |
-|---|---|---|---|
-| 1 | Balanced Parenthesis | Stack — bracket validation | 50 min |
-| 2 | Asteroid Collision | Stack — simulation | 50 min |
-| 3 | Largest Rectangle in Histogram | Stack — NSE/PSE two-pass + one-pass optimal | 50 min |
-| 4 | Queue — Intro & Array Implementation | Queue — fixed-capacity array, circular wraparound | 50 min |
-| 5 | Queue — Linked List Implementation | Queue — node pointers, no capacity ceiling | 50 min |
-| 6 | Stack Using Queue | Constraint problem — simulate LIFO with FIFO | 50 min |
-
-Each depends on the one before it — the Warm-Up Poll in every session retrieves the previous session's material by name. Don't reorder them.
-
----
-
-## 2. Anatomy of a session — same 9 sections, every time
+## 1. Anatomy of a session — same 9 sections, every time
 
 Read a session top to bottom once; after that you'll recognize the shape instantly.
 
@@ -29,14 +14,16 @@ Read a session top to bottom once; after that you'll recognize the shape instant
 
 **Hook (6–9 min)** — a short question or board example that motivates *why today's problem needs a new tool*, before any formal definition. Scripted, close to verbatim.
 
-**Problem Statement (9–13 min)** — the actual problem, stated cleanly: input, output, what makes an output correct, and **2 worked input/output examples**. This exists so students know exactly what they're being asked to solve before you explain how — deliver it before Concept Walkthrough, not folded into it.
+**Problem Statement (9–13 min)** — the actual problem, stated cleanly: input, output, what makes an output correct, and **2 worked input/output examples**. This exists so students know exactly what they're being asked to solve before you explain how — deliver it before Concept Walkthrough, not folded into it. A *(Deck: Slides …)* line under the heading tells you which slides of the session's actual deck this maps to — flip there, don't paraphrase from memory.
 
 **Concept Walkthrough (13 min → varies)** — the algorithm itself, in a fixed sub-order every time:
 1. **Core idea** — the one-paragraph insight.
-2. **Worked example** — a specific input traced step by step, with stack/queue state shown after *every* step (see §3 for the notation).
+2. **Worked example** — a specific input traced step by step, with stack/queue state shown after *every* step (see §2 for the notation).
 3. **Pseudocode** — derived from the core idea, language-neutral.
 4. **C++ implementation** — the pseudocode made concrete.
 5. **Checkpoint** — one cold-call question that tests whether the core idea actually landed, asked live before moving on.
+
+Same as Problem Statement, a *(Deck: …)* line under the heading gives the real slide ranges for each of these five, in order — so you know exactly when to flip the deck forward.
 
 This block's length is the one thing that varies session to session (17–23 min) — it's sized to the algorithm's real complexity, not padded or compressed to a fixed number.
 
@@ -50,7 +37,7 @@ This block's length is the one thing that varies session to session (17–23 min
 
 ---
 
-## 3. Reading the stack/queue traces
+## 2. Reading the stack/queue traces
 
 Every worked example and activity shows state after each step as a **plain top→bottom (or front→back) list — never wrapped in `[ ]`.** An empty stack/queue is written explicitly as `(empty)`, never a blank list.
 
@@ -58,7 +45,7 @@ This is deliberate, not stylistic: several of these problems take `[` and `]` as
 
 ---
 
-## 4. Optional Activity — what it's for
+## 3. Optional Activity — what it's for
 
 Sessions 1, 2, 4, 5, and 6 each carry a second activity, demoted to an **Optional Activity** section at the end (after Common Misconceptions, no clock time attached — it won't show up on the on-page timeline). This is real, usable material, not a discard pile:
 
@@ -70,7 +57,7 @@ It was demoted, not deleted, specifically because it duplicated a skill Concept 
 
 ---
 
-## 5. Quick reference
+## 4. Quick reference
 
 | Section | Fixed at | Notes |
 |---|---|---|
@@ -85,6 +72,6 @@ It was demoted, not deleted, specifically because it duplicated a skill Concept 
 
 ---
 
-## 6. This guide vs. the Practice Session Playbook
+## 5. This guide vs. the Practice Session Playbook
 
 This document explains the **lecture** sessions above — one instructor, one room, delivering a concept. The **Practice Session Playbook** is a different document for a different session type: a timed, silent work block where students attempt problems themselves and you check progress pod by pod. Don't mix the two formats — a lecture session doesn't have pods or a progress tracker, and a practice block doesn't have a Concept Walkthrough.

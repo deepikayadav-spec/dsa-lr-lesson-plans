@@ -52,6 +52,8 @@ Let a few guesses land.
 
 ## Problem Statement (9–13 min)
 
+*(Deck: Slides 4–8 — problem definition + both examples)*
+
 Given a string `s` containing only the six bracket characters `(`, `)`, `{`, `}`, `[`, `]`, determine whether it is **valid**.
 
 **Input:** a string `s` made up only of those six characters.
@@ -72,6 +74,8 @@ Why: `[` is opened but the string tries to close it with a plain `)`, at a point
 ---
 
 ## Concept Walkthrough (13–30 min)
+
+*(Deck: Approach Slides 9–10 · Dry Run Slides 11–30 · Pseudocode Slides 31–32 · Complexity Slides 33–35 · C++ Code Slides 36–37 · Key Takeaways Slides 38–39)*
 
 **Core idea:** push every opening bracket onto a stack. On a closing bracket, check the top of the stack — if it matches, pop; if it doesn't match, or the stack is already empty, the string is invalid. After the whole string, the stack must also be empty — leftover unclosed openings are invalid too.
 

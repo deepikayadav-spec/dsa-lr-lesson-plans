@@ -50,6 +50,8 @@ Let students answer (no). Then:
 
 ## Problem Statement (9–13 min)
 
+*(Deck: Slides 4–6 — introduction, node structure, front/back pointers)*
+
 Design a queue backed by a singly linked list, supporting FIFO insertion and removal with no fixed capacity.
 
 **Input:** a sequence of operations — `enqueue(x)`, `dequeue()`, `front()`.
@@ -68,6 +70,8 @@ Why: there's no node to remove; unlike the array version, there's no capacity ce
 ---
 
 ## Concept Walkthrough (13–29 min)
+
+*(Deck: Worked example Slides 7–21 · Pseudocode Slides 22–27 · Complexity Slide 28 · C++ Code Slides 29–36)*
 
 **Core idea:** swap the fixed array for a linked list — `front` and `back` become **node pointers**, not indices, both `null` when empty. No capacity, no modulo. `push` links a new node after `back` and moves `back` to it; `pop` moves `front` to `front->next`.
 

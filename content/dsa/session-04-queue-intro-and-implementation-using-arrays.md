@@ -50,6 +50,8 @@ Let students answer (first joined). Then:
 
 ## Problem Statement (9–13 min)
 
+*(Deck: Slides 4–6 — problem definition + example diagram)*
+
 Design a queue backed by a fixed-size array, supporting FIFO insertion and removal.
 
 **Input:** a fixed capacity, then a sequence of operations — `enqueue(x)`, `dequeue()`, `front()`.
@@ -68,6 +70,8 @@ Why: a fixed-capacity array queue has a hard ceiling — no room for a third ele
 ---
 
 ## Concept Walkthrough (13–29 min)
+
+*(Deck: Setup Slides 7–8 · Worked example Slides 9–29 · Pseudocode Slides 30–35 · Complexity Slide 38 · C++ Code Slides 39–45)*
 
 **Core idea:** a fixed-size array queue tracks two pointers — `front` (where you remove) and `back` (where you add), both starting at `-1` to mean empty. When `back` reaches the end of the array but slots have been freed at the front (from prior pops), it **wraps around** via `back = (back + 1) % capacity` instead of reporting full.
 

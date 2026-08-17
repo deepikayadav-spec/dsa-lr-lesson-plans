@@ -52,6 +52,8 @@ Let students reason: `10` (moving right) and `-10` (moving left) are heading tow
 
 ## Problem Statement (9–13 min)
 
+*(Deck: Slides 4–7 — problem definition; Slides 8–29 carry the deck's own animated examples, which overlap with the Worked example below)*
+
 Given an array of integers `asteroids`, each entry's absolute value is its size and its sign is its direction — positive moves right, negative moves left, all at the same speed. Simulate every collision and return the asteroids that remain.
 
 **Input:** an array of non-zero integers `asteroids`.
@@ -72,6 +74,8 @@ Why: equal magnitude, opposite directions — both explode, nothing survives.
 ---
 
 ## Concept Walkthrough (13–29 min)
+
+*(Deck: Approach Slides 30–31 · Dry Run Slides 32–61 (also Slides 8–29 for the two worked examples) · Pseudocode Slides 62–63 · Complexity Slides 64–66 · C++ Code Slides 67–68 · Key Takeaways Slides 69–70 — deck continues to Slide 106 with bonus/alternate practice examples, not needed for this script)*
 
 **Core idea:** keep a stack of surviving asteroids. Push positives (moving right) directly. For a negative (moving left) asteroid, keep colliding it against the stack's top — in a `while`, not an `if` — popping any smaller positive, until it either meets something bigger/equal or the stack empties.
 
