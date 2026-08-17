@@ -1,6 +1,6 @@
 # Queue Implementation Using Linked List
 
-**Duration** 50 min total — 43 min instruction + 5 min Classroom Quiz + 2 min buffer · **Topic** Queue — Implementation Using Linked List · **Prerequisite** Introduction to Queue & Implementation Using Arrays
+**Duration** 50 min total — 36 min instruction + 5 min Classroom Quiz + 9 min buffer · **Topic** Queue — Implementation Using Linked List · **Prerequisite** Introduction to Queue & Implementation Using Arrays
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -137,33 +137,7 @@ public:
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Live Trace: Push and Pop by Pointer (29–36 min)
-
-**Format:** Live Coding / Dry-Run Relay · **Exposes:** whether students can track `front` and `back` as they move between actual nodes, rather than array indices — the one genuinely new mental model this session introduces.
-
-**Setup line (say this):**
-> *"Empty queue. Sequence: `push(A)`, `push(B)`, `push(C)`, `pop()`, `pop()`. After each step, tell me what `front` and `back` point to — before I confirm."*
-
-Run **one operation at a time**:
-
-```
-push(A) → queue was empty → front = back = node(A).             front→A←back
-push(B) → back->next = node(B); back = node(B).                 front→A→B←back
-push(C) → back->next = node(C); back = node(C).                 front→A→B→C←back
-pop()   → front = front->next = node(B).                        front→B→C←back
-pop()   → front = front->next = node(C). Now front == back == node(C).   front→C←back
-```
-
-**How it surfaces:** After the second `pop()`, ask before revealing: *"`front` and `back` now point at the same node — does that mean the queue is empty?"* Correct: no — it means exactly one element remains (`C`), the same "front equals back, one element" case from last session's Activity 2, just expressed as pointers instead of indices.
-
-**Debrief line:**
-> *"Same underlying situations as last session — 'one element left' and 'completely empty' are still two different states that happen to look similar. The representation changed from indices to pointers; the logic you have to get right didn't."*
-
-**Cut rule:** If running short, do just `push(A)` and the second `pop()` — one shows the empty-queue special case, the other shows the one-element state.
-
----
-
-## ⚡ Active Learning Strategy 2 — Spot the Bug: The Missing Reset (36–43 min)
+## ⚡ Active Learning Strategy — Spot the Bug: The Missing Reset (29–36 min)
 
 **Format:** Spot the Bug · **Exposes:** the single most common real bug in this implementation — forgetting to reset `back` to `null` when the last element is popped, leaving it dangling.
 
@@ -193,15 +167,43 @@ pop() {
 
 ---
 
-## Classroom Quiz (43–48 min)
+## Classroom Quiz (36–41 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
 
 ---
 
-## Buffer (48–50 min) · Flex — not instructional
+## Buffer (41–50 min) · Flex — not instructional
 
 Unscheduled on purpose. If you land here with time on the clock, let the session end early — don't stretch content to fill it.
+
+---
+
+## Optional Activity — Live Trace: Push and Pop by Pointer
+
+*Not part of the core timed flow — pointer movement is already covered in Concept Walkthrough's worked example. Run this only if the room finishes early, or as a follow-up warm-up next session.*
+
+**Format:** Live Coding / Dry-Run Relay · **Exposes:** whether students can track `front` and `back` as they move between actual nodes, rather than array indices — the one genuinely new mental model this session introduces.
+
+**Setup line (say this):**
+> *"Empty queue. Sequence: `push(A)`, `push(B)`, `push(C)`, `pop()`, `pop()`. After each step, tell me what `front` and `back` point to — before I confirm."*
+
+Run **one operation at a time**:
+
+```
+push(A) → queue was empty → front = back = node(A).             front→A←back
+push(B) → back->next = node(B); back = node(B).                 front→A→B←back
+push(C) → back->next = node(C); back = node(C).                 front→A→B→C←back
+pop()   → front = front->next = node(B).                        front→B→C←back
+pop()   → front = front->next = node(C). Now front == back == node(C).   front→C←back
+```
+
+**How it surfaces:** After the second `pop()`, ask before revealing: *"`front` and `back` now point at the same node — does that mean the queue is empty?"* Correct: no — it means exactly one element remains (`C`), the same "front equals back, one element" case from last session's Activity 2, just expressed as pointers instead of indices.
+
+**Debrief line:**
+> *"Same underlying situations as last session — 'one element left' and 'completely empty' are still two different states that happen to look similar. The representation changed from indices to pointers; the logic you have to get right didn't."*
+
+**Cut rule:** If running short, do just `push(A)` and the second `pop()` — one shows the empty-queue special case, the other shows the one-element state.
 
 ---
 

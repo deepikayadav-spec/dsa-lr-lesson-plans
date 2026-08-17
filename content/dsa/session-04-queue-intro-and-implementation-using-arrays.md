@@ -1,6 +1,6 @@
 # Introduction to Queue & Implementation Using Arrays
 
-**Duration** 50 min total — 43 min instruction + 5 min Classroom Quiz + 2 min buffer · **Topic** Queue — Introduction and Array Implementation · **Prerequisite** Largest Rectangle in Histogram
+**Duration** 50 min total — 36 min instruction + 5 min Classroom Quiz + 9 min buffer · **Topic** Queue — Introduction and Array Implementation · **Prerequisite** Largest Rectangle in Histogram
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -138,35 +138,7 @@ public:
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Predict the Output: Trace the Circular Wraparound (29–36 min)
-
-**Format:** Predict-the-Output / Live Trace · **Exposes:** whether students can track `front`, `back`, and `size` through a full wraparound cycle themselves — the single trickiest mechanical detail in this session.
-
-**Setup line (say this):**
-> *"Capacity-4 array, starts empty. Sequence: `push(A), push(B), push(C), pop(), pop(), push(D), push(E)`. After each operation, tell me `front`, `back`, and what's actually stored, before I confirm."*
-
-Run **one operation at a time**:
-
-```
-push(A) → front=0, back=0.                arr: [A, _, _, _]
-push(B) → back=1.                         arr: [A, B, _, _]
-push(C) → back=2.                         arr: [A, B, C, _]
-pop()   → front=1 (A removed logically).  arr: [A, B, C, _]  (A still physically there, just unreachable)
-pop()   → front=2 (B removed logically).  arr: [A, B, C, _]
-push(D) → back=3.                         arr: [A, B, C, D]
-push(E) → back=(3+1)%4=0 → wraps!         arr: [E, B, C, D]  (E overwrites A's old slot)
-```
-
-**How it surfaces:** At `push(E)`, ask before revealing: *"Is the array full at this point? `back` is about to go past index 3 — what happens?"* Correct: it's *not* full — `front` is sitting at index 2, meaning slots 0 and 1 are free — so `back` wraps to `0` and reuses that freed slot, rather than reporting overflow.
-
-**Debrief line:**
-> *"The values at indices 0 and 1 never got erased — `pop()` just moved `front` past them. `push(E)` is the operation that actually overwrites what's there. Physical array position and logical queue position are two different things, and that gap is exactly what the modulo arithmetic bridges."*
-
-**Cut rule:** If running short, do only the `push(D)` and `push(E)` steps — the wraparound is the entire point; the earlier pushes and pops are just setup.
-
----
-
-## ⚡ Active Learning Strategy 2 — Spot the Bug: Full or Empty? (36–43 min)
+## ⚡ Active Learning Strategy — Spot the Bug: Full or Empty? (29–36 min)
 
 **Format:** Spot the Bug · **Exposes:** the classic array-queue ambiguity — `front == back` can mean either "completely empty" or "exactly one element," and conflating the two is the most common real bug in this implementation.
 
@@ -198,15 +170,45 @@ push(E) → back=(3+1)%4=0 → wraps!         arr: [E, B, C, D]  (E overwrites A
 
 ---
 
-## Classroom Quiz (43–48 min)
+## Classroom Quiz (36–41 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
 
 ---
 
-## Buffer (48–50 min) · Flex — not instructional
+## Buffer (41–50 min) · Flex — not instructional
 
 Unscheduled on purpose. If you land here with time on the clock, let the session end early — don't stretch content to fill it.
+
+---
+
+## Optional Activity — Predict the Output: Trace the Circular Wraparound
+
+*Not part of the core timed flow — the wraparound mechanic is already covered in Concept Walkthrough's worked example. Run this only if the room finishes early, or as a follow-up warm-up next session.*
+
+**Format:** Predict-the-Output / Live Trace · **Exposes:** whether students can track `front`, `back`, and `size` through a full wraparound cycle themselves — the single trickiest mechanical detail in this session.
+
+**Setup line (say this):**
+> *"Capacity-4 array, starts empty. Sequence: `push(A), push(B), push(C), pop(), pop(), push(D), push(E)`. After each operation, tell me `front`, `back`, and what's actually stored, before I confirm."*
+
+Run **one operation at a time**:
+
+```
+push(A) → front=0, back=0.                arr: [A, _, _, _]
+push(B) → back=1.                         arr: [A, B, _, _]
+push(C) → back=2.                         arr: [A, B, C, _]
+pop()   → front=1 (A removed logically).  arr: [A, B, C, _]  (A still physically there, just unreachable)
+pop()   → front=2 (B removed logically).  arr: [A, B, C, _]
+push(D) → back=3.                         arr: [A, B, C, D]
+push(E) → back=(3+1)%4=0 → wraps!         arr: [E, B, C, D]  (E overwrites A's old slot)
+```
+
+**How it surfaces:** At `push(E)`, ask before revealing: *"Is the array full at this point? `back` is about to go past index 3 — what happens?"* Correct: it's *not* full — `front` is sitting at index 2, meaning slots 0 and 1 are free — so `back` wraps to `0` and reuses that freed slot, rather than reporting overflow.
+
+**Debrief line:**
+> *"The values at indices 0 and 1 never got erased — `pop()` just moved `front` past them. `push(E)` is the operation that actually overwrites what's there. Physical array position and logical queue position are two different things, and that gap is exactly what the modulo arithmetic bridges."*
+
+**Cut rule:** If running short, do only the `push(D)` and `push(E)` steps — the wraparound is the entire point; the earlier pushes and pops are just setup.
 
 ---
 

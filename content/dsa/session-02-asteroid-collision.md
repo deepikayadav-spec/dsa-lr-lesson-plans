@@ -1,6 +1,6 @@
 # Asteroid Collision
 
-**Duration** 50 min total — 43 min instruction + 5 min Classroom Quiz + 2 min buffer · **Topic** Stack — Asteroid Collision Simulation · **Prerequisite** Balanced Parenthesis
+**Duration** 50 min total — 36 min instruction + 5 min Classroom Quiz + 9 min buffer · **Topic** Stack — Asteroid Collision Simulation · **Prerequisite** Balanced Parenthesis
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -142,7 +142,7 @@ Each asteroid is pushed once and popped at most once — O(N) time, O(N) space.
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Spot the Bug: Collide or Not? (29–36 min)
+## ⚡ Active Learning Strategy — Spot the Bug: Collide or Not? (29–36 min)
 
 **ALS format:** Spot the Bug / Predict-the-Output — exposes whether students can correctly classify each pairwise interaction into "collide" vs. "no collision," and if colliding, resolve the outcome — the single skill the whole algorithm depends on.
 
@@ -176,7 +176,21 @@ Each asteroid is pushed once and popped at most once — O(N) time, O(N) space.
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Live Coding / Dry-Run Relay (36–43 min)
+## Classroom Quiz (36–41 min)
+
+**Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block, covering the collision rules and the moving-apart trap case.
+
+---
+
+## Buffer (41–50 min) · Flex — not instructional
+
+Unscheduled on purpose. If you land here with time on the clock, let the session end early — don't stretch content to fill it.
+
+---
+
+## Optional Activity — Live Coding / Dry-Run Relay
+
+*Not part of the core timed flow — Concept Walkthrough's worked example already traces the stack step by step. Run this only if the room finishes early, or as a follow-up warm-up next session.*
 
 **ALS format:** Live Coding / Dry-Run Relay — exposes whether students can execute a multi-step collision chain themselves, including a case where one incoming asteroid destroys more than one stack element in a row. "While, not if" is the last mechanical detail students need before they can implement this alone.
 
@@ -202,18 +216,6 @@ Final stack: `-8, 2`.
 > *"One incoming asteroid destroyed two stack elements in a row, in a single step of the outer loop — that's the `while`, not `if`, doing its job. It only stops early if it meets something bigger than itself, or something moving the same direction."*
 
 **Cut rule:** Do only the `-8` step — it's the one that carries the whole "keep colliding until stopped" lesson; `6`, `3`, and `2` are all simple pushes.
-
----
-
-## Classroom Quiz (43–48 min)
-
-**Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block, covering the collision rules and the moving-apart trap case.
-
----
-
-## Buffer (48–50 min) · Flex — not instructional
-
-Unscheduled on purpose. If you land here with time on the clock, let the session end early — don't stretch content to fill it.
 
 ---
 

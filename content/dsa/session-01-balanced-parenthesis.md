@@ -1,6 +1,6 @@
 # Balanced Parenthesis
 
-**Duration** 50 min total — 44 min instruction + 5 min Classroom Quiz + 1 min buffer · **Topic** Stack — Balanced Parenthesis Validation · **Prerequisite** Implement Min Stack
+**Duration** 50 min total — 37 min instruction + 5 min Classroom Quiz + 8 min buffer · **Topic** Stack — Balanced Parenthesis Validation · **Prerequisite** Implement Min Stack
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -135,7 +135,7 @@ One pass, one stack — O(N) time, O(N) space.
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Spot the Bug (30–37 min)
+## ⚡ Active Learning Strategy — Spot the Bug (30–37 min)
 
 **ALS format:** Spot the Bug — exposes whether students can identify *which* of the three failure modes applies, not just guess valid/invalid from a glance. Naming the specific failure is the actual transferable skill here, not just voting.
 
@@ -169,7 +169,21 @@ One pass, one stack — O(N) time, O(N) space.
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Live Coding / Dry-Run Relay (37–44 min)
+## Classroom Quiz (37–42 min)
+
+**Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session, covering the three failure modes and the count-isn't-enough misconception.
+
+---
+
+## Buffer (42–50 min) · Flex — not instructional
+
+Unscheduled on purpose. If you land here with time on the clock, let the session end early — don't stretch content to fill it.
+
+---
+
+## Optional Activity — Live Coding / Dry-Run Relay
+
+*Not part of the core timed flow — Concept Walkthrough's worked example already traces the stack step by step. Run this only if the room finishes early, or as a follow-up warm-up next session.*
 
 **ALS format:** Live Coding / Dry-Run Relay — exposes whether students can execute the full algorithm themselves end to end, on a string they haven't seen. Closing activity: the first time students run the complete algorithm start to finish, on eight characters in a row, without the safety of a partial example.
 
@@ -197,18 +211,6 @@ End of string, stack empty → **valid**.
 > *"Every close only ever looks at one thing: the top of the stack. Not the whole string, not memory — just the top. That's the entire algorithm, executed eight times in a row."*
 
 **Cut rule:** Do the first four characters only (`{[()`) plus the final `}` — enough to show both a push run and a full unwind to empty.
-
----
-
-## Classroom Quiz (44–49 min)
-
-**Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session, covering the three failure modes and the count-isn't-enough misconception.
-
----
-
-## Buffer (49–50 min) · Flex — not instructional
-
-Unscheduled on purpose. If you land here with time on the clock, let the session end early — don't stretch content to fill it.
 
 ---
 
