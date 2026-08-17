@@ -1,6 +1,6 @@
 # Balanced Parenthesis
 
-**Duration** 46 min total — 39 min instruction + 7 min Classroom Quiz · **Topic** Stack — Balanced Parenthesis Validation · **Prerequisite** Implement Min Stack
+**Duration** 50 min total — 44 min instruction + 6 min Classroom Quiz · **Topic** Stack — Balanced Parenthesis Validation · **Prerequisite** Implement Min Stack
 **Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
 
 ---
@@ -38,7 +38,7 @@ By the end of this session, students will be able to:
 
 ---
 
-## Hook (6–10 min)
+## Hook (6–9 min)
 
 Write this on the board: `(){[{}])`
 
@@ -50,13 +50,84 @@ Let a few guesses land.
 
 ---
 
-## Concept Walkthrough (10–25 min)
+## Problem Statement (9–13 min)
+
+Given a string `s` containing only the six bracket characters `(`, `)`, `{`, `}`, `[`, `]`, determine whether it is **valid**.
+
+**Input:** a string `s` made up only of those six characters.
+**Output:** a boolean — `true` if `s` is valid, `false` otherwise.
+
+A string is valid when every opening bracket has a closing bracket of the *same type*, and brackets close in the correct order — the most recently opened bracket must be the next one closed.
+
+**Example 1**
+Input: `s = "{}()[]"`
+Output: `true`
+Why: each pair opens and closes immediately, in order, no nesting — every type matches its own kind.
+
+**Example 2**
+Input: `s = "(){[{}])"`
+Output: `false`
+Why: `[` is opened but the string tries to close it with a plain `)`, at a point where the stack's top is actually `{` — wrong bracket closing at that position.
+
+---
+
+## Concept Walkthrough (13–30 min)
 
 **Core idea:** push every opening bracket onto a stack. On a closing bracket, check the top of the stack — if it matches, pop; if it doesn't match, or the stack is already empty, the string is invalid. After the whole string, the stack must also be empty — leftover unclosed openings are invalid too.
 
-**Worked example** — `s = "(){[{}])"`: `(` push. `)` matches top `(`, pop — stack empty. `{` push. `[` push. `{` push (stack: `{`, `[`, `{`). `}` matches top `{`, pop (stack: `{`, `[`). `]` matches top `[`, pop (stack: `{`). `)` — top is `{`, does **not** match `)` — invalid, stop.
+**Worked example** — `s = "(){[{}])"`. Show the stack top→bottom after every character (written as a plain list, never in `[ ]` — those brackets are themselves valid input characters here, so an empty stack is written as `(empty)`, not `[]`):
+
+```
+(   → push                    Stack: (
+)   → matches top (, pop      Stack: (empty)
+{   → push                    Stack: {
+[   → push                    Stack: [, {
+{   → push                    Stack: {, [, {
+}   → matches top {, pop      Stack: [, {
+]   → matches top [, pop      Stack: {
+)   → top is {, no match      INVALID — stop
+```
 
 **Say explicitly:** counting brackets isn't enough — `(){[{}])` has 3 of each type and is still invalid. Order and type both matter, not just totals.
+
+**Pseudocode** — derive it straight from the core idea:
+
+```
+function isValid(s):
+    stack = empty stack
+    for each character c in s:
+        if c is an opening bracket ('(', '{', '['):
+            push c onto stack
+        else:                          # c is a closing bracket
+            if stack is empty:
+                return false           # empty-stack-on-close
+            top = stack.pop()
+            if top does not match c:
+                return false           # mismatched-type-on-close
+    return stack is empty              # leftover-stack-at-the-end check
+```
+
+**C++ implementation:**
+
+```cpp
+bool isValid(string s) {
+    stack<char> st;
+    unordered_map<char, char> match = {{')', '('}, {']', '['}, {'}', '{'}};
+
+    for (char c : s) {
+        if (c == '(' || c == '{' || c == '[') {
+            st.push(c);
+        } else {
+            if (st.empty() || st.top() != match[c])
+                return false;
+            st.pop();
+        }
+    }
+    return st.empty();
+}
+```
+
+One pass, one stack — O(N) time, O(N) space.
 
 **Checkpoint:**
 > *"Suppose the string is just `"(("` — two opening brackets, nothing else. Valid or invalid?"*
@@ -64,7 +135,7 @@ Let a few guesses land.
 
 ---
 
-## ⚡ Active Learning Strategy 1 — Spot the Bug (25–32 min)
+## ⚡ Active Learning Strategy 1 — Spot the Bug (30–37 min)
 
 **ALS format:** Spot the Bug — exposes whether students can identify *which* of the three failure modes applies, not just guess valid/invalid from a glance. Naming the specific failure is the actual transferable skill here, not just voting.
 
@@ -98,24 +169,24 @@ Let a few guesses land.
 
 ---
 
-## ⚡ Active Learning Strategy 2 — Live Coding / Dry-Run Relay (32–39 min)
+## ⚡ Active Learning Strategy 2 — Live Coding / Dry-Run Relay (37–44 min)
 
 **ALS format:** Live Coding / Dry-Run Relay — exposes whether students can execute the full algorithm themselves end to end, on a string they haven't seen. Closing activity: the first time students run the complete algorithm start to finish, on eight characters in a row, without the safety of a partial example.
 
 **Setup line:**
 > *"New string: `{[()()]}`. I want the stack state after every single character — call it out before I write it."*
 
-Run **one character at a time**, taking a prediction before each:
+Run **one character at a time**, taking a prediction before each. Stack shown top→bottom, plain list (same convention as the worked example — no `[ ]` around it, empty stack written as `(empty)`):
 
 ```
-{   → push                    Stack: [{]
-[   → push                    Stack: [{, []
-(   → push                    Stack: [{, [, (]
-)   → matches top (           Stack: [{, []
-(   → push                    Stack: [{, [, (]
-)   → matches top (           Stack: [{, []
-]   → matches top [           Stack: [{]
-}   → matches top {           Stack: []
+{   → push                    Stack: {
+[   → push                    Stack: [, {
+(   → push                    Stack: (, [, {
+)   → matches top (, pop      Stack: [, {
+(   → push                    Stack: (, [, {
+)   → matches top (, pop      Stack: [, {
+]   → matches top [, pop      Stack: {
+}   → matches top {, pop      Stack: (empty)
 ```
 
 End of string, stack empty → **valid**.
@@ -129,7 +200,7 @@ End of string, stack empty → **valid**.
 
 ---
 
-## Classroom Quiz (39–46 min)
+## Classroom Quiz (44–50 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session, covering the three failure modes and the count-isn't-enough misconception.
 
