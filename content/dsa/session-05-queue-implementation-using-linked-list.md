@@ -38,7 +38,7 @@ Say: *"Five quick ones on the array-based queue before we swap the array out ent
 
 ---
 
-## Hook (6–10 min)
+## Hook (6–9 min)
 
 Ask: *"A shared office printer has a print queue. Someone can send a 200-page print job at 2 AM, and someone else can send one job every minute all day. Should that queue ever say 'sorry, full, try again later'?"*
 
@@ -48,11 +48,88 @@ Let students answer (no). Then:
 
 ---
 
-## Concept Walkthrough (10–29 min)
+## Problem Statement (9–13 min)
+
+Design a queue backed by a singly linked list, supporting FIFO insertion and removal with no fixed capacity.
+
+**Input:** a sequence of operations — `enqueue(x)`, `dequeue()`, `front()`.
+**Output:** for each `dequeue()`/`front()` call, the value returned (or an explicit error if the queue is empty).
+
+**Example 1**
+Input: `enqueue(10)`, `enqueue(20)`, `dequeue()`, `front()`
+Output: `dequeue() = 10`, `front() = 20`
+Why: `10` was added first, so it's the first one out; `20` is now the only element left, so it's also the front.
+
+**Example 2**
+Input: `dequeue()` on an empty queue
+Output: fails — `"Queue is empty"`
+Why: there's no node to remove; unlike the array version, there's no capacity ceiling, but emptiness still has to be checked.
+
+---
+
+## Concept Walkthrough (13–29 min)
 
 **Core idea:** swap the fixed array for a linked list — `front` and `back` become **node pointers**, not indices, both `null` when empty. No capacity, no modulo. `push` links a new node after `back` and moves `back` to it; `pop` moves `front` to `front->next`.
 
 **Worked example:** on the very first `push`, the queue was empty, so the new node becomes *both* `front` and `back`. When `pop()` removes the **last** remaining node, *both* `front` and `back` must be reset to `null` — resetting only `front` leaves `back` dangling, pointing at a deleted node.
+
+**Pseudocode** — derived from the core idea:
+
+```
+class Node: data, next
+
+class LinkedQueue:
+    front = null
+    back = null
+
+    function enqueue(x):
+        node = new Node(x)
+        if back == null:                # queue was empty
+            front = back = node
+        else:
+            back.next = node
+            back = node
+
+    function dequeue():
+        if front == null: error "Queue is empty"
+        x = front.data
+        front = front.next
+        if front == null: back = null   # just removed the last node
+        return x
+```
+
+**C++ implementation:**
+
+```cpp
+struct Node {
+    int data;
+    Node* next;
+    Node(int val) : data(val), next(nullptr) {}
+};
+
+class LinkedQueue {
+    Node* front = nullptr;
+    Node* back  = nullptr;
+public:
+    void enqueue(int x) {
+        Node* node = new Node(x);
+        if (!back) front = back = node;       // queue was empty
+        else { back->next = node; back = node; }
+    }
+
+    int dequeue() {
+        if (!front) throw runtime_error("Queue is empty");
+        int x = front->data;
+        Node* temp = front;
+        front = front->next;
+        if (!front) back = nullptr;           // just removed the last node
+        delete temp;
+        return x;
+    }
+};
+```
+
+`enqueue` and `dequeue` are both O(1) — no traversal, no capacity ceiling.
 
 **Checkpoint:**
 > *"When the last element is popped, why reset both pointers, not just `front`?"*

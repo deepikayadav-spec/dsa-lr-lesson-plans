@@ -40,7 +40,7 @@ Say: *"Five quick ones on asteroid collisions before we hit the hardest problem 
 
 ---
 
-## Hook (6–10 min)
+## Hook (6–9 min)
 
 Draw a rough skyline on the board — bars of heights `2, 1, 5, 6, 2, 3` sitting side by side, each width 1.
 
@@ -52,11 +52,90 @@ Let a few guesses land (actual answer: height 5, width 2, area 10 — bars at he
 
 ---
 
-## Concept Walkthrough (10–36 min)
+## Problem Statement (9–13 min)
+
+Given an array of non-negative integers `heights` representing histogram bars of width 1 standing side by side, find the area of the largest rectangle that fits entirely under the outline.
+
+**Input:** an array of integers `heights` — each bar's height, width fixed at 1.
+**Output:** an integer — the maximum rectangular area achievable.
+
+**Example 1**
+Input: `heights = [2, 1, 5, 6, 2, 3]`
+Output: `10`
+Why: the rectangle spanning the two bars of height `5` and `6` (both at least height 5) gives width `2 × 5 = 10` — the largest of any combination here.
+
+**Example 2**
+Input: `heights = [2, 4]`
+Output: `4`
+Why: bar `2` alone gives area `2`; bar `4` alone gives area `4`; both together are capped at the shorter bar's height, `min(2,4) × 2 = 4`. Best is `4`.
+
+---
+
+## Concept Walkthrough (13–36 min)
 
 **Core idea (two-pass):** for every bar, width = `NSE[i] - PSE[i] - 1`, where NSE/PSE are the nearest strictly-smaller bar to the right/left, each found with a monotonic stack in one pass. **Core idea (one-pass, optimal):** instead of precomputing both arrays, pop-and-compute — when a shorter bar arrives, pop the taller one off the stack and compute its area immediately, using the current index as its right boundary.
 
-**Worked example** — `arr = [2, 3, 8, 10, 6, 7, 5]`, bar at index 4 (height `6`): `NSE[4]=6, PSE[4]=1` → width `6-1-1=4` → area `24`. In the one-pass version, that same area is computed the instant `6` causes `10` and `8` to get popped off the stack.
+**Worked example** — one-pass approach on `heights = [2, 1, 5, 6, 2, 3]`, stack of indices shown after every step:
+
+```
+i=0 (h=2) → stack empty → push                          Stack (idx): 0
+i=1 (h=1) → h[0]=2 ≥ 1 → pop idx 0
+            area = 2 × 1 = 2   (stack now empty, width = i)
+            → push 1                                     Stack (idx): 1
+i=2 (h=5) → h[1]=1 < 5 → push                             Stack (idx): 1, 2
+i=3 (h=6) → h[2]=5 < 6 → push                             Stack (idx): 1, 2, 3
+i=4 (h=2) → h[3]=6 ≥ 2 → pop idx 3
+            area = 6 × (4−2−1) = 6
+            → h[2]=5 ≥ 2 → pop idx 2
+            area = 5 × (4−1−1) = 10
+            → h[1]=1 < 2 → push                           Stack (idx): 1, 4
+i=5 (h=3) → h[4]=2 < 3 → push                             Stack (idx): 1, 4, 5
+end        → pop idx 5: area = 3 × (6−4−1) = 3
+           → pop idx 4: area = 2 × (6−1−1) = 8
+           → pop idx 1: area = 1 × 6 = 6
+```
+
+Maximum area across all pops: `10` — matches the hook's eyeballed answer.
+
+**Pseudocode (optimal one-pass)** — the version actually implemented; the two-pass NSE/PSE version above is scaffolding for *why* it works:
+
+```
+function largestRectangleArea(heights):
+    stack = empty stack of indices
+    append 0 to heights                    # sentinel: forces a final flush
+    maxArea = 0
+    for i from 0 to heights.length - 1:
+        while stack not empty and heights[top(stack)] >= heights[i]:
+            topIdx = pop(stack)
+            height = heights[topIdx]
+            width = stack.empty() ? i : i - top(stack) - 1
+            maxArea = max(maxArea, height * width)
+        push i onto stack
+    return maxArea
+```
+
+**C++ implementation:**
+
+```cpp
+int largestRectangleArea(vector<int>& heights) {
+    stack<int> st;                 // stores indices
+    heights.push_back(0);          // sentinel: forces a final flush
+    int maxArea = 0;
+
+    for (int i = 0; i < (int)heights.size(); i++) {
+        while (!st.empty() && heights[st.top()] >= heights[i]) {
+            int height = heights[st.top()];
+            st.pop();
+            int width = st.empty() ? i : i - st.top() - 1;
+            maxArea = max(maxArea, height * width);
+        }
+        st.push(i);
+    }
+    return maxArea;
+}
+```
+
+Each index is pushed once and popped at most once — O(N) time, O(N) space.
 
 **Checkpoint:**
 > *"Why does the two-pass approach need separate NSE and PSE scans, in opposite directions?"*

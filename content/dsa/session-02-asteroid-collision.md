@@ -38,7 +38,7 @@ By the end of this session, students will be able to:
 
 ---
 
-## Hook (6–10 min)
+## Hook (6–9 min)
 
 Write this on the board: `[5, 10, -10, -5]` (positive = moving right, negative = moving left).
 
@@ -50,11 +50,91 @@ Let students reason: `10` (moving right) and `-10` (moving left) are heading tow
 
 ---
 
-## Concept Walkthrough (10–29 min)
+## Problem Statement (9–13 min)
+
+Given an array of integers `asteroids`, each entry's absolute value is its size and its sign is its direction — positive moves right, negative moves left, all at the same speed. Simulate every collision and return the asteroids that remain.
+
+**Input:** an array of non-zero integers `asteroids`.
+**Output:** an array of integers — the surviving asteroids, left to right, after all collisions resolve.
+
+Two asteroids collide only if a right-mover is followed by a left-mover converging on it. The smaller one explodes; if they're exactly equal, both explode. Same-direction asteroids never meet.
+
+**Example 1**
+Input: `asteroids = [5, 10, -5]`
+Output: `[5, 10]`
+Why: `5` and `10` both move right, no collision between them. `-5` then collides with `10` — `10` survives, `-5` explodes.
+
+**Example 2**
+Input: `asteroids = [8, -8]`
+Output: `[]`
+Why: equal magnitude, opposite directions — both explode, nothing survives.
+
+---
+
+## Concept Walkthrough (13–29 min)
 
 **Core idea:** keep a stack of surviving asteroids. Push positives (moving right) directly. For a negative (moving left) asteroid, keep colliding it against the stack's top — in a `while`, not an `if` — popping any smaller positive, until it either meets something bigger/equal or the stack empties.
 
-**Worked example** — `[7, 5, 4, -5, -6, -8, -9, 12]`: `7, 5, 4` all push. `-5` collides with `4` (explodes), then `5` (equal — both explode). `-6` collides with `7` (`7` survives, `-6` explodes). `-8` collides with `7` (`7` explodes, stack empty, push `-8`). `-9` — same direction as `-8` — push. `12` — moving apart from `-9` — push. Final: `[-8, -9, 12]`.
+**Worked example** — `[7, 5, 4, -5, -6, -8, -9, 12]`. Stack shown bottom→top after every element:
+
+```
+7   → moving right → push                              Stack: 7
+5   → moving right, same direction → push               Stack: 7, 5
+4   → moving right, same direction → push               Stack: 7, 5, 4
+-5  → top 4: |4|<|-5| → 4 explodes
+      new top 5: |5|=|-5| → both explode                Stack: 7
+-6  → top 7: |7|>|-6| → 7 survives, -6 explodes          Stack: 7
+-8  → top 7: |7|<|-8| → 7 explodes, stack empty → push   Stack: -8
+-9  → moving left, same direction as top → push          Stack: -8, -9
+12  → moving right, top -9 moving left → moving apart → push   Stack: -8, -9, 12
+```
+
+Final: `-8, -9, 12`.
+
+**Pseudocode** — derived from the core idea:
+
+```
+function collide(asteroids):
+    stack = empty stack
+    for each a in asteroids:
+        alive = true
+        while alive and a < 0 and stack not empty and top(stack) > 0:
+            if top(stack) < -a:
+                pop stack                  # top explodes, a keeps moving
+            else if top(stack) == -a:
+                pop stack                  # both explode
+                alive = false
+            else:
+                alive = false              # a explodes, top survives
+        if alive:
+            push a onto stack
+    return stack, bottom to top
+```
+
+**C++ implementation:**
+
+```cpp
+vector<int> asteroidCollision(vector<int>& asteroids) {
+    vector<int> st;   // used as a stack
+    for (int a : asteroids) {
+        bool alive = true;
+        while (alive && a < 0 && !st.empty() && st.back() > 0) {
+            if (st.back() < -a) {
+                st.pop_back();            // top explodes, a survives, keeps checking
+            } else if (st.back() == -a) {
+                st.pop_back();            // both explode
+                alive = false;
+            } else {
+                alive = false;            // a explodes, top survives
+            }
+        }
+        if (alive) st.push_back(a);
+    }
+    return st;
+}
+```
+
+Each asteroid is pushed once and popped at most once — O(N) time, O(N) space.
 
 **Checkpoint:**
 > *"When `-9` arrives and the stack top is `-8`, why is there no collision?"*
@@ -106,15 +186,15 @@ Let students reason: `10` (moving right) and `-10` (moving left) are heading tow
 Run **one element at a time**:
 
 ```
-6   → stack empty → push.                                  Stack: [6]
-3   → 3 moving right, same direction as top → push.         Stack: [6, 3]
+6   → stack empty → push.                                  Stack: 6
+3   → 3 moving right, same direction as top → push.         Stack: 6, 3
 -8  → collides with top 3: |3| < |-8| → 3 explodes.
       collides with new top 6: |6| < |-8| → 6 explodes.
-      Stack now empty → push -8.                            Stack: [-8]
-2   → 2 moving right, top is -8 moving left → moving apart, no collision → push.   Stack: [-8, 2]
+      Stack now empty → push -8.                            Stack: -8
+2   → 2 moving right, top is -8 moving left → moving apart, no collision → push.   Stack: -8, 2
 ```
 
-Final stack: `[-8, 2]`.
+Final stack: `-8, 2`.
 
 **How it surfaces:** At `-8`, ask before revealing each step: *"Does it stop after destroying `3`, or keep going?"* Correct: it keeps going — `-8` is not yet resolved, so it must keep checking the new top (`6`) until either something bigger stops it or the stack empties.
 

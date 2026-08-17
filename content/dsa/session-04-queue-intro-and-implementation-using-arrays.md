@@ -38,7 +38,7 @@ Say: *"Five quick ones on histograms, then we leave stacks behind for one sessio
 
 ---
 
-## Hook (6–10 min)
+## Hook (6–9 min)
 
 Ask: *"You're standing in a line at a ticket counter. Who gets served first — the person who joined the line first, or the person standing closest to the counter right now?"*
 
@@ -48,11 +48,89 @@ Let students answer (first joined). Then:
 
 ---
 
-## Concept Walkthrough (10–29 min)
+## Problem Statement (9–13 min)
+
+Design a queue backed by a fixed-size array, supporting FIFO insertion and removal.
+
+**Input:** a fixed capacity, then a sequence of operations — `enqueue(x)`, `dequeue()`, `front()`.
+**Output:** for each `dequeue()`/`front()` call, the value returned (or an explicit error if the queue is empty/full).
+
+**Example 1**
+Input: capacity 3 → `enqueue(1)`, `enqueue(2)`, `front()`, `dequeue()`, `front()`
+Output: `front() = 1`, `dequeue() = 1`, `front() = 2`
+Why: whatever was added first (`1`) is always the one at the front until it's removed.
+
+**Example 2**
+Input: capacity 2 → `enqueue(1)`, `enqueue(2)`, `enqueue(3)`
+Output: `enqueue(3)` fails — `"Queue is full"`
+Why: a fixed-capacity array queue has a hard ceiling — no room for a third element until one is dequeued.
+
+---
+
+## Concept Walkthrough (13–29 min)
 
 **Core idea:** a fixed-size array queue tracks two pointers — `front` (where you remove) and `back` (where you add), both starting at `-1` to mean empty. When `back` reaches the end of the array but slots have been freed at the front (from prior pops), it **wraps around** via `back = (back + 1) % capacity` instead of reporting full.
 
 **Worked example** — capacity-5 array: `push(1), push(2), push(3), push(4)` fills to `front=0, back=3`. Two pops move `front` to `2`, freeing indices `0` and `1`. `push(5)` uses index `4` (still in bounds); `push(6)` needs a slot — the only free ones are behind `front` positionally, so `back` wraps `4 → 0`.
+
+**Pseudocode** — derived from the core idea:
+
+```
+class ArrayQueue:
+    array[capacity]
+    front = -1
+    back = -1
+
+    function isEmpty():
+        return front == -1
+
+    function isFull():
+        return (back + 1) % capacity == front
+
+    function enqueue(x):
+        if isFull(): error "Queue is full"
+        if isEmpty(): front = 0
+        back = (back + 1) % capacity
+        array[back] = x
+
+    function dequeue():
+        if isEmpty(): error "Queue is empty"
+        x = array[front]
+        if front == back: front = back = -1     # queue just emptied
+        else: front = (front + 1) % capacity
+        return x
+```
+
+**C++ implementation:**
+
+```cpp
+class ArrayQueue {
+    vector<int> arr;
+    int capacity, front, back;
+public:
+    ArrayQueue(int cap) : arr(cap), capacity(cap), front(-1), back(-1) {}
+
+    bool isEmpty() { return front == -1; }
+    bool isFull()  { return (back + 1) % capacity == front; }
+
+    void enqueue(int x) {
+        if (isFull()) throw runtime_error("Queue is full");
+        if (isEmpty()) front = 0;
+        back = (back + 1) % capacity;
+        arr[back] = x;
+    }
+
+    int dequeue() {
+        if (isEmpty()) throw runtime_error("Queue is empty");
+        int x = arr[front];
+        if (front == back) front = back = -1;    // queue just emptied
+        else front = (front + 1) % capacity;
+        return x;
+    }
+};
+```
+
+`enqueue` and `dequeue` are both O(1) — no shifting, the modulo does the wraparound.
 
 **Checkpoint:**
 > *"Why does a queue need two pointers when a stack only needed one?"*

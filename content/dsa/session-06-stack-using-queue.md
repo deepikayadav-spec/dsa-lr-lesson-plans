@@ -38,7 +38,7 @@ Say: *"Five on the linked-list queue, then we do something a little backwards �
 
 ---
 
-## Hook (6–10 min)
+## Hook (6–9 min)
 
 Ask: *"You have a queue — enqueue at the back, dequeue from the front. That's the only tool you're allowed to use. Can you make it behave like a stack — last in, first out?"*
 
@@ -48,11 +48,74 @@ Let students think for a moment; most will assume this needs a completely differ
 
 ---
 
-## Concept Walkthrough (10–29 min)
+## Problem Statement (9–13 min)
+
+Implement a stack — `push`, `pop`, `top` — using only a queue's `enqueue`/`dequeue` operations.
+
+**Input:** a sequence of operations — `push(x)`, `pop()`, `top()`.
+**Output:** for each `pop()`/`top()` call, the value returned, in LIFO order (most recently pushed comes out first).
+
+**Example 1**
+Input: `push(1)`, `push(2)`, `top()`
+Output: `top() = 2`
+Why: `2` was pushed most recently, so it must be the one `top()` reports — the opposite of what the underlying queue would naturally give you.
+
+**Example 2**
+Input: `push(1)`, `push(2)`, `pop()`, `pop()`
+Output: `pop() = 2`, then `pop() = 1`
+Why: LIFO order — last pushed, first popped.
+
+---
+
+## Concept Walkthrough (13–29 min)
 
 **Core idea:** simulate a stack using only a queue's `enqueue`/`dequeue`. On every `push`, enqueue the new element, then rotate the rest of the queue behind it — exactly `size-before-the-push` rotations — so the newest element ends up at the front, where `pop()` and `top()` can read it directly.
 
 **Worked example:** `push(10)` — 0 rotations. `push(20)` — 1 element already there, rotate once: `[20, 10]`. `push(30)` — 2 elements, rotate twice: `[30, 20, 10]`. `pop()` and `top()` are then trivial front reads — no rotation involved.
+
+**Pseudocode** — derived from the core idea:
+
+```
+class StackUsingQueue:
+    queue = empty queue
+
+    function push(x):
+        queue.enqueue(x)
+        repeat (size(queue) - 1) times:
+            queue.enqueue(queue.dequeue())   # rotate everything before x behind it
+
+    function pop():
+        return queue.dequeue()               # newest element is always at the front
+
+    function top():
+        return queue.front()
+```
+
+**C++ implementation:**
+
+```cpp
+class StackUsingQueue {
+    queue<int> q;
+public:
+    void push(int x) {
+        q.push(x);
+        for (int i = 0; i < (int)q.size() - 1; i++) {
+            q.push(q.front());
+            q.pop();
+        }
+    }
+
+    int pop() {
+        int x = q.front();
+        q.pop();
+        return x;
+    }
+
+    int top() { return q.front(); }
+};
+```
+
+`push` is O(N) (the rotation); `pop` and `top` are O(1) — the cost of simulating LIFO with a FIFO structure.
 
 **Checkpoint:**
 > *"`push(40)` on a 3-element queue rotates how many times, and why?"*
