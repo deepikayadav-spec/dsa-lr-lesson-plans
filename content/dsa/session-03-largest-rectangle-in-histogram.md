@@ -79,7 +79,7 @@ Why: bar `2` alone gives area `2`; bar `4` alone gives area `4`; both together a
 
 **Core idea (two-pass):** for every bar, width = `NSE[i] - PSE[i] - 1`, where NSE/PSE are the nearest strictly-smaller bar to the right/left, each found with a monotonic stack in one pass. **Core idea (one-pass, optimal):** instead of precomputing both arrays, pop-and-compute — when a shorter bar arrives, pop the taller one off the stack and compute its area immediately, using the current index as its right boundary.
 
-**Worked example** — one-pass approach on `heights = [2, 1, 5, 6, 2, 3]`, stack of indices shown after every step:
+**Dry Run** — one-pass approach on `heights = [2, 1, 5, 6, 2, 3]`. Show the status of the stack after every update:
 
 ```
 i=0 (h=2) → stack empty → push                          Stack (idx): 0
@@ -118,7 +118,7 @@ function largestRectangleArea(heights):
     return maxArea
 ```
 
-**C++ implementation:**
+**Deriving the code** — build this live in the coding playground, straight from the pseudocode above; don't just read out a finished block:
 
 ```cpp
 int largestRectangleArea(vector<int>& heights) {
@@ -147,9 +147,9 @@ Each index is pushed once and popped at most once — O(N) time, O(N) space.
 
 ---
 
-## ⚡ Active Learning Strategy — Live Coding / Dry-Run Relay (36–43 min)
+## ⚡ Active Learning Strategy — Dry-Run Relay (36–43 min)
 
-**ALS format:** Live Coding / Dry-Run Relay, run twice on the same fresh array — once for NSE only, once for the one-pass area computation — so students execute both the two-pass mechanics and the optimal one-pass mechanics themselves, not just watch the deck's example.
+**ALS format:** Dry-Run Relay, run twice on the same fresh array — once for NSE only, once for the one-pass area computation — so students execute both the two-pass mechanics and the optimal one-pass mechanics themselves, not just watch the deck's example.
 
 **Part A — Compute NSE Yourself.**
 > *"New array: `[3, 1, 4, 2]`. I want NSE for every index, scanning right to left. Call out what gets popped and what the answer is, before I confirm."*

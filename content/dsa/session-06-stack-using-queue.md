@@ -75,7 +75,7 @@ Why: LIFO order — last pushed, first popped.
 
 **Core idea:** simulate a stack using only a queue's `enqueue`/`dequeue`. On every `push`, enqueue the new element, then rotate the rest of the queue behind it — exactly `size-before-the-push` rotations — so the newest element ends up at the front, where `pop()` and `top()` can read it directly.
 
-**Worked example:** `push(10)` — 0 rotations. `push(20)` — 1 element already there, rotate once: `[20, 10]`. `push(30)` — 2 elements, rotate twice: `[30, 20, 10]`. `pop()` and `top()` are then trivial front reads — no rotation involved.
+**Dry Run** — show the status of the queue after every update: `push(10)` — 0 rotations. `push(20)` — 1 element already there, rotate once: `[20, 10]`. `push(30)` — 2 elements, rotate twice: `[30, 20, 10]`. `pop()` and `top()` are then trivial front reads — no rotation involved.
 
 **Pseudocode** — derived from the core idea:
 
@@ -95,7 +95,7 @@ class StackUsingQueue:
         return queue.front()
 ```
 
-**C++ implementation:**
+**Deriving the code** — build this live in the coding playground, straight from the pseudocode above; don't just read out a finished block:
 
 ```cpp
 class StackUsingQueue {
@@ -161,9 +161,9 @@ Unscheduled on purpose. If you land here with time on the clock, let the session
 
 ## Optional Activity — Live Trace: Rotate It Yourself
 
-*Not part of the core timed flow — the rotation mechanic is already covered in Concept Walkthrough's worked example. Run this only if the room finishes early, or as a follow-up warm-up next session.*
+*Not part of the core timed flow — the rotation mechanic is already covered in Concept Walkthrough's Dry Run. Run this only if the room finishes early, or as a follow-up warm-up next session.*
 
-**Format:** Live Coding / Dry-Run Relay · **Exposes:** whether students can execute the rotation count and mechanics themselves on a fresh sequence, rather than having only watched the deck's example.
+**Format:** Dry-Run Relay · **Exposes:** whether students can execute the rotation count and mechanics themselves on a fresh sequence, rather than having only watched the deck's example.
 
 **Setup line (say this):**
 > *"Fresh queue. Sequence: `push(5), push(15), push(25)`. After each push, tell me the rotation count and the resulting queue order, front to back, before I confirm."*

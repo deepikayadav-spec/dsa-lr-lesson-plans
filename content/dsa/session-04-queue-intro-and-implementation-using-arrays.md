@@ -71,11 +71,11 @@ Why: a fixed-capacity array queue has a hard ceiling — no room for a third ele
 
 ## Concept Walkthrough (13–29 min)
 
-*(Deck: Setup Slides 7–8 · Worked example Slides 9–29 · Pseudocode Slides 30–35 · Complexity Slide 38 · C++ Code Slides 39–45)*
+*(Deck: Setup Slides 7–8 · Dry Run Slides 9–29 · Pseudocode Slides 30–35 · Complexity Slide 38 · C++ Code Slides 39–45)*
 
 **Core idea:** a fixed-size array queue tracks two pointers — `front` (where you remove) and `back` (where you add), both starting at `-1` to mean empty. When `back` reaches the end of the array but slots have been freed at the front (from prior pops), it **wraps around** via `back = (back + 1) % capacity` instead of reporting full.
 
-**Worked example** — capacity-5 array: `push(1), push(2), push(3), push(4)` fills to `front=0, back=3`. Two pops move `front` to `2`, freeing indices `0` and `1`. `push(5)` uses index `4` (still in bounds); `push(6)` needs a slot — the only free ones are behind `front` positionally, so `back` wraps `4 → 0`.
+**Dry Run** — capacity-5 array. Show the status of the queue after every update: `push(1), push(2), push(3), push(4)` fills to `front=0, back=3`. Two pops move `front` to `2`, freeing indices `0` and `1`. `push(5)` uses index `4` (still in bounds); `push(6)` needs a slot — the only free ones are behind `front` positionally, so `back` wraps `4 → 0`.
 
 **Pseudocode** — derived from the core idea:
 
@@ -105,7 +105,7 @@ class ArrayQueue:
         return x
 ```
 
-**C++ implementation:**
+**Deriving the code** — build this live in the coding playground, straight from the pseudocode above; don't just read out a finished block:
 
 ```cpp
 class ArrayQueue {
@@ -188,7 +188,7 @@ Unscheduled on purpose. If you land here with time on the clock, let the session
 
 ## Optional Activity — Predict the Output: Trace the Circular Wraparound
 
-*Not part of the core timed flow — the wraparound mechanic is already covered in Concept Walkthrough's worked example. Run this only if the room finishes early, or as a follow-up warm-up next session.*
+*Not part of the core timed flow — the wraparound mechanic is already covered in Concept Walkthrough's Dry Run. Run this only if the room finishes early, or as a follow-up warm-up next session.*
 
 **Format:** Predict-the-Output / Live Trace · **Exposes:** whether students can track `front`, `back`, and `size` through a full wraparound cycle themselves — the single trickiest mechanical detail in this session.
 

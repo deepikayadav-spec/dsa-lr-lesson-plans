@@ -18,16 +18,16 @@ Read a session top to bottom once; after that you'll recognize the shape instant
 
 **Concept Walkthrough (13 min → varies)** — the algorithm itself, in a fixed sub-order every time:
 1. **Core idea** — the one-paragraph insight.
-2. **Worked example** — a specific input traced step by step, with stack/queue state shown after *every* step (see §2 for the notation).
+2. **Dry Run** — a specific input traced step by step, showing the status of the stack/queue after *every* update (see §2 for the notation).
 3. **Pseudocode** — derived from the core idea, language-neutral.
-4. **C++ implementation** — the pseudocode made concrete.
+4. **Deriving the code** — the C++ implementation, built live in the coding playground from the pseudocode, not read out as a finished block.
 5. **Checkpoint** — one cold-call question that tests whether the core idea actually landed, asked live before moving on.
 
 Same as Problem Statement, a *(Deck: …)* line under the heading gives the real slide ranges for each of these five, in order — so you know exactly when to flip the deck forward.
 
 This block's length is the one thing that varies session to session (17–23 min) — it's sized to the algorithm's real complexity, not padded or compressed to a fixed number.
 
-**Active Learning Strategy (~7 min)** — exactly **one** hands-on activity, not two. Named formats repeat across sessions (Spot the Bug, Predict & Discuss, Live Coding/Dry-Run Relay) — each names its format up front and states exactly what skill it exposes. Every activity includes a **Cut rule**: what to drop first if you're running behind.
+**Active Learning Strategy (~7 min)** — exactly **one** hands-on activity, not two. Named formats repeat across sessions (Spot the Bug, Predict & Discuss, Dry-Run Relay) — each names its format up front and states exactly what skill it exposes. Every activity includes a **Cut rule**: what to drop first if you're running behind.
 
 **Classroom Quiz (~5 min)** — 5–6 MCQs pulled from the platform bank live in class, closing block.
 
@@ -39,7 +39,7 @@ This block's length is the one thing that varies session to session (17–23 min
 
 ## 2. Reading the stack/queue traces
 
-Every worked example and activity shows state after each step as a **plain top→bottom (or front→back) list — never wrapped in `[ ]`.** An empty stack/queue is written explicitly as `(empty)`, never a blank list.
+Every Dry Run and activity shows the status of the stack/queue after each update as a **plain top→bottom (or front→back) list — never wrapped in `[ ]`.** An empty stack/queue is written explicitly as `(empty)`, never a blank list.
 
 This is deliberate, not stylistic: several of these problems take `[` and `]` as literal *input* characters (Balanced Parenthesis most obviously). Using square brackets as the container notation *too* reads as ambiguous to a first-time student — is `[` data or notation? Plain lists sidestep the question entirely, so the convention is kept everywhere in this block, even in sessions where the input itself has no brackets.
 
@@ -53,7 +53,7 @@ Sessions 1, 2, 4, 5, and 6 each carry a second activity, demoted to an **Optiona
 - Run it as a 5-minute warm-up recap at the start of the *next* session.
 - Skip it outright — nothing in the core 50-minute flow depends on it.
 
-It was demoted, not deleted, specifically because it duplicated a skill Concept Walkthrough's worked example already covers (usually a step-by-step trace) — the kept activity is the one that exercises a genuinely distinct skill (classifying failure modes, a live bug hunt, a complexity discussion). Session 3 (Largest Rectangle) never had a second activity to begin with — its one Live Coding/Dry-Run Relay already runs in two parts.
+It was demoted, not deleted, specifically because it duplicated a skill Concept Walkthrough's Dry Run already covers (usually a step-by-step trace) — the kept activity is the one that exercises a genuinely distinct skill (classifying failure modes, a live bug hunt, a complexity discussion). Session 3 (Largest Rectangle) never had a second activity to begin with — its one Dry-Run Relay already runs in two parts.
 
 ---
 
@@ -64,7 +64,7 @@ It was demoted, not deleted, specifically because it duplicated a skill Concept 
 | Warm-Up Poll | 0–6 min | Previous session only |
 | Hook | 6–9 min | Scripted, board or question |
 | Problem Statement | 9–13 min | Input/output + 2 examples, always |
-| Concept Walkthrough | 13 min → varies | Core idea → worked example → pseudocode → C++ → checkpoint |
+| Concept Walkthrough | 13 min → varies | Core idea → Dry Run → pseudocode → deriving the code → checkpoint |
 | Active Learning Strategy | ~7 min | One activity, has a Cut rule |
 | Classroom Quiz | ~5 min | Platform bank, live |
 | Buffer | remainder → 50 min | Never filled with content |

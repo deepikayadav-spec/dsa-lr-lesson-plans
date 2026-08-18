@@ -79,7 +79,7 @@ Why: `[` is opened but the string tries to close it with a plain `)`, at a point
 
 **Core idea:** push every opening bracket onto a stack. On a closing bracket, check the top of the stack — if it matches, pop; if it doesn't match, or the stack is already empty, the string is invalid. After the whole string, the stack must also be empty — leftover unclosed openings are invalid too.
 
-**Worked example** — `s = "(){[{}])"`. Show the stack top→bottom after every character (written as a plain list, never in `[ ]` — those brackets are themselves valid input characters here, so an empty stack is written as `(empty)`, not `[]`):
+**Dry Run** — `s = "(){[{}])"`. Show the status of the stack after every update:
 
 ```
 (   → push                    Stack: (
@@ -111,7 +111,7 @@ function isValid(s):
     return stack is empty              # leftover-stack-at-the-end check
 ```
 
-**C++ implementation:**
+**Deriving the code** — build this live in the coding playground, straight from the pseudocode above; don't just read out a finished block:
 
 ```cpp
 bool isValid(string s) {
@@ -185,16 +185,16 @@ Unscheduled on purpose. If you land here with time on the clock, let the session
 
 ---
 
-## Optional Activity — Live Coding / Dry-Run Relay
+## Optional Activity — Dry-Run Relay
 
-*Not part of the core timed flow — Concept Walkthrough's worked example already traces the stack step by step. Run this only if the room finishes early, or as a follow-up warm-up next session.*
+*Not part of the core timed flow — Concept Walkthrough's Dry Run already traces the stack step by step. Run this only if the room finishes early, or as a follow-up warm-up next session.*
 
-**ALS format:** Live Coding / Dry-Run Relay — exposes whether students can execute the full algorithm themselves end to end, on a string they haven't seen. Closing activity: the first time students run the complete algorithm start to finish, on eight characters in a row, without the safety of a partial example.
+**ALS format:** Dry-Run Relay — exposes whether students can execute the full algorithm themselves end to end, on a string they haven't seen. Closing activity: the first time students run the complete algorithm start to finish, on eight characters in a row, without the safety of a partial example.
 
 **Setup line:**
 > *"New string: `{[()()]}`. I want the stack state after every single character — call it out before I write it."*
 
-Run **one character at a time**, taking a prediction before each. Stack shown top→bottom, plain list (same convention as the worked example — no `[ ]` around it, empty stack written as `(empty)`):
+Run **one character at a time**, taking a prediction before each. Show the status of the stack after every update:
 
 ```
 {   → push                    Stack: {

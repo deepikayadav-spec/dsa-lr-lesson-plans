@@ -52,7 +52,7 @@ Let students reason: `10` (moving right) and `-10` (moving left) are heading tow
 
 ## Problem Statement (9–13 min)
 
-*(Deck: Slides 4–7 — problem definition; Slides 8–29 carry the deck's own animated examples, which overlap with the Worked example below)*
+*(Deck: Slides 4–7 — problem definition; Slides 8–29 carry the deck's own animated examples, which overlap with the Dry Run below)*
 
 Given an array of integers `asteroids`, each entry's absolute value is its size and its sign is its direction — positive moves right, negative moves left, all at the same speed. Simulate every collision and return the asteroids that remain.
 
@@ -75,11 +75,11 @@ Why: equal magnitude, opposite directions — both explode, nothing survives.
 
 ## Concept Walkthrough (13–29 min)
 
-*(Deck: Approach Slides 30–31 · Dry Run Slides 32–61 (also Slides 8–29 for the two worked examples) · Pseudocode Slides 62–63 · Complexity Slides 64–66 · C++ Code Slides 67–68 · Key Takeaways Slides 69–70 — deck continues to Slide 106 with bonus/alternate practice examples, not needed for this script)*
+*(Deck: Approach Slides 30–31 · Dry Run Slides 32–61 (also Slides 8–29 for the two dry-run examples) · Pseudocode Slides 62–63 · Complexity Slides 64–66 · C++ Code Slides 67–68 · Key Takeaways Slides 69–70 — deck continues to Slide 106 with bonus/alternate practice examples, not needed for this script)*
 
 **Core idea:** keep a stack of surviving asteroids. Push positives (moving right) directly. For a negative (moving left) asteroid, keep colliding it against the stack's top — in a `while`, not an `if` — popping any smaller positive, until it either meets something bigger/equal or the stack empties.
 
-**Worked example** — `[7, 5, 4, -5, -6, -8, -9, 12]`. Stack shown bottom→top after every element:
+**Dry Run** — `[7, 5, 4, -5, -6, -8, -9, 12]`. Show the status of the stack after every update:
 
 ```
 7   → moving right → push                              Stack: 7
@@ -115,7 +115,7 @@ function collide(asteroids):
     return stack, bottom to top
 ```
 
-**C++ implementation:**
+**Deriving the code** — build this live in the coding playground, straight from the pseudocode above; don't just read out a finished block:
 
 ```cpp
 vector<int> asteroidCollision(vector<int>& asteroids) {
@@ -192,11 +192,11 @@ Unscheduled on purpose. If you land here with time on the clock, let the session
 
 ---
 
-## Optional Activity — Live Coding / Dry-Run Relay
+## Optional Activity — Dry-Run Relay
 
-*Not part of the core timed flow — Concept Walkthrough's worked example already traces the stack step by step. Run this only if the room finishes early, or as a follow-up warm-up next session.*
+*Not part of the core timed flow — Concept Walkthrough's Dry Run already traces the stack step by step. Run this only if the room finishes early, or as a follow-up warm-up next session.*
 
-**ALS format:** Live Coding / Dry-Run Relay — exposes whether students can execute a multi-step collision chain themselves, including a case where one incoming asteroid destroys more than one stack element in a row. "While, not if" is the last mechanical detail students need before they can implement this alone.
+**ALS format:** Dry-Run Relay — exposes whether students can execute a multi-step collision chain themselves, including a case where one incoming asteroid destroys more than one stack element in a row. "While, not if" is the last mechanical detail students need before they can implement this alone.
 
 **Setup line:**
 > *"New array: `[6, 3, -8, 2]`. Walk it with me, one element at a time — tell me what's pushed, what collides, and what survives, before I confirm."*

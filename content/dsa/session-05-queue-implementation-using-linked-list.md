@@ -71,11 +71,11 @@ Why: there's no node to remove; unlike the array version, there's no capacity ce
 
 ## Concept Walkthrough (13–29 min)
 
-*(Deck: Worked example Slides 7–21 · Pseudocode Slides 22–27 · Complexity Slide 28 · C++ Code Slides 29–36)*
+*(Deck: Dry Run Slides 7–21 · Pseudocode Slides 22–27 · Complexity Slide 28 · C++ Code Slides 29–36)*
 
 **Core idea:** swap the fixed array for a linked list — `front` and `back` become **node pointers**, not indices, both `null` when empty. No capacity, no modulo. `push` links a new node after `back` and moves `back` to it; `pop` moves `front` to `front->next`.
 
-**Worked example:** on the very first `push`, the queue was empty, so the new node becomes *both* `front` and `back`. When `pop()` removes the **last** remaining node, *both* `front` and `back` must be reset to `null` — resetting only `front` leaves `back` dangling, pointing at a deleted node.
+**Dry Run** — show the status of the queue after every update: on the very first `push`, the queue was empty, so the new node becomes *both* `front` and `back`. When `pop()` removes the **last** remaining node, *both* `front` and `back` must be reset to `null` — resetting only `front` leaves `back` dangling, pointing at a deleted node.
 
 **Pseudocode** — derived from the core idea:
 
@@ -102,7 +102,7 @@ class LinkedQueue:
         return x
 ```
 
-**C++ implementation:**
+**Deriving the code** — build this live in the coding playground, straight from the pseudocode above; don't just read out a finished block:
 
 ```cpp
 struct Node {
@@ -185,9 +185,9 @@ Unscheduled on purpose. If you land here with time on the clock, let the session
 
 ## Optional Activity — Live Trace: Push and Pop by Pointer
 
-*Not part of the core timed flow — pointer movement is already covered in Concept Walkthrough's worked example. Run this only if the room finishes early, or as a follow-up warm-up next session.*
+*Not part of the core timed flow — pointer movement is already covered in Concept Walkthrough's Dry Run. Run this only if the room finishes early, or as a follow-up warm-up next session.*
 
-**Format:** Live Coding / Dry-Run Relay · **Exposes:** whether students can track `front` and `back` as they move between actual nodes, rather than array indices — the one genuinely new mental model this session introduces.
+**Format:** Dry-Run Relay · **Exposes:** whether students can track `front` and `back` as they move between actual nodes, rather than array indices — the one genuinely new mental model this session introduces.
 
 **Setup line (say this):**
 > *"Empty queue. Sequence: `push(A)`, `push(B)`, `push(C)`, `pop()`, `pop()`. After each step, tell me what `front` and `back` point to — before I confirm."*
