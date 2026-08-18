@@ -1,7 +1,7 @@
 # Introduction to Queue & Implementation Using Arrays
 
-**Duration** 50 min total — 36 min instruction + 5 min Classroom Quiz + 9 min buffer · **Topic** Queue — Introduction and Array Implementation · **Prerequisite** Largest Rectangle in Histogram
-**Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
+**Duration** 50 min total — 43 min instruction + 5 min Classroom Quiz + 2 min buffer (buffer is inside the 50, not extra) · **Topic** Queue — Introduction and Array Implementation · **Prerequisite** Largest Rectangle in Histogram
+**Session type** Concept lecture · **Format** Class Delivery Framework — Safe Points, dry run → observations → pseudocode → code, engagement activity reuses the session's own example
 
 ---
 
@@ -16,39 +16,43 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Largest Rectangle in Histogram (0–6 min)
+## Warm-Up Poll — Recap of Previous Session (0–5 min)
 
-Say: *"Five quick ones on histograms, then we leave stacks behind for one session and meet an entirely new structure."*
+Live poll (Mentimeter or similar) on **Largest Rectangle in Histogram**. **Don't summarize LRH yourself first** — run the poll cold, then read the aggregate result out loud as the recap. The numbers *are* the recap; you're not re-teaching it.
 
 **Q1.** A rectangle anchored at a given bar's height can extend as far as:
 `A` The edges of the array, always · `B` The nearest shorter bar on each side · `C` The nearest taller bar on each side · `D` Exactly one bar in each direction
 → **B.**
 
-**Q2.** NSE (Next Smaller Element) for a bar is computed by scanning:
-`A` Left to right · `B` Right to left · `C` From the tallest bar outward · `D` In sorted order
-→ **B.**
-
-**Q3.** In the one-pass optimal approach, a bar's area is computed:
+**Q2.** In the one-pass optimal approach, a bar's area is computed:
 `A` At the very start · `B` At the very end, for all bars at once · `C` The moment it's popped from the stack · `D` Only if it's the tallest bar
 → **C.**
 
-**Q4.** If the stack empties during a pop in the one-pass approach, the rectangle's width is:
+**Q3.** If the stack empties during a pop in the one-pass approach, the rectangle's width is:
 `A` Zero · `B` Undefined · `C` The current index · `D` Always 1
 → **C.**
 
+**Q4.** Overall time complexity of the one-pass approach:
+`A` O(1) · `B` O(N) · `C` O(N²) · `D` O(N log N)
+→ **B.**
+
+Say: *"Alright — [X]% got two or more of these. Let's leave stacks behind for a session and meet an entirely new structure."*
+
 ---
 
-## Hook (6–9 min)
+## Hook (5–8 min)
+
+State the topic explicitly, then motivate it: *"Today we're learning Queue — a new linear data structure. Everything you've built this block — Balanced Parenthesis, Asteroid Collision, Largest Rectangle — used a stack. Today that changes."*
 
 Ask: *"You're standing in a line at a ticket counter. Who gets served first — the person who joined the line first, or the person standing closest to the counter right now?"*
 
-Let students answer (first joined). Then:
+Let students answer (first joined). Then name the advantage explicitly:
 
-> *"That's a queue. Whoever arrived first leaves first — First In, First Out, FIFO. It's the exact opposite discipline from every stack you've built so far, where the *most recently* added thing came out first. Today we build this from scratch, starting with the simplest possible version: a plain array."*
+> *"That's a queue. Whoever arrived first leaves first — First In, First Out, FIFO. It's the exact opposite discipline from every stack you've built so far. The advantage: anything that has to be processed fairly, in arrival order — a print queue, a support ticket queue, a task scheduler — needs exactly this. Today we build it from scratch, starting with the simplest possible version: a plain array."*
 
 ---
 
-## Problem Statement (9–13 min)
+## Problem Statement (8–12 min)
 
 *(Deck: Slides 4–6 — problem definition + example diagram)*
 
@@ -67,17 +71,41 @@ Input: capacity 2 → `enqueue(1)`, `enqueue(2)`, `enqueue(3)`
 Output: `enqueue(3)` fails — `"Queue is full"`
 Why: a fixed-capacity array queue has a hard ceiling — no room for a third element until one is dequeued.
 
+**Safe Point 1 — Problem Statement Clarity.** *Technique: Paraphrase-Back.* Pick one student, ask them to restate the problem in their own words, "as if you're explaining it to someone hearing it for the first time." Do not move to the approach until this lands cleanly — a shaky paraphrase here means the rest of the session is built on sand.
+
 ---
 
-## Concept Walkthrough (13–29 min)
+## Concept Walkthrough (12–38 min)
 
 *(Deck: Setup Slides 7–8 · Dry Run Slides 9–29 · Pseudocode Slides 30–35 · Complexity Slide 38 · C++ Code Slides 39–45 · Key Takeaways Slides 52–53)*
 
-**Core idea:** a fixed-size array queue tracks two pointers — `front` (where you remove) and `back` (where you add), both starting at `-1` to mean empty. When `back` reaches the end of the array but slots have been freed at the front (from prior pops), it **wraps around** via `back = (back + 1) % capacity` instead of reporting full.
+**Approach Exploration (~2 min).** Before revealing the design, ask: *"We need FIFO behaviour out of a plain array — no built-in queue type. What would you try first?"* Let 2–3 guesses land. The common one: "keep everything at the front, shift left on every pop." Don't shoot it down yet — bank it, and come back to it during Deriving the Code's complexity discussion. Then give the brief, one-line version of the actual approach, not the full mechanism: *"We're going to track two positions instead of shifting anything — where the next removal happens, and where the next addition happens."*
 
-**Dry Run** — capacity-5 array. Show the status of the queue after every update: `push(1), push(2), push(3), push(4)` fills to `front=0, back=3`. Two pops move `front` to `2`, freeing indices `0` and `1`. `push(5)` uses index `4` (still in bounds); `push(6)` needs a slot — the only free ones are behind `front` positionally, so `back` wraps `4 → 0`.
+**Dry Run (~6 min).** Capacity-5 array, empty to start. Track `front` and `back` explicitly at every step, and choose the example so it actually triggers the wraparound edge case — don't stop before that:
 
-**Pseudocode** — derived from the core idea:
+```
+front = back = -1 (empty)
+
+enqueue(1) → front was -1, so front becomes 0. back = 0.        arr: [1, _, _, _, _]  front=0 back=0
+enqueue(2) → back = 1.                                          arr: [1, 2, _, _, _]  front=0 back=1
+enqueue(3) → back = 2.                                          arr: [1, 2, 3, _, _]  front=0 back=2
+enqueue(4) → back = 3.                                          arr: [1, 2, 3, 4, _]  front=0 back=3
+dequeue()  → returns 1. front = 1.                               arr: [1, 2, 3, 4, _]  front=1 back=3
+dequeue()  → returns 2. front = 2.                               arr: [1, 2, 3, 4, _]  front=2 back=3
+enqueue(5) → back = 4 (still in bounds).                         arr: [1, 2, 3, 4, 5]  front=2 back=4
+enqueue(6) → back would be 5 — off the end. But front=2, so
+             slots 0 and 1 are free. back wraps: (4+1)%5 = 0.    arr: [6, 2, 3, 4, 5]  front=2 back=0
+```
+
+**Observations — write these on the board, in plain English, before touching pseudocode:**
+1. Two pointers: `front` (next slot to remove from) and `back` (last slot filled).
+2. On `enqueue`: move `back` forward one slot — wrapping to `0` if it runs past the end — and write the value there.
+3. On `dequeue`: read the value at `front`, then move `front` forward one slot — wrapping the same way.
+4. If `back` would run past the array's end but `front` has moved forward (freeing slots behind it), wrap instead of reporting full.
+
+**Safe Point 2 — Approach Understanding.** *Technique: Hand-Signal Check.* "Thumbs up if you can tell me what `back` becomes when it's at the last index and slot 0 is free. Thumbs down if not." Address any thumbs-down before moving on — don't take silence as agreement.
+
+**Pseudocode — derive step by step, not all at once.** First just the state and the empty/full checks:
 
 ```
 class ArrayQueue:
@@ -85,18 +113,23 @@ class ArrayQueue:
     front = -1
     back = -1
 
-    function isEmpty():
-        return front == -1
+    function isEmpty(): return front == -1
+    function isFull():  return (back + 1) % capacity == front
+```
 
-    function isFull():
-        return (back + 1) % capacity == front
+Then `enqueue`, referring back to Observation 2:
 
+```
     function enqueue(x):
         if isFull(): error "Queue is full"
         if isEmpty(): front = 0
         back = (back + 1) % capacity
         array[back] = x
+```
 
+Then `dequeue`, referring back to Observation 3:
+
+```
     function dequeue():
         if isEmpty(): error "Queue is empty"
         x = array[front]
@@ -105,7 +138,9 @@ class ArrayQueue:
         return x
 ```
 
-**Deriving the code** — build this live in the coding playground, straight from the pseudocode above; don't just read out a finished block:
+**Safe Point 3 — Pseudocode Understanding.** *Technique: Deliberate Bug.* Show `enqueue` with the `if isEmpty(): front = 0` line removed, and ask: *"Is this still correct?"* Students tracking the logic will catch that a fresh queue would leave `front` stuck at `-1` forever, even after elements are pushed. Students who accept it uncritically are the ones to check in with individually.
+
+**Deriving the Code (~7 min) — build this live, in the coding playground, straight from the pseudocode above. Do not read out a finished block.** If anyone hasn't seen a `vector<int>` constructed with a fixed size before, address that syntax gap now, before it surfaces mid-derivation. Relate every line back to the pseudocode line it came from as you type it:
 
 ```cpp
 class ArrayQueue {
@@ -134,61 +169,54 @@ public:
 };
 ```
 
-`enqueue` and `dequeue` are both O(1) — no shifting, the modulo does the wraparound.
+**Complexity — derive it, don't state it (~2 min).** Go back to the shifting idea from Approach Exploration. Take a concrete case: a queue holding 4 elements, `dequeue()` called once.
+- **Shifting approach:** remove index 0, then move every remaining element one slot left — 3 moves for 4 elements. With `n` elements, that's `n − 1` moves, every single time. That's O(N) per operation.
+- **This approach:** one comparison (`isEmpty`), one pointer read, one pointer update — **3 operations**, regardless of whether the queue holds 4 elements or 4,000. That's what O(1) means: work that doesn't grow with `n`. Compare the two side by side on the board — the shifting approach's cost was the thing this design was built to avoid.
 
-**Key Takeaways** *(mandatory — matches the deck's own Key Takeaways slides, state these explicitly before moving on):*
+**Key Takeaways** *(mandatory — matches the deck's own Key Takeaways slides, state these explicitly):*
 - Queue: a data structure following the First-In-First-Out (FIFO) principle.
-- `push()` adds an element to the rear; `pop()` removes an element from the front.
+- `enqueue()` adds an element to the rear; `dequeue()` removes an element from the front.
 - `front()` retrieves the front element without removing it; `back()` retrieves the rear element without removing it.
 - `empty()` checks if the queue is empty; `full()` checks if the queue is full.
 
-**Checkpoint:**
-> *"Why does a queue need two pointers when a stack only needed one?"*
-> **Answer:** A queue adds at one end and removes from the other; a stack does both at the same end.
+**Safe Point 4 — Final Check.** *Technique: Quiet-Bench Check-In.* Walk toward a less-interactive part of the room and ask, low-stakes: *"Why does a queue need two pointers when a stack only needed one?"* **Answer:** a queue adds at one end and removes from the other; a stack does both at the same end.
 
 ---
 
-## ⚡ Active Learning Strategy — Spot the Bug: Full or Empty? (29–36 min)
+## ⚡ Engagement Activity (38–43 min)
 
-**Format:** Spot the Bug · **Exposes:** the classic array-queue ambiguity — `front == back` can mean either "completely empty" or "exactly one element," and conflating the two is the most common real bug in this implementation.
+*Reuses the exact example from the Dry Run above — no new content, so no extra time added to the session.*
 
-**Setup line (say this):**
-> *"Three queue states, each showing `front` and `back` at the same index. For each: is the queue empty, or does it have exactly one element? How would code even tell the difference?"*
+**Format:** What-If Discussion · **Exposes:** whether students actually understood *why* two pointers + wraparound beats the shifting approach they proposed earlier, not just whether they can recite the mechanism.
 
-```
-1.  front = -1, back = -1
-2.  front = 2,  back = 2   (after a fresh push(x) as the very first element)
-3.  front = 2,  back = 2   (after several push/pop cycles have looped back around)
-```
+**Prompt 1 — say this:**
+> *"Back in Approach Exploration, someone suggested shifting every element left on every pop instead of using `back` and wraparound. What if we'd actually built it that way — would it still be a correct queue?"*
 
-**What students do:** 45 seconds silent, then hands up.
+**Anticipated response A (common, partially right):** *"Yes, it would still work."* — **Correct.** Push back: *"Right, it's correct. Now — this queue has 10,000 elements and I call `dequeue()` once. What did that single call just cost us?"* Steer toward: 9,999 shifts, every time, regardless of how the wraparound version would've handled it in 3 operations.
 
-**Answers**
+**Anticipated response B (common, off-target):** *"No, because you need `back` to know where to add."* — Validate the true part, then redirect: *"You're right that you need to know where to add — but you could always add right after the last used slot, no `back` pointer required for that. That's not the real problem with shifting. What actually costs you?"* Steer back toward Response A's cost analysis.
 
-| # | State | How to tell |
-|---|---|---|
-| 1 | Empty | `-1, -1` is the dedicated sentinel — this is the *only* unambiguous empty signal in this design |
-| 2 | One element | `front == back` at a real index, with a `size` counter confirming `size = 1` |
-| 3 | One element | Same as #2 — `front == back` alone can't distinguish "just started" from "wrapped back around"; only an explicit `size` variable (or capacity check) resolves it |
+**Prompt 2 — say this:**
+> *"What if a student builds this queue with capacity 1? Walk me through it: `enqueue(x)` — full or not? Then `dequeue()` — what do `front` and `back` become?"*
 
-**How it surfaces:** Push students to say explicitly *why* `front == back` is ambiguous on its own — it's true both when there's exactly one element and, in some naive implementations, when the queue is completely empty. This deck's design sidesteps the ambiguity with the dedicated `-1, -1` sentinel plus an explicit `size` counter — flag that as a deliberate design choice, not an accident.
+**Expected walk-through:** `enqueue(x)` — queue was empty, `front = 0`, `back = (−1+1)%1 = 0`. `isFull()` is now true (`(back+1)%capacity == front` → `(0+1)%1=0==front`). `dequeue()` — reads `arr[0]`, then since `front == back`, both reset to `-1`. This is the smallest possible case that still exercises every branch of the design — if students can walk it cleanly, the mechanism has landed.
 
 **Debrief line:**
-> *"`front == back` alone never tells you the whole story. This implementation solves it two ways at once: a `-1, -1` sentinel for genuinely empty, and a `size` counter for everything else. Skip either one and you'll misreport empty as full, or vice versa."*
+> *"Both what-ifs point at the same thing: the two-pointer design isn't just 'a way' to build a queue — every piece of it (the wraparound, the `front == back` reset) exists specifically to avoid the cost of shifting. Next session, we drop the array entirely and see what a linked-list version buys us instead."*
 
-**Cut rule:** If running short, do state 1 vs. state 2 only — that pairing alone establishes the sentinel-vs-real-index distinction; state 3 is a reinforcement.
+**Cut rule:** If running short, do Prompt 1 only — it's the one that directly tests the session's central trade-off; Prompt 2 is a reinforcement of the mechanism, not new insight.
 
 ---
 
-## Classroom Quiz (36–41 min)
+## Classroom Quiz (43–48 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
 
 ---
 
-## Buffer (41–50 min) · Flex — not instructional
+## Buffer (48–50 min) · Flex — not instructional, inside the 50-minute block
 
-Unscheduled on purpose. If you land here with time on the clock, let the session end early — don't stretch content to fill it.
+Unscheduled on purpose. If you land here with time on the clock, let the session end early — don't stretch content to fill it. If students have open questions, this is where they get handled.
 
 ---
 
@@ -196,7 +224,7 @@ Unscheduled on purpose. If you land here with time on the clock, let the session
 
 *Not part of the core timed flow — the wraparound mechanic is already covered in Concept Walkthrough's Dry Run. Run this only if the room finishes early, or as a follow-up warm-up next session.*
 
-**Format:** Predict-the-Output / Live Trace · **Exposes:** whether students can track `front`, `back`, and `size` through a full wraparound cycle themselves — the single trickiest mechanical detail in this session.
+**Format:** Predict-the-Output / Live Trace · **Exposes:** whether students can track `front`, `back`, and `size` through a full wraparound cycle themselves, on a sequence they haven't seen.
 
 **Setup line (say this):**
 > *"Capacity-4 array, starts empty. Sequence: `push(A), push(B), push(C), pop(), pop(), push(D), push(E)`. After each operation, tell me `front`, `back`, and what's actually stored, before I confirm."*
@@ -213,12 +241,7 @@ push(D) → back=3.                         arr: [A, B, C, D]
 push(E) → back=(3+1)%4=0 → wraps!         arr: [E, B, C, D]  (E overwrites A's old slot)
 ```
 
-**How it surfaces:** At `push(E)`, ask before revealing: *"Is the array full at this point? `back` is about to go past index 3 — what happens?"* Correct: it's *not* full — `front` is sitting at index 2, meaning slots 0 and 1 are free — so `back` wraps to `0` and reuses that freed slot, rather than reporting overflow.
-
-**Debrief line:**
-> *"The values at indices 0 and 1 never got erased — `pop()` just moved `front` past them. `push(E)` is the operation that actually overwrites what's there. Physical array position and logical queue position are two different things, and that gap is exactly what the modulo arithmetic bridges."*
-
-**Cut rule:** If running short, do only the `push(D)` and `push(E)` steps — the wraparound is the entire point; the earlier pushes and pops are just setup.
+**Cut rule:** If running short, do only the `push(D)` and `push(E)` steps — the wraparound is the entire point.
 
 ---
 
@@ -226,9 +249,10 @@ push(E) → back=(3+1)%4=0 → wraps!         arr: [E, B, C, D]  (E overwrites A
 
 | Misconception | Why students hold it | Correct it live by |
 |---|---|---|
-| `pop()` physically removes/clears the array slot | Mental model of arrays as "boxes that empty out" | ALS 1 — showing earlier elements still physically present after their pops, simply unreachable |
-| `front == back` always means the queue is empty | Natural first guess, carried over from single-pointer emptiness checks | ALS 2 — distinguishing the `-1, -1` sentinel (truly empty) from `front == back` at a real index (exactly one element) |
-| Once `back` reaches the last index, the queue is full, permanently | Feels like running off the end of an array is a hard stop | ALS 1's wraparound step — `back` reuses freed slots via modulo |
+| `pop()` physically removes/clears the array slot | Mental model of arrays as "boxes that empty out" | Dry Run — showing earlier elements still physically present after their pops, simply unreachable |
+| `front == back` always means the queue is empty | Natural first guess, carried over from single-pointer emptiness checks | Deriving the Code's `isEmpty`/reset logic — distinguishing the `-1, -1` sentinel from `front == back` at a real index |
+| Once `back` reaches the last index, the queue is full, permanently | Feels like running off the end of an array is a hard stop | The Dry Run's wraparound step — `back` reuses freed slots via modulo |
+| Shifting elements left on every pop is a reasonable way to build this | It's the first thing that comes to mind, and it *is* correct | Engagement Activity Prompt 1 — same correctness, but O(N) vs O(1) per operation |
 | A circular array queue can grow without limit | Confusing this session's fixed-capacity array with next session's linked-list version | This implementation has a **fixed** capacity — say so explicitly |
 
 ---

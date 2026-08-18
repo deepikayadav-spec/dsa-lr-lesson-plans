@@ -1,7 +1,7 @@
 # Queue Implementation Using Linked List
 
-**Duration** 50 min total — 36 min instruction + 5 min Classroom Quiz + 9 min buffer · **Topic** Queue — Implementation Using Linked List · **Prerequisite** Introduction to Queue & Implementation Using Arrays
-**Session type** Concept lecture · **Format** Condensed — active learning strategies referenced by name, single closing quiz
+**Duration** 50 min total — 43 min instruction + 5 min Classroom Quiz + 2 min buffer (buffer is inside the 50, not extra) · **Topic** Queue — Implementation Using Linked List · **Prerequisite** Introduction to Queue & Implementation Using Arrays
+**Session type** Concept lecture · **Format** Class Delivery Framework — Safe Points, dry run → observations → pseudocode → code, engagement activity reuses the session's own example
 
 ---
 
@@ -16,9 +16,9 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Retrieval Practice on Queue: Array Implementation (0–6 min)
+## Warm-Up Poll — Recap of Previous Session (0–5 min)
 
-Say: *"Five quick ones on the array-based queue before we swap the array out entirely."*
+Live poll (Mentimeter or similar) on **Queue: Array Implementation**. **Don't summarize it yourself first** — run the poll cold, then read the aggregate result out loud as the recap.
 
 **Q1.** A queue follows which principle?
 `A` LIFO · `B` FIFO · `C` Random access · `D` Priority order
@@ -36,19 +36,23 @@ Say: *"Five quick ones on the array-based queue before we swap the array out ent
 `A` It's slower than a linked list for `push` · `B` It has a fixed maximum capacity · `C` It can't track a `front` pointer · `D` It doesn't support `pop`
 → **B.**
 
+Say: *"[X]% caught the fixed-capacity limitation — good, because that's exactly what today fixes."*
+
 ---
 
-## Hook (6–9 min)
+## Hook (5–8 min)
+
+State the topic explicitly: *"Today we're staying with queues, but swapping out the array for a linked list — fixing the one real weakness from last session."*
 
 Ask: *"A shared office printer has a print queue. Someone can send a 200-page print job at 2 AM, and someone else can send one job every minute all day. Should that queue ever say 'sorry, full, try again later'?"*
 
-Let students answer (no). Then:
+Let students answer (no). Then name the advantage explicitly:
 
-> *"Last session's array-based queue had exactly that flaw — a fixed capacity that could genuinely run out even with plenty of memory left. Today's fix is almost embarrassingly simple: swap the array for a linked list. Same FIFO behaviour, same O(1) operations, no capacity ceiling at all."*
+> *"Last session's array-based queue had exactly that flaw — a fixed capacity that could genuinely run out even with plenty of memory left. Today's fix is almost embarrassingly simple: swap the array for a linked list. Same FIFO behaviour, same O(1) operations, no capacity ceiling at all — that's the advantage, concretely."*
 
 ---
 
-## Problem Statement (9–13 min)
+## Problem Statement (8–12 min)
 
 *(Deck: Slides 4–6 — introduction, node structure, front/back pointers)*
 
@@ -67,17 +71,39 @@ Input: `dequeue()` on an empty queue
 Output: fails — `"Queue is empty"`
 Why: there's no node to remove; unlike the array version, there's no capacity ceiling, but emptiness still has to be checked.
 
+**Safe Point 1 — Problem Statement Clarity.** *Technique: Paraphrase-Back.* Pick a different student than last session's Safe Point 1. Ask them to restate, in their own words: "what's the same as last session's queue, and what's explicitly different?" Don't proceed until both halves of that answer are clean.
+
 ---
 
-## Concept Walkthrough (13–29 min)
+## Concept Walkthrough (12–38 min)
 
 *(Deck: Dry Run Slides 7–21 · Pseudocode Slides 22–27 · Complexity Slide 28 · C++ Code Slides 29–36 · Key Takeaways Slide 45)*
 
-**Core idea:** swap the fixed array for a linked list — `front` and `back` become **node pointers**, not indices, both `null` when empty. No capacity, no modulo. `push` links a new node after `back` and moves `back` to it; `pop` moves `front` to `front->next`.
+**Approach Exploration (~2 min).** Before revealing anything, ask: *"If we're not using an array at all, what do `front` and `back` even mean anymore? What could they point to instead?"* Let students land on "a node" themselves if possible — it's a small leap from Linked List sessions earlier in the block. Then give the brief version: *"`front` and `back` become node pointers, not indices. No capacity, no modulo — we're trading array indices for pointers."*
 
-**Dry Run** — show the status of the queue after every update: on the very first `push`, the queue was empty, so the new node becomes *both* `front` and `back`. When `pop()` removes the **last** remaining node, *both* `front` and `back` must be reset to `null` — resetting only `front` leaves `back` dangling, pointing at a deleted node.
+**Dry Run (~6 min).** Empty queue to start. Track `front` and `back` explicitly at every step, and choose the sequence so it hits the single-node special case — both the creation and the removal side of it:
 
-**Pseudocode** — derived from the core idea:
+```
+front = back = null (empty)
+
+enqueue(A) → queue was empty → front = back = new node(A).         front→A←back
+enqueue(B) → back->next = node(B); back moves to node(B).          front→A→B←back
+enqueue(C) → back->next = node(C); back moves to node(C).          front→A→B→C←back
+dequeue()  → returns A. front moves to front->next = node(B).      front→B→C←back
+dequeue()  → returns B. front moves to node(C). Now front==back.   front→C←back
+dequeue()  → returns C. front->next is null, so front = null.
+             front is now null — reset back to null too.           front=back=null (empty again)
+```
+
+**Observations — write these on the board, in plain English, before touching pseudocode:**
+1. `front` and `back` are node pointers, both `null` when the queue is empty.
+2. On `enqueue`: if the queue was empty, the new node becomes *both* `front` and `back`. Otherwise, link it after the current `back` and move `back` to it.
+3. On `dequeue`: read `front`'s data, then move `front` to `front->next`.
+4. If that move leaves `front` as `null` (the queue just emptied), reset `back` to `null` too — don't leave it dangling.
+
+**Safe Point 2 — Approach Understanding.** *Technique: Hand-Signal Check.* "Thumbs up if you can tell me what happens to `back` on the very last `dequeue()`, when only one node was left. Thumbs down if not." Address any thumbs-down before moving on.
+
+**Pseudocode — derive step by step, not all at once.** First the node and the empty case:
 
 ```
 class Node: data, next
@@ -85,7 +111,11 @@ class Node: data, next
 class LinkedQueue:
     front = null
     back = null
+```
 
+Then `enqueue`, referring back to Observation 2:
+
+```
     function enqueue(x):
         node = new Node(x)
         if back == null:                # queue was empty
@@ -93,7 +123,11 @@ class LinkedQueue:
         else:
             back.next = node
             back = node
+```
 
+Then `dequeue`, referring back to Observations 3 and 4:
+
+```
     function dequeue():
         if front == null: error "Queue is empty"
         x = front.data
@@ -102,7 +136,9 @@ class LinkedQueue:
         return x
 ```
 
-**Deriving the code** — build this live in the coding playground, straight from the pseudocode above; don't just read out a finished block:
+**Safe Point 3 — Pseudocode Understanding.** *Technique: Deliberate Bug.* Show `dequeue` with the `if front == null: back = null` line removed, and ask: *"Is this still correct?"* Students tracking the logic should catch that `back` is left pointing at a now-conceptually-removed node — a dangling reference that will corrupt the very next `enqueue`. (This is exactly what the Engagement Activity below drills into further.)
+
+**Deriving the Code (~7 min) — build this live, in the coding playground, straight from the pseudocode above. Do not read out a finished block.** If anyone hasn't seen a `struct` with a constructor before, address that syntax gap now. Relate every line back to the pseudocode line it came from:
 
 ```cpp
 struct Node {
@@ -133,27 +169,26 @@ public:
 };
 ```
 
-`enqueue` and `dequeue` are both O(1) — no traversal, no capacity ceiling.
+**Complexity — derive it, don't state it (~2 min).** Take a concrete case: a queue holding 4 nodes, `dequeue()` called once. There's no shifting, no scanning — reading `front->data`, moving one pointer, and (conditionally) resetting `back` is the same fixed handful of operations whether the queue holds 4 nodes or 4,000. Compare directly against last session's array version on the board: same O(1) result, but derived from *pointer reassignment* here instead of *modulo arithmetic* there — same cost, different mechanism.
 
-**Key Takeaways** *(mandatory — matches the deck's own Key Takeaways slide, state these explicitly before moving on):*
+**Key Takeaways** *(mandatory — matches the deck's own Key Takeaways slide, state these explicitly):*
 - Nodes contain data and a pointer to the next node; the queue uses `front` and `back` pointers.
-- `push`: add a new node at the back, update the back pointer and link it to the new node.
-- `pop`: remove the node at the front, update the front pointer — set both `front` and `back` to null if the queue becomes empty.
+- `enqueue`: add a new node at the back, update the back pointer and link it to the new node.
+- `dequeue`: remove the node at the front, update the front pointer — set both `front` and `back` to null if the queue becomes empty.
 - `front`/`back` access the first and last elements directly via the pointers, no traversal needed.
 - Advantage over the array version: dynamic size, no element shifting, no fixed capacity.
 
-**Checkpoint:**
-> *"When the last element is popped, why reset both pointers, not just `front`?"*
-> **Answer:** If only `front` is reset, `back` still points at the deleted node — a dangling pointer that corrupts the next `push`.
+**Safe Point 4 — Final Check.** *Technique: Quiet-Bench Check-In.* Walk toward a less-interactive part of the room and ask, low-stakes: *"When the last element is popped, why reset both pointers, not just `front`?"* **Answer:** if only `front` is reset, `back` still points at the deleted node — a dangling pointer that corrupts the next `enqueue`.
 
 ---
 
-## ⚡ Active Learning Strategy — Spot the Bug: The Missing Reset (29–36 min)
+## ⚡ Engagement Activity (38–43 min)
 
-**Format:** Spot the Bug · **Exposes:** the single most common real bug in this implementation — forgetting to reset `back` to `null` when the last element is popped, leaving it dangling.
+*Reuses the exact scenario from Concept Walkthrough's Safe Point 3 — no new content, so no extra time added to the session.*
 
-**Setup line (say this):**
-> *"Here's a `pop()` implementation with a bug. Find it."*
+**Format:** What-If / Deliberate Bug, live · **Exposes:** whether students can trace the *consequence* of a bug forward through subsequent operations, not just spot that a line is missing.
+
+**Prompt 1 — say this, and write this exact buggy `pop()` on the board:**
 
 ```
 pop() {
@@ -165,28 +200,33 @@ pop() {
 }
 ```
 
-**What students do:** 45 seconds silent, then hands up.
+> *"What if I only reset `front` here, and never touch `back`? Walk me through what happens if this `pop()` empties the queue completely."*
 
-**Answer:** This version *always* just does `front = front->next`, even when popping the very last element. When `front` was the only node, `front->next` is `null`, so `front` correctly becomes `null` — but `back` was never touched, and still points at the now-deleted node. `back` is left dangling.
+**Expected walk-through:** `front` correctly becomes `null` (since `front->next` was `null` on the last node). But `back` is never touched — it still points at the now-deleted node. `back` is left dangling.
 
-**How it surfaces:** Ask: *"If I call `push(x)` right after this buggy `pop()` empties the queue, what happens?"* Walk through it: `push` checks `if (size == 0)` to decide whether to set `front = back = newNode` — but `size` was correctly decremented to `0`, so this particular bug is masked *this time*. Then ask: *"What if `push`'s empty-check used `back == null` instead of `size == 0`?"* Now it breaks — `back` isn't null, so `push` thinks the queue isn't empty and tries to do `back->next = newNode` on a dangling pointer.
+**Prompt 2 — the consequence, say this:**
+> *"OK, the bug is there, but nothing crashed yet. What if I now call `push(x)` right after this? Does it break immediately, or does it look fine for a while?"*
+
+**Anticipated response A (common, incomplete):** *"It would break immediately."* — Not quite. Walk through it: if `push`'s empty-check uses `size == 0` (which was correctly decremented), it takes the `front = back = newNode` branch and silently *overwrites* the dangling `back` — the bug is masked, this time.
+
+**Anticipated response B (the real trap, ask directly if nobody raises it):** *"What if `push`'s empty-check used `back == null` instead of `size == 0`?"* Now it genuinely breaks — `back` isn't `null` (it's dangling, not null), so `push` thinks the queue isn't empty and tries `back->next = newNode` on a deleted node.
 
 **Debrief line:**
-> *"The fix: when `size` reaches `0` after a pop, explicitly set both `front = null` and `back = null`. Don't rely on one pointer's state to imply the other's — say it directly, every time."*
+> *"That's the trap with dangling-pointer bugs specifically — they don't always fail where they're created. This one can sit silent for an entire `push` call and only surface later, depending on which check the next function happens to use. That's exactly why we reset both pointers explicitly, every time, rather than relying on one to imply the other."*
 
-**Cut rule:** If running short, state the bug and its fix directly rather than running the "what if push used `back == null`" extension — the core lesson (reset both pointers together) still lands.
+**Cut rule:** If running short, do Prompt 1 only — spotting the missing reset is the core lesson; Prompt 2's masking behaviour is a deeper reinforcement, not new insight.
 
 ---
 
-## Classroom Quiz (36–41 min)
+## Classroom Quiz (43–48 min)
 
 **Classroom Quiz** (~5 min) — 5-6 MCQs from the platform bank, run as the closing block of the session.
 
 ---
 
-## Buffer (41–50 min) · Flex — not instructional
+## Buffer (48–50 min) · Flex — not instructional, inside the 50-minute block
 
-Unscheduled on purpose. If you land here with time on the clock, let the session end early — don't stretch content to fill it.
+Unscheduled on purpose. If you land here with time on the clock, let the session end early — don't stretch content to fill it. If students have open questions, this is where they get handled.
 
 ---
 
@@ -194,7 +234,7 @@ Unscheduled on purpose. If you land here with time on the clock, let the session
 
 *Not part of the core timed flow — pointer movement is already covered in Concept Walkthrough's Dry Run. Run this only if the room finishes early, or as a follow-up warm-up next session.*
 
-**Format:** Dry-Run Relay · **Exposes:** whether students can track `front` and `back` as they move between actual nodes, rather than array indices — the one genuinely new mental model this session introduces.
+**Format:** Dry-Run Relay · **Exposes:** whether students can track `front` and `back` as they move between actual nodes, on a sequence they haven't seen.
 
 **Setup line (say this):**
 > *"Empty queue. Sequence: `push(A)`, `push(B)`, `push(C)`, `pop()`, `pop()`. After each step, tell me what `front` and `back` point to — before I confirm."*
@@ -209,11 +249,6 @@ pop()   → front = front->next = node(B).                        front→B→C�
 pop()   → front = front->next = node(C). Now front == back == node(C).   front→C←back
 ```
 
-**How it surfaces:** After the second `pop()`, ask before revealing: *"`front` and `back` now point at the same node — does that mean the queue is empty?"* Correct: no — it means exactly one element remains (`C`), the same "front equals back, one element" case from last session's Activity 2, just expressed as pointers instead of indices.
-
-**Debrief line:**
-> *"Same underlying situations as last session — 'one element left' and 'completely empty' are still two different states that happen to look similar. The representation changed from indices to pointers; the logic you have to get right didn't."*
-
 **Cut rule:** If running short, do just `push(A)` and the second `pop()` — one shows the empty-queue special case, the other shows the one-element state.
 
 ---
@@ -222,9 +257,9 @@ pop()   → front = front->next = node(C). Now front == back == node(C).   front
 
 | Misconception | Why students hold it | Correct it live by |
 |---|---|---|
-| Only `front` needs updating when popping the last element | Pop is mentally centred on `front`, since that's the end being removed | ALS 2 — showing `back` left dangling if it isn't explicitly reset alongside `front` |
-| `front == back` always means the queue is empty | Direct carryover from arrays | ALS 1's second pop — `front == back` here means exactly one node remains |
-| The linked-list queue is a fundamentally different algorithm from the array queue | New pointer-based syntax looks unfamiliar | Same FIFO behaviour, same two-pointer design as last session — only the storage mechanism changed |
+| Only `front` needs updating when popping the last element | Pop is mentally centred on `front`, since that's the end being removed | Engagement Activity — showing `back` left dangling, and the delayed way it surfaces |
+| `front == back` always means the queue is empty | Direct carryover from arrays | Dry Run's second-to-last pop — `front == back` here means exactly one node remains |
+| The linked-list queue is a fundamentally different algorithm from the array queue | New pointer-based syntax looks unfamiliar | Complexity derivation — same FIFO behaviour, same O(1) result, only the mechanism changed |
 | A linked-list queue can never run out of space | Technically bounded only by system memory | Brief, honest caveat: not capacity-*checked*, but not infinite either |
 
 ---
