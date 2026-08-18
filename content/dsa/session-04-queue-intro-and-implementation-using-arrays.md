@@ -71,7 +71,7 @@ Why: a fixed-capacity array queue has a hard ceiling — no room for a third ele
 
 ## Concept Walkthrough (13–29 min)
 
-*(Deck: Setup Slides 7–8 · Dry Run Slides 9–29 · Pseudocode Slides 30–35 · Complexity Slide 38 · C++ Code Slides 39–45)*
+*(Deck: Setup Slides 7–8 · Dry Run Slides 9–29 · Pseudocode Slides 30–35 · Complexity Slide 38 · C++ Code Slides 39–45 · Key Takeaways Slides 52–53)*
 
 **Core idea:** a fixed-size array queue tracks two pointers — `front` (where you remove) and `back` (where you add), both starting at `-1` to mean empty. When `back` reaches the end of the array but slots have been freed at the front (from prior pops), it **wraps around** via `back = (back + 1) % capacity` instead of reporting full.
 
@@ -135,6 +135,12 @@ public:
 ```
 
 `enqueue` and `dequeue` are both O(1) — no shifting, the modulo does the wraparound.
+
+**Key Takeaways** *(mandatory — matches the deck's own Key Takeaways slides, state these explicitly before moving on):*
+- Queue: a data structure following the First-In-First-Out (FIFO) principle.
+- `push()` adds an element to the rear; `pop()` removes an element from the front.
+- `front()` retrieves the front element without removing it; `back()` retrieves the rear element without removing it.
+- `empty()` checks if the queue is empty; `full()` checks if the queue is full.
 
 **Checkpoint:**
 > *"Why does a queue need two pointers when a stack only needed one?"*

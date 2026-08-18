@@ -140,6 +140,13 @@ vector<int> asteroidCollision(vector<int>& asteroids) {
 
 Each asteroid is pushed once and popped at most once — O(N) time, O(N) space.
 
+**Key Takeaways** *(mandatory — matches the deck's own Key Takeaways slides, state these explicitly before moving on):*
+- Use a stack to handle collisions as asteroids move in opposite directions.
+- Positive asteroids (moving right) are pushed to the stack; negative ones may cause collisions.
+- When a collision occurs, the smaller asteroid explodes — or both explode if they're equal.
+- Continue processing until all collisions are resolved; the stack's remaining elements are the final state.
+- Overall complexity: O(N) time, O(N) space.
+
 **Checkpoint:**
 > *"When `-9` arrives and the stack top is `-8`, why is there no collision?"*
 > **Answer:** Both are moving left — same-direction asteroids never collide, regardless of size.

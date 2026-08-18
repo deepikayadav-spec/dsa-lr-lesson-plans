@@ -133,6 +133,12 @@ bool isValid(string s) {
 
 One pass, one stack — O(N) time, O(N) space.
 
+**Key Takeaways** *(mandatory — matches the deck's own Key Takeaways slides, state these explicitly before moving on):*
+- Scan left to right using a stack: push every opening bracket (`(`, `{`, `[`).
+- On a closing bracket, if the stack is empty or the top doesn't form a matching pair, the string is invalid.
+- After processing all characters, the string is valid only if the stack is empty — no unmatched openings remain.
+- Complexity: O(N) time, O(N) space (worst case: every character is an opening bracket).
+
 **Checkpoint:**
 > *"Suppose the string is just `"(("` — two opening brackets, nothing else. Valid or invalid?"*
 > **Answer:** Invalid — the stack still has two unmatched elements when the string ends.

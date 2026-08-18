@@ -71,7 +71,7 @@ Why: LIFO order — last pushed, first popped.
 
 ## Concept Walkthrough (13–29 min)
 
-*(Deck: Approach Slides 8–10 · Dry Run Slides 11–28 · Pseudocode Slides 29–30 · Complexity Slides 31–34 · C++ Code Slides 35–36 — deck continues to Slide 58 with a second, alternate Dry Run pass, not needed for this script)*
+*(Deck: Approach Slides 8–10 · Dry Run Slides 11–28 · Pseudocode Slides 29–30 · Complexity Slides 31–34 · C++ Code Slides 35–36 · Key Takeaways Slide 37 — deck continues to Slide 58 with a second, alternate Dry Run pass, not needed for this script)*
 
 **Core idea:** simulate a stack using only a queue's `enqueue`/`dequeue`. On every `push`, enqueue the new element, then rotate the rest of the queue behind it — exactly `size-before-the-push` rotations — so the newest element ends up at the front, where `pop()` and `top()` can read it directly.
 
@@ -120,6 +120,11 @@ public:
 ```
 
 `push` is O(N) (the rotation); `pop` and `top` are O(1) — the cost of simulating LIFO with a FIFO structure.
+
+**Key Takeaways** *(mandatory — matches the deck's own Key Takeaways slide, state these explicitly before moving on):*
+- A stack can be implemented using one queue by rotating elements after each push.
+- The queue's front represents the stack's top — `pop`, `top`, and `empty` map directly to queue operations.
+- `push` takes O(N) (due to rotation); everything else stays O(1) — that's what preserves LIFO behaviour.
 
 **Checkpoint:**
 > *"`push(40)` on a 3-element queue rotates how many times, and why?"*

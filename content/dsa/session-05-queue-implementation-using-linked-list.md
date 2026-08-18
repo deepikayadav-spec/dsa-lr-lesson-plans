@@ -71,7 +71,7 @@ Why: there's no node to remove; unlike the array version, there's no capacity ce
 
 ## Concept Walkthrough (13–29 min)
 
-*(Deck: Dry Run Slides 7–21 · Pseudocode Slides 22–27 · Complexity Slide 28 · C++ Code Slides 29–36)*
+*(Deck: Dry Run Slides 7–21 · Pseudocode Slides 22–27 · Complexity Slide 28 · C++ Code Slides 29–36 · Key Takeaways Slide 45)*
 
 **Core idea:** swap the fixed array for a linked list — `front` and `back` become **node pointers**, not indices, both `null` when empty. No capacity, no modulo. `push` links a new node after `back` and moves `back` to it; `pop` moves `front` to `front->next`.
 
@@ -134,6 +134,13 @@ public:
 ```
 
 `enqueue` and `dequeue` are both O(1) — no traversal, no capacity ceiling.
+
+**Key Takeaways** *(mandatory — matches the deck's own Key Takeaways slide, state these explicitly before moving on):*
+- Nodes contain data and a pointer to the next node; the queue uses `front` and `back` pointers.
+- `push`: add a new node at the back, update the back pointer and link it to the new node.
+- `pop`: remove the node at the front, update the front pointer — set both `front` and `back` to null if the queue becomes empty.
+- `front`/`back` access the first and last elements directly via the pointers, no traversal needed.
+- Advantage over the array version: dynamic size, no element shifting, no fixed capacity.
 
 **Checkpoint:**
 > *"When the last element is popped, why reset both pointers, not just `front`?"*

@@ -75,7 +75,7 @@ Why: bar `2` alone gives area `2`; bar `4` alone gives area `4`; both together a
 
 ## Concept Walkthrough (13–36 min)
 
-*(Deck: Two-pass NSE/PSE — Approach Slides 21–22, Dry Run Slides 23–61, Pseudocode Slides 62–64, Complexity Slides 65–66, C++ Code Slides 67–68. One-pass optimal — Approach Slides 69–70, Dry Run Slides 71–88, Pseudocode Slides 89–91, Complexity Slides 92–94, C++ Code Slides 95–97, Summary Slides 98–100)*
+*(Deck: Two-pass NSE/PSE — Approach Slides 21–22, Dry Run Slides 23–61, Pseudocode Slides 62–64, Complexity Slides 65–66, C++ Code Slides 67–68. One-pass optimal — Approach Slides 69–70, Dry Run Slides 71–88, Pseudocode Slides 89–91, Complexity Slides 92–94, C++ Code Slides 95–97, Key Takeaways Slides 98–100)*
 
 **Core idea (two-pass):** for every bar, width = `NSE[i] - PSE[i] - 1`, where NSE/PSE are the nearest strictly-smaller bar to the right/left, each found with a monotonic stack in one pass. **Core idea (one-pass, optimal):** instead of precomputing both arrays, pop-and-compute — when a shorter bar arrives, pop the taller one off the stack and compute its area immediately, using the current index as its right boundary.
 
@@ -140,6 +140,13 @@ int largestRectangleArea(vector<int>& heights) {
 ```
 
 Each index is pushed once and popped at most once — O(N) time, O(N) space.
+
+**Key Takeaways** *(mandatory — matches the deck's own Key Takeaways slides, state these explicitly before moving on):*
+- Every bar's maximum width is decided by its Previous Smaller Element (PSE) on the left and Next Smaller Element (NSE) on the right.
+- PSE and NSE for all bars are computed in O(N) time using a monotonic stack of indices.
+- `width = NSE[i] − PSE[i] − 1`, `area = height × width` for every bar — take the maximum.
+- In the optimal one-pass approach, whenever a smaller bar is seen, pop taller bars and compute each one's area, treating it as the smallest height in its own rectangle.
+- In both approaches, each index is pushed and popped at most once — O(N) time, O(N) extra space overall.
 
 **Checkpoint:**
 > *"Why does the two-pass approach need separate NSE and PSE scans, in opposite directions?"*

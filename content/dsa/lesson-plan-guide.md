@@ -21,9 +21,10 @@ Read a session top to bottom once; after that you'll recognize the shape instant
 2. **Dry Run** — a specific input traced step by step, showing the status of the stack/queue after *every* update (see §2 for the notation).
 3. **Pseudocode** — derived from the core idea, language-neutral.
 4. **Deriving the code** — the C++ implementation, built live in the coding playground from the pseudocode, not read out as a finished block.
-5. **Checkpoint** — one cold-call question that tests whether the core idea actually landed, asked live before moving on.
+5. **Key Takeaways** — **mandatory**, not optional. A short bullet list matching the session's own deck (its Key Takeaways slides, near the end) — state these explicitly before the checkpoint, don't skip them just because the algorithm was already covered in the Dry Run.
+6. **Checkpoint** — one cold-call question that tests whether the core idea actually landed, asked live before moving on.
 
-Same as Problem Statement, a *(Deck: …)* line under the heading gives the real slide ranges for each of these five, in order — so you know exactly when to flip the deck forward.
+Same as Problem Statement, a *(Deck: …)* line under the heading gives the real slide ranges for each of these six, in order — so you know exactly when to flip the deck forward.
 
 This block's length is the one thing that varies session to session (17–23 min) — it's sized to the algorithm's real complexity, not padded or compressed to a fixed number.
 
@@ -64,7 +65,7 @@ It was demoted, not deleted, specifically because it duplicated a skill Concept 
 | Warm-Up Poll | 0–6 min | Previous session only |
 | Hook | 6–9 min | Scripted, board or question |
 | Problem Statement | 9–13 min | Input/output + 2 examples, always |
-| Concept Walkthrough | 13 min → varies | Core idea → Dry Run → pseudocode → deriving the code → checkpoint |
+| Concept Walkthrough | 13 min → varies | Core idea → Dry Run → pseudocode → deriving the code → Key Takeaways (mandatory) → checkpoint |
 | Active Learning Strategy | ~7 min | One activity, has a Cut rule |
 | Classroom Quiz | ~5 min | Platform bank, live |
 | Buffer | remainder → 50 min | Never filled with content |
