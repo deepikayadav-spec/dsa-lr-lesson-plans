@@ -69,7 +69,9 @@ Input: `heights = [2, 4]`
 Output: `4`
 Why: bar `2` alone gives area `2`; bar `4` alone gives area `4`; both together are capped at the shorter bar's height, `min(2,4) × 2 = 4`. Best is `4`.
 
-**Safe Point 1 — Problem Statement Clarity.** *Technique: Paraphrase-Back.* Ask a student to restate: "what decides how *wide* a rectangle at a given bar's height is allowed to be?" If they can't answer without your help, don't move to approach yet — the whole session hinges on this one idea.
+**Safe Point 1 — Problem Statement Clarity.** *Technique: Predict-the-Output, on a new input.* Draw a third array on the board — one they haven't seen: `heights = [2, 4, 2]`. Ask: *"Just by eyeballing it, before we talk about how to solve it — what's the largest rectangle here, and why?"* Give them a few seconds, take an answer.
+
+**What to listen for:** the common wrong answer is `4` — the single tall bar, alone. The correct answer is `6` — all three bars together at height `2`, width `3`, since `2` is short enough to sit under the tall middle bar too. If the room lands on `4`, don't correct it yet — just note it out loud: *"Hold that thought — that's the exact trap we're solving for today."* If they land on `6` unprompted, that's a strong signal the problem statement has genuinely landed; move on.
 
 ---
 
@@ -77,7 +79,9 @@ Why: bar `2` alone gives area `2`; bar `4` alone gives area `4`; both together a
 
 *(Deck: Approach Slides 21–22 · Dry Run Slides 23–61 · Pseudocode Slides 62–64 · Complexity Slides 65–66)*
 
-**Approach Exploration (~2 min).** Before revealing anything, ask: *"For one specific bar, its rectangle can stretch left and right until it hits something shorter. What would you need to know about each bar to compute that directly?"* Let guesses land — steer toward "how far until a shorter bar appears, on both sides." Give the brief version only: *"That's exactly two values per bar: the nearest strictly-shorter bar to its left, and to its right. We compute those with a monotonic stack — the same tool from Asteroid Collision, aimed at a new job."*
+**Approach Exploration (~3 min).** Before revealing anything, ask: *"For one specific bar, its rectangle can stretch left and right until it hits something shorter. What would you need to know about each bar to compute that directly?"* Let guesses land — steer toward "how far until a shorter bar appears, on both sides." Give the brief version only: *"That's exactly two values per bar: the nearest strictly-shorter bar to its left, and to its right — its Next Smaller Element and Previous Smaller Element."*
+
+**Now find one, together, by eye — don't just announce it.** Point at index `2` (height `5`) on the hook's skyline, `heights = [2, 1, 5, 6, 2, 3]`. Ask: *"Looking at the board — starting from this bar and scanning right, where's the first bar that's shorter than it?"* Let them point or call it out — index `4` (height `2`). Then: *"And scanning left?"* — index `1` (height `1`). Confirm out loud: *"You just found bar 2's Next Smaller Element and Previous Smaller Element yourselves — index 4 and index 1. That's exactly what we're about to automate for every bar at once, with a monotonic stack — the same tool from Asteroid Collision, aimed at a new job."*
 
 **Dry Run (~4 min) — brief, proof of concept.** Same array, `heights = [2, 1, 5, 6, 2, 3]`. Compute **Next Smaller Element (NSE)**, scanning right to left, popping while the stack's top is `≥` the current value:
 
