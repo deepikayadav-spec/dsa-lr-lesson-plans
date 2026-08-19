@@ -71,7 +71,9 @@ Input: `dequeue()` on an empty queue
 Output: fails — `"Queue is empty"`
 Why: there's no node to remove; unlike the array version, there's no capacity ceiling, but emptiness still has to be checked.
 
-**Safe Point 1 — Problem Statement Clarity.** *Technique: Paraphrase-Back.* Pick a different student than last session's Safe Point 1. Ask them to restate, in their own words: "what's the same as last session's queue, and what's explicitly different?" Don't proceed until both halves of that answer are clean.
+**Safe Point 1 — Problem Statement Clarity.** *Technique: Predict-the-Output, on a new input.* Write a sequence on the board — one they haven't seen: `enqueue(7)`, `enqueue(8)`, `dequeue()`, `enqueue(9)`, `front()`. Ask: *"What does `front()` return here, and why?"*
+
+**What to listen for:** the correct answer is `8` — `7` was removed first, so `8` is next in line; `9` just joined the back. Same FIFO logic as last session's array version — the mechanics underneath are about to change, but this answer shouldn't. If anyone reaches for capacity or `null` checks to answer this, that's a sign they're anticipating today's content before it's been taught — worth a quick "hold that thought, we'll get there."
 
 ---
 

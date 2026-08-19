@@ -49,7 +49,7 @@ Same overall shell (Warm-Up → Hook → Problem Statement → Concept Walkthrou
 
 **Hook (5–8 min)** — states the topic name explicitly ("Today we're learning X"), then names the concept's real-world advantage concretely, not just an analogy.
 
-**Problem Statement (~4 min)** — input/output + 2 examples, same as §2, plus **Safe Point 1**: a specific technique (usually Paraphrase-Back), checking understanding before any approach is discussed. Don't proceed on a shaky paraphrase.
+**Problem Statement (~4 min)** — input/output + 2 examples, same as §2, plus **Safe Point 1**: always Predict-the-Output on a new input (see §4) — a small third example students haven't seen, asked before any approach is discussed. Concrete beats abstract here: an input to reason about lands better than an abstract "do you understand the problem?" question, and a well-chosen input surfaces the exact misconception the session is built to correct. Don't proceed until the room's answer (or the instructor's diagnosis of a wrong one) is out in the open.
 
 **Concept Walkthrough** — longest block, in a fixed sub-order:
 1. **Approach Exploration** — ask students what they'd try first, *before* revealing anything. Bank their guess (right or wrong — it gets revisited later, usually in the Engagement Activity). Give only a **one-line brief** of the real approach, never the full solution up front — a student who doesn't know the solution yet can't absorb a complete walkthrough of it.
@@ -64,7 +64,7 @@ Same overall shell (Warm-Up → Hook → Problem Statement → Concept Walkthrou
 7. **Key Takeaways** — mandatory, matching the deck's own slides.
 8. **Safe Point** (Quiet-Bench Check-In, usually) — a low-stakes question, asked walking toward a less-interactive part of the room.
 
-**LRH only** repeats steps 2–9 twice: a deliberately lean pass for the brute-force/two-pass approach (dry run + pseudocode, no live coding — its job is to motivate the shortcut, not to be implemented), then an explicit **Bottleneck & Transition** beat (its own Safe Point, Physical Movement Reset), then the full nine-step cycle for the optimal approach.
+**LRH only** repeats steps 2–8 twice: a deliberately lean pass for the brute-force/two-pass approach (dry run + pseudocode, no live coding — its job is to motivate the shortcut, not to be implemented), then an explicit **Bottleneck & Transition** beat (its own Safe Point, Physical Movement Reset), then the full cycle for the optimal approach.
 
 **Engagement Activity (~5 min)** — not "Active Learning Strategy." **Reuses the session's own worked example — no new content, no added time.** Framed as "what if" prompts building on what's already covered. Scripted with the instructor's exact dialogue *and* anticipated student responses, including plausible-but-wrong ones and how to redirect them — not just the correct answer.
 
@@ -76,6 +76,7 @@ Same overall shell (Warm-Up → Hook → Problem Statement → Concept Walkthrou
 
 | Technique | How it works |
 |---|---|
+| **Predict-the-Output** | Give a small new input (not one already used in the session) and ask what the output is, before revealing the approach. Concrete beats abstract — pick the input so the common wrong answer surfaces a real misconception. This is always Safe Point 1. |
 | **Paraphrase-Back** | Pick a student, ask them to restate the problem/approach in their own words, "as if explaining it for the first time." |
 | **Hand-Signal Check** | Thumbs up if understood, a different signal (thumbs down) if lost — scan the room fast. |
 | **Deliberate Bug** | Show an intentionally wrong line (flipped condition, missing reset, wrong index) and ask "is this correct?" Silence or a reflexive yes is not a real check — this is. |
@@ -128,7 +129,7 @@ It was demoted, not deleted, specifically because it duplicated a skill the Dry 
 |---|---|---|
 | Warm-Up Poll | 0–5 min | Recap via questioning — poll cold, no pre-summary |
 | Hook | ~3 min | Names the topic + a concrete advantage |
-| Problem Statement | ~4 min | + Safe Point 1 (Paraphrase-Back) |
+| Problem Statement | ~4 min | + Safe Point 1 (Predict-the-Output, new input) |
 | Concept Walkthrough | longest block | Approach Exploration → Dry Run → Observations → Safe Point → Deriving the Code (pseudocode → Safe Point → Hands-On Coding) → Complexity (derived) → Key Takeaways → Safe Point. LRH: two full cycles + Bottleneck & Transition. |
 | Engagement Activity | ~5 min | Reuses the session's own example, scripted dialogue + anticipated responses |
 | Classroom Quiz | ~5 min | Platform bank, live |

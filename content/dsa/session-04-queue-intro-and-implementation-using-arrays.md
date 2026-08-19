@@ -71,7 +71,9 @@ Input: capacity 2 → `enqueue(1)`, `enqueue(2)`, `enqueue(3)`
 Output: `enqueue(3)` fails — `"Queue is full"`
 Why: a fixed-capacity array queue has a hard ceiling — no room for a third element until one is dequeued.
 
-**Safe Point 1 — Problem Statement Clarity.** *Technique: Paraphrase-Back.* Pick one student, ask them to restate the problem in their own words, "as if you're explaining it to someone hearing it for the first time." Do not move to the approach until this lands cleanly — a shaky paraphrase here means the rest of the session is built on sand.
+**Safe Point 1 — Problem Statement Clarity.** *Technique: Predict-the-Output, on a new input.* Write a third sequence on the board — one they haven't seen: capacity `3` → `enqueue(4)`, `enqueue(5)`, `dequeue()`, `enqueue(6)`, `front()`. Ask: *"What does `front()` return here, and why?"*
+
+**What to listen for:** the correct answer is `5` — `4` was removed first, so `5` is next in line; `6` just joined the back. The common wrong answer is `6` — the *most recently added* element, which is LIFO thinking left over from every stack session this block. If the room lands on `6`, don't correct it yet — just note it out loud: *"Hold that thought — that's stack thinking, and today is the one day it doesn't apply."*
 
 ---
 
