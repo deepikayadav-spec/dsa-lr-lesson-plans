@@ -105,7 +105,9 @@ enqueue(6) → back would be 5 — off the end. But front=2, so
 
 **Safe Point 2 — Approach Understanding.** *Technique: Hand-Signal Check.* "Thumbs up if you can tell me what `back` becomes when it's at the last index and slot 0 is free. Thumbs down if not." Address any thumbs-down before moving on — don't take silence as agreement.
 
-**Pseudocode — derive step by step, not all at once.** First just the state and the empty/full checks:
+**Deriving the Code (~9 min)** — pseudocode, then the C++ it becomes. Derive step by step, not all at once.
+
+**Pseudocode.** First just the state and the empty/full checks:
 
 ```
 class ArrayQueue:
@@ -140,7 +142,7 @@ Then `dequeue`, referring back to Observation 3:
 
 **Safe Point 3 — Pseudocode Understanding.** *Technique: Deliberate Bug.* Show `enqueue` with the `if isEmpty(): front = 0` line removed, and ask: *"Is this still correct?"* Students tracking the logic will catch that a fresh queue would leave `front` stuck at `-1` forever, even after elements are pushed. Students who accept it uncritically are the ones to check in with individually.
 
-**Deriving the Code (~7 min) — build this live, in the coding playground, straight from the pseudocode above. Do not read out a finished block.** If anyone hasn't seen a `vector<int>` constructed with a fixed size before, address that syntax gap now, before it surfaces mid-derivation. Relate every line back to the pseudocode line it came from as you type it:
+**Hands-On Coding** — build this live, in the coding playground, straight from the pseudocode above. Do not read out a finished block. If anyone hasn't seen a `vector<int>` constructed with a fixed size before, address that syntax gap now, before it surfaces mid-derivation. Relate every line back to the pseudocode line it came from as you type it:
 
 ```cpp
 class ArrayQueue {

@@ -56,12 +56,13 @@ Same overall shell (Warm-Up → Hook → Problem Statement → Concept Walkthrou
 2. **Dry Run** — a specific input traced step by step. Simple mechanics get one cycle; a genuinely complex algorithm (LRH's optimal approach) gets **two cycles** — a brief one that just proves the mechanism works, then a detailed one tracking every pointer/index and hitting the edge cases.
 3. **Observations** — written on the board in plain English, *before* pseudocode. This is the bridge: students can't hold an entire dry run in memory while pseudocode gets derived, so the observations are what pseudocode derivation actually refers back to.
 4. **Safe Point** (Hand-Signal Check, usually) — confirms the approach landed before pseudocode starts.
-5. **Pseudocode** — derived **piece by piece, not all at once** — each piece tied back to a specific observation.
-6. **Safe Point** (Deliberate Bug, usually) — an intentionally wrong line, to check whether students are actually tracking the logic or just nodding along.
-7. **Deriving the Code** — built live in the coding playground, every line related back to the pseudocode line it came from. Language gaps (unfamiliar syntax) get addressed before they'd otherwise surface mid-derivation.
-8. **Complexity — derived, not stated.** A concrete example size, real operations counted, the pattern generalized. Never just "this is O(N)."
-9. **Key Takeaways** — mandatory, matching the deck's own slides.
-10. **Safe Point** (Quiet-Bench Check-In, usually) — a low-stakes question, asked walking toward a less-interactive part of the room.
+5. **Deriving the Code** — the umbrella label for this whole beat, stated with its combined time up front (pseudocode + hands-on coding together). Two parts:
+   - **Pseudocode** — derived **piece by piece, not all at once** — each piece tied back to a specific observation.
+   - **Safe Point** (Deliberate Bug, usually) — an intentionally wrong line, to check whether students are actually tracking the logic or just nodding along.
+   - **Hands-On Coding** — built live in the coding playground, every line related back to the pseudocode line it came from. Language gaps (unfamiliar syntax) get addressed before they'd otherwise surface mid-derivation.
+6. **Complexity — derived, not stated.** A concrete example size, real operations counted, the pattern generalized. Never just "this is O(N)."
+7. **Key Takeaways** — mandatory, matching the deck's own slides.
+8. **Safe Point** (Quiet-Bench Check-In, usually) — a low-stakes question, asked walking toward a less-interactive part of the room.
 
 **LRH only** repeats steps 2–9 twice: a deliberately lean pass for the brute-force/two-pass approach (dry run + pseudocode, no live coding — its job is to motivate the shortcut, not to be implemented), then an explicit **Bottleneck & Transition** beat (its own Safe Point, Physical Movement Reset), then the full nine-step cycle for the optimal approach.
 
@@ -128,7 +129,7 @@ It was demoted, not deleted, specifically because it duplicated a skill the Dry 
 | Warm-Up Poll | 0–5 min | Recap via questioning — poll cold, no pre-summary |
 | Hook | ~3 min | Names the topic + a concrete advantage |
 | Problem Statement | ~4 min | + Safe Point 1 (Paraphrase-Back) |
-| Concept Walkthrough | longest block | Approach Exploration → Dry Run → Observations → Safe Point → Pseudocode → Safe Point → Deriving the Code → Complexity (derived) → Key Takeaways → Safe Point. LRH: two full cycles + Bottleneck & Transition. |
+| Concept Walkthrough | longest block | Approach Exploration → Dry Run → Observations → Safe Point → Deriving the Code (pseudocode → Safe Point → Hands-On Coding) → Complexity (derived) → Key Takeaways → Safe Point. LRH: two full cycles + Bottleneck & Transition. |
 | Engagement Activity | ~5 min | Reuses the session's own example, scripted dialogue + anticipated responses |
 | Classroom Quiz | ~5 min | Platform bank, live |
 | Buffer | remainder → 50 min | Inside the 50, never additive, never filled with content |

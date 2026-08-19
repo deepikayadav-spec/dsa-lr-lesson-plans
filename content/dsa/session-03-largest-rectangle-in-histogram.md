@@ -195,7 +195,9 @@ Maximum area across all pops: `10` — matches the hook's eyeballed answer, and 
 **Safe Point 5 — Approach Understanding.** *Technique: Hand-Signal Check.* "Thumbs up if you can tell me what the width is when the stack goes empty during a pop. Thumbs down if not."
 **Answer:** the current index itself — there's no bar to the left that's smaller, so the rectangle reaches all the way back to the start.
 
-**Pseudocode — derive step by step, not all at once.** First just the scan and the pop condition:
+**Deriving the Code (~7 min)** — pseudocode, then the C++ it becomes. Derive step by step, not all at once.
+
+**Pseudocode.** First just the scan and the pop condition:
 
 ```
 function largestRectangleArea(heights):
@@ -219,7 +221,7 @@ Then the area computation inside the loop, referring back to Observation 3:
 
 **Safe Point 6 — Pseudocode Understanding.** *Technique: Deliberate Bug.* Ask: *"What if I dropped the sentinel `0` appended to `heights`? Would the last bars on the stack ever get their area computed?"* They wouldn't — without a value smaller than everything remaining, the final pops never trigger, and those bars' areas are silently lost.
 
-**Deriving the Code (~4 min) — build this live, in the coding playground, straight from the pseudocode above. Do not read out a finished block.** Relate every line back to the pseudocode line it came from:
+**Hands-On Coding** — build this live, in the coding playground, straight from the pseudocode above. Do not read out a finished block. Relate every line back to the pseudocode line it came from:
 
 ```cpp
 int largestRectangleArea(vector<int>& heights) {

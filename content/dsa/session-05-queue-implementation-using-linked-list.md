@@ -103,7 +103,9 @@ dequeue()  → returns C. front->next is null, so front = null.
 
 **Safe Point 2 — Approach Understanding.** *Technique: Hand-Signal Check.* "Thumbs up if you can tell me what happens to `back` on the very last `dequeue()`, when only one node was left. Thumbs down if not." Address any thumbs-down before moving on.
 
-**Pseudocode — derive step by step, not all at once.** First the node and the empty case:
+**Deriving the Code (~9 min)** — pseudocode, then the C++ it becomes. Derive step by step, not all at once.
+
+**Pseudocode.** First the node and the empty case:
 
 ```
 class Node: data, next
@@ -138,7 +140,7 @@ Then `dequeue`, referring back to Observations 3 and 4:
 
 **Safe Point 3 — Pseudocode Understanding.** *Technique: Deliberate Bug.* Show `dequeue` with the `if front == null: back = null` line removed, and ask: *"Is this still correct?"* Students tracking the logic should catch that `back` is left pointing at a now-conceptually-removed node — a dangling reference that will corrupt the very next `enqueue`. (This is exactly what the Engagement Activity below drills into further.)
 
-**Deriving the Code (~7 min) — build this live, in the coding playground, straight from the pseudocode above. Do not read out a finished block.** If anyone hasn't seen a `struct` with a constructor before, address that syntax gap now. Relate every line back to the pseudocode line it came from:
+**Hands-On Coding** — build this live, in the coding playground, straight from the pseudocode above. Do not read out a finished block. If anyone hasn't seen a `struct` with a constructor before, address that syntax gap now. Relate every line back to the pseudocode line it came from:
 
 ```cpp
 struct Node {
