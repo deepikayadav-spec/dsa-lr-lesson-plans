@@ -83,7 +83,11 @@ Why: bar `2` alone gives area `2`; bar `4` alone gives area `4`; both together a
 
 **Now find one, together, by eye — don't just announce it.** Point at index `2` (height `5`) on the hook's skyline, `heights = [2, 1, 5, 6, 2, 3]`. Ask: *"Looking at the board — starting from this bar and scanning right, where's the first bar that's shorter than it?"* Let them point or call it out — index `4` (height `2`). Then: *"And scanning left?"* — index `1` (height `1`). Confirm out loud: *"You just found bar 2's Next Smaller Element and Previous Smaller Element yourselves — index 4 and index 1. That's exactly what we're about to automate for every bar at once, with a monotonic stack — the same tool from Asteroid Collision, aimed at a new job."*
 
-**Dry Run (~4 min) — brief, proof of concept.** Same array, `heights = [2, 1, 5, 6, 2, 3]`. Compute **Next Smaller Element (NSE)**, scanning right to left, popping while the stack's top is `≥` the current value:
+**Dry Run (~4 min) — brief, proof of concept.** Before running anything, name the two variables on the board:
+- **`NSE[]`** — an array. `NSE[i]` will hold the *index* of bar `i`'s Next Smaller Element to the right.
+- **The stack** — holds *indexes* of bars we haven't found an NSE for yet, i.e. bars that could still turn out to be the next-smaller-to-the-right for something processed later.
+
+Same array, `heights = [2, 1, 5, 6, 2, 3]`. Compute **NSE**, scanning right to left, popping while the stack's top is `≥` the current value:
 
 ```
 i=5 (h=3) → stack empty → NSE[5]=6 (past end) → push 5.            Stack (idx): 5
