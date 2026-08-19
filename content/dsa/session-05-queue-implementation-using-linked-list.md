@@ -83,7 +83,12 @@ Why: there's no node to remove; unlike the array version, there's no capacity ce
 
 **Approach Exploration (~2 min).** Before revealing anything, ask: *"If we're not using an array at all, what do `front` and `back` even mean anymore? What could they point to instead?"* Let students land on "a node" themselves if possible — it's a small leap from Linked List sessions earlier in the block. Then give the brief version: *"`front` and `back` become node pointers, not indices. No capacity, no modulo — we're trading array indices for pointers."*
 
-**Dry Run (~6 min).** Empty queue to start. Track `front` and `back` explicitly at every step, and choose the sequence so it hits the single-node special case — both the creation and the removal side of it:
+**Dry Run (~6 min).** Before running anything, name the variables on the board:
+- **`front`** — pointer to the node at the head of the queue, the next one to remove.
+- **`back`** — pointer to the node at the tail, the last one added.
+- **`Node`** — holds a value and a pointer to the next node; no fixed size, no capacity.
+
+Empty queue to start. Track `front` and `back` explicitly at every step, and choose the sequence so it hits the single-node special case — both the creation and the removal side of it:
 
 ```
 front = back = null (empty)

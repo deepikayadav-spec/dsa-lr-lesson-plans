@@ -83,7 +83,12 @@ Why: a fixed-capacity array queue has a hard ceiling — no room for a third ele
 
 **Approach Exploration (~2 min).** Before revealing the design, ask: *"We need FIFO behaviour out of a plain array — no built-in queue type. What would you try first?"* Let 2–3 guesses land. The common one: "keep everything at the front, shift left on every pop." Don't shoot it down yet — bank it, and come back to it during Deriving the Code's complexity discussion. Then give the brief, one-line version of the actual approach, not the full mechanism: *"We're going to track two positions instead of shifting anything — where the next removal happens, and where the next addition happens."*
 
-**Dry Run (~6 min).** Capacity-5 array, empty to start. Track `front` and `back` explicitly at every step, and choose the example so it actually triggers the wraparound edge case — don't stop before that:
+**Dry Run (~6 min).** Before running anything, name the variables on the board:
+- **`front`** — index of the next slot to remove from.
+- **`back`** — index of the last slot filled.
+- **The array** — fixed size (`capacity`), slots reused via wraparound rather than grown.
+
+Capacity-5 array, empty to start. Track `front` and `back` explicitly at every step, and choose the example so it actually triggers the wraparound edge case — don't stop before that:
 
 ```
 front = back = -1 (empty)
