@@ -40,7 +40,7 @@ Say: *"[X]% got the repeated-comparison mechanic — good, because today's probl
 
 ## Hook (5–7 min)
 
-State the topic explicitly: *"Today's problem is the hardest one in this block — Largest Rectangle in Histogram."* Draw a rough skyline on the board — bars of heights `2, 1, 5, 6, 2, 3` sitting side by side, each width 1.
+State the topic explicitly: *"Today's problem is Largest Rectangle in Histogram — this one needs a bit more of your attention and time than usual, so stay with me."* Draw a rough skyline on the board — bars of heights `2, 1, 5, 6, 2, 3` sitting side by side, each width 1.
 
 Ask: *"Somewhere in this skyline is the single largest rectangle that fits entirely under the outline. Just eyeball it — where do you think it is, and how big?"*
 
