@@ -191,11 +191,11 @@ public:
 
 ---
 
-## ⚡ Engagement Activity — What-If / Deliberate Bug (38–43 min)
+## ⚡ Engagement Activity — Dry-Run Relay (38–43 min)
 
 *Reuses the exact scenario from Concept Walkthrough's Safe Point 3 — no new content, so no extra time added to the session.*
 
-**Format:** What-If / Deliberate Bug, live · **Exposes:** whether students can trace the *consequence* of a bug forward through subsequent operations, not just spot that a line is missing.
+**Format:** Dry-Run Relay · **Exposes:** whether students can trace the *consequence* of a bug forward through subsequent operations, not just spot that a line is missing.
 
 **Prompt 1 — say this, and write this exact buggy `pop()` on the board:**
 

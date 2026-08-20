@@ -253,11 +253,11 @@ int largestRectangleArea(vector<int>& heights) {
 
 ---
 
-## ⚡ Engagement Activity — What-If Discussion (38–43 min)
+## ⚡ Engagement Activity — Dry-Run Relay (38–43 min)
 
 *Reuses the exact array from the Dry Runs above, plus one new small array chosen to trigger a specific edge case — no unrelated content, so minimal extra time added.*
 
-**Format:** What-If Discussion · **Exposes:** whether students understand *why* the algorithm works, not just that it produces `10` on the one array they've now seen three times.
+**Format:** Dry-Run Relay · **Exposes:** whether students understand *why* the algorithm works, not just that it produces `10` on the one array they've now seen three times.
 
 **Prompt 1 — say this:**
 > *"What if the histogram was strictly decreasing — `heights = [3, 2, 1]`? Quick guess before we trace it: does every bar just form its own separate little rectangle, or could some of them combine into something bigger?"*

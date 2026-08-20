@@ -66,7 +66,7 @@ Same overall shell (Warm-Up → Hook → Problem Statement → Concept Walkthrou
 
 **LRH only** repeats steps 2–8 twice: a deliberately lean pass for the brute-force/two-pass approach (dry run + pseudocode, no live coding — its job is to motivate the shortcut, not to be implemented), then an explicit **Bottleneck & Transition** beat (its own Safe Point, Physical Movement Reset), then the full cycle for the optimal approach.
 
-**Engagement Activity (~5 min)** — not "Active Learning Strategy." **Reuses the session's own worked example — no new content, no added time.** Framed as "what if" prompts building on what's already covered. Scripted with the instructor's exact dialogue *and* anticipated student responses, including plausible-but-wrong ones and how to redirect them — not just the correct answer.
+**Engagement Activity — Dry-Run Relay (~5 min)** — not "Active Learning Strategy." All three §3 sessions name it Dry-Run Relay in the heading. **Reuses the session's own worked example — no new content, no added time.** Framed as "what if" prompts building on what's already covered. Scripted with the instructor's exact dialogue *and* anticipated student responses, including plausible-but-wrong ones and how to redirect them — not just the correct answer.
 
 **Classroom Quiz (~5 min)**, **Buffer (inside the 50, not additive)** — same as §2.
 

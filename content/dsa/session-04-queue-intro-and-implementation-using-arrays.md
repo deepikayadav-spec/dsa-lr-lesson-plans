@@ -192,11 +192,11 @@ public:
 
 ---
 
-## ⚡ Engagement Activity — What-If Discussion (38–43 min)
+## ⚡ Engagement Activity — Dry-Run Relay (38–43 min)
 
 *Reuses the exact example from the Dry Run above — no new content, so no extra time added to the session.*
 
-**Format:** What-If Discussion · **Exposes:** whether students actually understood *why* two pointers + wraparound beats the shifting approach they proposed earlier, not just whether they can recite the mechanism.
+**Format:** Dry-Run Relay · **Exposes:** whether students actually understood *why* two pointers + wraparound beats the shifting approach they proposed earlier, not just whether they can recite the mechanism.
 
 **Prompt 1 — say this:**
 > *"Back in Approach Exploration, someone suggested shifting every element left on every pop instead of using `back` and wraparound. What if we'd actually built it that way — would it still be a correct queue?"*
