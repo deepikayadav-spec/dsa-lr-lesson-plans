@@ -192,7 +192,7 @@ public:
 
 ---
 
-## ⚡ Engagement Activity (38–43 min)
+## ⚡ Engagement Activity — What-If Discussion (38–43 min)
 
 *Reuses the exact example from the Dry Run above — no new content, so no extra time added to the session.*
 

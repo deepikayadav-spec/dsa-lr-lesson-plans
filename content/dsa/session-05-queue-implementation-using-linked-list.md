@@ -191,7 +191,7 @@ public:
 
 ---
 
-## ⚡ Engagement Activity (38–43 min)
+## ⚡ Engagement Activity — What-If / Deliberate Bug (38–43 min)
 
 *Reuses the exact scenario from Concept Walkthrough's Safe Point 3 — no new content, so no extra time added to the session.*
 

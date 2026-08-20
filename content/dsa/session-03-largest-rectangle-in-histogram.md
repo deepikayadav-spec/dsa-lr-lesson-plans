@@ -253,7 +253,7 @@ int largestRectangleArea(vector<int>& heights) {
 
 ---
 
-## ⚡ Engagement Activity (38–43 min)
+## ⚡ Engagement Activity — What-If Discussion (38–43 min)
 
 *Reuses the exact array from the Dry Runs above, plus one new small array chosen to trigger a specific edge case — no unrelated content, so minimal extra time added.*
 
